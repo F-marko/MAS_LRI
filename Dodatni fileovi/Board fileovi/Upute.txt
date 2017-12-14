@@ -1,0 +1,1 @@
+Staviti folder "pynq-z1" u direktorij "C:\Xilinx\Vivado\2017.3\data\boards\board_files"
