@@ -3,6 +3,33 @@
 ## - uncomment the lines corresponding to used pins
 ## - rename the used ports (in each line, after get_ports) according to the top level signal names in the project
 
+
+
+
+
+
+
+
+
+
+
+
+set_property PACKAGE_PIN W14 [get_ports {cam_data[1]}]
+set_property PACKAGE_PIN W19 [get_ports {cam_data[2]}]
+set_property PACKAGE_PIN V16 [get_ports {cam_data[3]}]
+set_property PACKAGE_PIN Y16 [get_ports {cam_data[4]}]
+set_property PACKAGE_PIN Y14 [get_ports {cam_data[5]}]
+set_property PACKAGE_PIN w18 [get_ports {cam_data[6]}]
+set_property PACKAGE_PIN W16 [get_ports {cam_data[7]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cam_data[7]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cam_data[6]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cam_data[5]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cam_data[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cam_data[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cam_data[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cam_data[1]}]
+
+
 ## Clock signal 125 MHz
 
 #set_property -dict { PACKAGE_PIN H16   IOSTANDARD LVCMOS33 } [get_ports { sysclk }]; #IO_L13P_T2_MRCC_35 Sch=sysclk
@@ -38,11 +65,22 @@
 
 ##Pmod Header JA
 
+set_property PACKAGE_PIN Y18 [get_ports iic_0_sda_io]
+set_property PULLUP true [get_ports iic_0_sda_io]
+set_property IOSTANDARD LVCMOS33 [get_ports iic_0_sda_io]
 #set_property -dict { PACKAGE_PIN Y18   IOSTANDARD LVCMOS33 } [get_ports { ja[0] }]; #IO_L17P_T2_34 Sch=ja_p[1]
+set_property PACKAGE_PIN Y19 [get_ports XCLK]
+set_property IOSTANDARD LVCMOS33 [get_ports XCLK]
+set_property SLEW FAST [get_ports XCLK]
+set_property OFFCHIP_TERM NONE [get_ports XCLK]
 #set_property -dict { PACKAGE_PIN Y19   IOSTANDARD LVCMOS33 } [get_ports { ja[1] }]; #IO_L17N_T2_34 Sch=ja_n[1]
 #set_property -dict { PACKAGE_PIN Y16   IOSTANDARD LVCMOS33 } [get_ports { ja[2] }]; #IO_L7P_T1_34 Sch=ja_p[2]
+set_property PACKAGE_PIN Y17 [get_ports {cam_data[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cam_data[0]}]
 #set_property -dict { PACKAGE_PIN Y17   IOSTANDARD LVCMOS33 } [get_ports { ja[3] }]; #IO_L7N_T1_34 Sch=ja_n[2]
 #set_property -dict { PACKAGE_PIN U18   IOSTANDARD LVCMOS33 } [get_ports { ja[4] }]; #IO_L12P_T1_MRCC_34 Sch=ja_p[3]
+set_property PACKAGE_PIN U19 [get_ports {cam_href}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cam_href}]
 #set_property -dict { PACKAGE_PIN U19   IOSTANDARD LVCMOS33 } [get_ports { ja[5] }]; #IO_L12N_T1_MRCC_34 Sch=ja_n[3]
 #set_property -dict { PACKAGE_PIN W18   IOSTANDARD LVCMOS33 } [get_ports { ja[6] }]; #IO_L22P_T3_34 Sch=ja_p[4]
 #set_property -dict { PACKAGE_PIN W19   IOSTANDARD LVCMOS33 } [get_ports { ja[7] }]; #IO_L22N_T3_34 Sch=ja_n[4]
@@ -51,10 +89,17 @@
 
 #set_property -dict { PACKAGE_PIN W14   IOSTANDARD LVCMOS33 } [get_ports { jb[0] }]; #IO_L8P_T1_34 Sch=jb_p[1]
 #set_property -dict { PACKAGE_PIN Y14   IOSTANDARD LVCMOS33 } [get_ports { jb[1] }]; #IO_L8N_T1_34 Sch=jb_n[1]
+set_property PACKAGE_PIN T11 [get_ports {cam_pclk}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cam_pclk}]
 #set_property -dict { PACKAGE_PIN T11   IOSTANDARD LVCMOS33 } [get_ports { jb[2] }]; #IO_L1P_T0_34 Sch=jb_p[2]
+set_property PACKAGE_PIN T10 [get_ports iic_0_scl_io]
+set_property PULLUP true [get_ports iic_0_scl_io]
+set_property IOSTANDARD LVCMOS33 [get_ports iic_0_scl_io]
 #set_property -dict { PACKAGE_PIN T10   IOSTANDARD LVCMOS33 } [get_ports { jb[3] }]; #IO_L1N_T0_34 Sch=jb_n[2]
 #set_property -dict { PACKAGE_PIN V16   IOSTANDARD LVCMOS33 } [get_ports { jb[4] }]; #IO_L18P_T2_34 Sch=jb_p[3]
 #set_property -dict { PACKAGE_PIN W16   IOSTANDARD LVCMOS33 } [get_ports { jb[5] }]; #IO_L18N_T2_34 Sch=jb_n[3]
+set_property PACKAGE_PIN V12 [get_ports {cam_vsync}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cam_vsync}]
 #set_property -dict { PACKAGE_PIN V12   IOSTANDARD LVCMOS33 } [get_ports { jb[6] }]; #IO_L4P_T0_34 Sch=jb_p[4]
 #set_property -dict { PACKAGE_PIN W13   IOSTANDARD LVCMOS33 } [get_ports { jb[7] }]; #IO_L4N_T0_34 Sch=jb_n[4]
 
