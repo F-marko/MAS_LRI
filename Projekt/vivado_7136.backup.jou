@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Tue Dec 19 11:49:35 2017
+# Process ID: 7136
+# Current directory: D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1708 D:\FER\Multimedijske_arhitekture_i_sustavi\Projekt\MAS_LRI\Projekt\MAS_projekt.xpr
+# Log file: D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt/vivado.log
+# Journal file: D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt/MAS_projekt.xpr
+update_compile_order -fileset sources_1
+write_hwdef -force  -file D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper.hdf
+file copy -force D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt/MAS_projekt.runs/impl_1/block_design_1_wrapper.sysdef D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper.hdf
+

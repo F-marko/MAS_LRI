@@ -1,0 +1,22 @@
+11:39:32 INFO  : Registering command handlers for SDK TCF services
+11:39:35 INFO  : Launching XSCT server: xsct.bat -interactive D:\FER\Multimedijske_arhitekture_i_sustavi\Projekt\MAS_LRI\Projekt\MAS\temp_xsdb_launch_script.tcl
+11:39:40 INFO  : XSCT server has started successfully.
+11:39:40 INFO  : Successfully done setting XSCT server connection channel  
+11:39:49 INFO  : Successfully done setting SDK workspace  
+11:39:49 INFO  : Processing command line option -hwspec D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt/MAS.
+11:39:49 ERROR : Error occurred while creating hardware platform MAS_hw_platform_0 from sysdef
+java.io.FileNotFoundException: D:\FER\Multimedijske_arhitekture_i_sustavi\Projekt\MAS_LRI\Projekt\MAS (Access is denied)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:266)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:210)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:197)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:171)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:517)
+	at com.xilinx.sdk.startup.InitSDK.access$8(InitSDK.java:499)
+	at com.xilinx.sdk.startup.InitSDK$12.run(InitSDK.java:450)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+11:39:49 ERROR : Unable to create Hardware Specification Project with specification file: D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt/MAS

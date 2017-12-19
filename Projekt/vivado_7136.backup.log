@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Tue Dec 19 11:49:35 2017
+# Process ID: 7136
+# Current directory: D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1708 D:\FER\Multimedijske_arhitekture_i_sustavi\Projekt\MAS_LRI\Projekt\MAS_projekt.xpr
+# Log file: D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt/vivado.log
+# Journal file: D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt/MAS_projekt.xpr
+INFO: [Project 1-313] Project file moved from 'D:/FER/Multimedijske arhitekture i sustavi/Projekt/MAS_LRI/Projekt' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt/MAS_projekt.ip_user_files', nor could it be found using path 'D:/FER/Multimedijske arhitekture i sustavi/Projekt/MAS_LRI/Projekt/MAS projekt.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.3/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 845.691 ; gain = 120.723
+update_compile_order -fileset sources_1
+write_hwdef -force  -file D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper.hdf
+file copy -force D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt/MAS_projekt.runs/impl_1/block_design_1_wrapper.sysdef D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper.hdf
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 19 11:51:16 2017...

@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Tue Dec 19 11:38:51 2017
+# Process ID: 8156
+# Current directory: D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3036 D:\FER\Multimedijske_arhitekture_i_sustavi\Projekt\MAS_LRI\Projekt\MAS projekt.xpr
+# Log file: D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt/vivado.log
+# Journal file: D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt/MAS projekt.xpr}
+INFO: [Project 1-313] Project file moved from 'D:/FER/Multimedijske arhitekture i sustavi/Projekt/MAS_LRI/Projekt' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt/MAS projekt.ip_user_files', nor could it be found using path 'D:/FER/Multimedijske arhitekture i sustavi/Projekt/MAS_LRI/Projekt/MAS projekt.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 831.613 ; gain = 118.508
+update_compile_order -fileset sources_1
+launch_sdk -workspace {D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt/MAS projekt.sdk} -hwspec {D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt/MAS projekt.sdk/block_design_1_wrapper.hdf}
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt/MAS projekt.sdk -hwspec D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt/MAS projekt.sdk/block_design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file copy -force {D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt/MAS projekt.runs/impl_1/block_design_1_wrapper.sysdef} {D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt/MAS projekt.sdk/block_design_1_wrapper.hdf}
+
+save_project_as MAS_projekt D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt/MAS_projekt -force
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 19 11:48:02 2017...

@@ -1,0 +1,86 @@
+/*
+
+Xilinx Vivado v2017.3 (64-bit) [Major: 2017, Minor: 3]
+SW Build: 2018833 on Wed Oct  4 19:58:22 MDT 2017
+IP Build: 2016188 on Wed Oct  4 21:52:56 MDT 2017
+
+Process ID: 7120
+License: Customer
+
+Current time: 	Tue Dec 19 11:49:46 CET 2017
+Time zone: 	Central European Time (Europe/Belgrade)
+
+OS: Windows 8.1
+OS Version: 6.3
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 64 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/Xilinx/Vivado/2017.3/tps/win64/jre
+JVM executable location: 	D:/Xilinx/Vivado/2017.3/tps/win64/jre/bin/java.exe
+
+User name: 	Marko
+User home directory: C:/Users/Marko
+User working directory: D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2017.3
+RDI_DATADIR: D:/Xilinx/Vivado/2017.3/data
+RDI_BINDIR: D:/Xilinx/Vivado/2017.3/bin
+
+User preferences location: C:/Users/Marko/AppData/Roaming/Xilinx/Vivado
+Vivado preferences directory: C:/Users/Marko/AppData/Roaming/Xilinx/Vivado/2017.3/vivado.xml
+Vivado layouts directory: C:/Users/Marko/AppData/Roaming/Xilinx/Vivado/2017.3/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2017.3/lib/classes/planAhead.jar
+Vivado log file location: 	D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt/vivado.log
+Vivado journal file location: 	D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt/vivado.jou
+Engine tmp dir: 	D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt/.Xil/Vivado-7120-Lenovo
+
+GUI allocated memory:	182 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 511 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bs (cl):  Open Project : addNotify
+// Opening Vivado Project: D:\FER\Multimedijske_arhitekture_i_sustavi\Projekt\MAS_LRI\Projekt\MAS_projekt.xpr. Version: Vivado v2017.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// [GUI Memory]: 42 MB (+41069kb) [00:00:06]
+// [Engine Memory]: 478 MB (+349805kb) [00:00:06]
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 524 MB. GUI used memory: 35 MB. Current time: 12/19/17 11:49:48 AM CET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 51 MB (+7329kb) [00:00:12]
+// [Engine Memory]: 591 MB (+92956kb) [00:00:12]
+// [GUI Memory]: 53 MB (+102kb) [00:00:12]
+// [GUI Memory]: 66 MB (+10192kb) [00:00:13]
+// Tcl Message: open_project D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt/MAS_projekt.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/FER/Multimedijske arhitekture i sustavi/Projekt/MAS_LRI/Projekt' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.3/data/ip'. 
+// Project name: MAS_projekt; location: D:/FER/Multimedijske_arhitekture_i_sustavi/Projekt/MAS_LRI/Projekt; part: xc7z020clg400-1
+// [GUI Memory]: 72 MB (+2676kb) [00:00:16]
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 826.375 ; gain = 128.414 
+dismissDialog("Open Project"); // bs (cl)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
