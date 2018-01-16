@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/FER/Multimedijske arhitekture i sustavi/Projekt/MAS_LRI/Projekt/MAS projekt.runs/block_design_1_auto_pc_0_synth_1'
+HD_PWD='D:/Vivado_Projects/MAS/Projekt/MAS_projekt.runs/block_design_1_auto_pc_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

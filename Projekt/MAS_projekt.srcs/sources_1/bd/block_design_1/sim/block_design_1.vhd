@@ -1,8 +1,8 @@
 --Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
---Tool Version: Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
---Date        : Tue Dec 19 11:17:50 2017
---Host        : Lenovo running 64-bit major release  (build 9200)
+--Tool Version: Vivado v.2017.3.1 (win64) Build 2035080 Fri Oct 20 14:20:01 MDT 2017
+--Date        : Tue Jan  9 12:14:43 2018
+--Host        : ASUS-X550DP running 64-bit major release  (build 9200)
 --Command     : generate_target block_design_1.bd
 --Design      : block_design_1
 --Purpose     : IP block netlist
@@ -1088,6 +1088,7 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity block_design_1 is
   port (
+    CAM_tri_i : in STD_LOGIC_VECTOR ( 10 downto 0 );
     DDR_addr : inout STD_LOGIC_VECTOR ( 14 downto 0 );
     DDR_ba : inout STD_LOGIC_VECTOR ( 2 downto 0 );
     DDR_cas_n : inout STD_LOGIC;
@@ -1117,16 +1118,12 @@ entity block_design_1 is
     IIC_0_sda_t : out STD_LOGIC;
     XCLK : out STD_LOGIC;
     btns_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    cam_data_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    cam_href : in STD_LOGIC;
-    cam_pclk : in STD_LOGIC;
-    cam_vsync : in STD_LOGIC;
     leds_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
     leds_4bits_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
     leds_4bits_tri_t : out STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of block_design_1 : entity is "block_design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=block_design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=11,numReposBlks=7,numNonXlnxBlks=0,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,da_board_cnt=3,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of block_design_1 : entity is "block_design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=block_design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=10,numReposBlks=6,numNonXlnxBlks=0,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,da_board_cnt=3,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of block_design_1 : entity is "block_design_1.hwdef";
 end block_design_1;
@@ -1226,8 +1223,7 @@ architecture STRUCTURE of block_design_1 is
     s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_rvalid : out STD_LOGIC;
     s_axi_rready : in STD_LOGIC;
-    gpio_io_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    gpio2_io_i : in STD_LOGIC_VECTOR ( 2 downto 0 )
+    gpio_io_i : in STD_LOGIC_VECTOR ( 10 downto 0 )
   );
   end component block_design_1_axi_gpio_0_0;
   component block_design_1_rst_ps7_0_100M_0 is
@@ -1271,22 +1267,11 @@ architecture STRUCTURE of block_design_1 is
     gpio2_io_i : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   end component block_design_1_axi_gpio_1_0;
-  component block_design_1_xlconcat_0_0 is
-  port (
-    In0 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    In1 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    In2 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    dout : out STD_LOGIC_VECTOR ( 2 downto 0 )
-  );
-  end component block_design_1_xlconcat_0_0;
-  signal axi_gpio_0_GPIO_TRI_I : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal axi_gpio_0_GPIO_TRI_I : STD_LOGIC_VECTOR ( 10 downto 0 );
   signal axi_gpio_1_GPIO2_TRI_I : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal axi_gpio_1_GPIO_TRI_I : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal axi_gpio_1_GPIO_TRI_O : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal axi_gpio_1_GPIO_TRI_T : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal cam_href_1 : STD_LOGIC;
-  signal cam_pclk_1 : STD_LOGIC;
-  signal cam_vsync_1 : STD_LOGIC;
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal processing_system7_0_DDR_BA : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal processing_system7_0_DDR_CAS_N : STD_LOGIC;
@@ -1391,7 +1376,6 @@ architecture STRUCTURE of block_design_1 is
   signal ps7_0_axi_periph_M01_AXI_WVALID : STD_LOGIC;
   signal rst_ps7_0_100M_interconnect_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal rst_ps7_0_100M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal xlconcat_0_dout : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal NLW_rst_ps7_0_100M_mb_reset_UNCONNECTED : STD_LOGIC;
   signal NLW_rst_ps7_0_100M_bus_struct_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_rst_ps7_0_100M_peripheral_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
@@ -1420,6 +1404,7 @@ architecture STRUCTURE of block_design_1 is
   attribute X_INTERFACE_INFO of IIC_0_sda_t : signal is "xilinx.com:interface:iic:1.0 IIC_0 SDA_T";
   attribute X_INTERFACE_INFO of XCLK : signal is "xilinx.com:signal:clock:1.0 CLK.XCLK CLK";
   attribute X_INTERFACE_PARAMETER of XCLK : signal is "XIL_INTERFACENAME CLK.XCLK, CLK_DOMAIN block_design_1_processing_system7_0_0_FCLK_CLK1, FREQ_HZ 20000000, PHASE 0.000";
+  attribute X_INTERFACE_INFO of CAM_tri_i : signal is "xilinx.com:interface:gpio:1.0 CAM ";
   attribute X_INTERFACE_INFO of DDR_addr : signal is "xilinx.com:interface:ddrx:1.0 DDR ADDR";
   attribute X_INTERFACE_PARAMETER of DDR_addr : signal is "XIL_INTERFACENAME DDR, AXI_ARBITRATION_SCHEME TDM, BURST_LENGTH 8, CAN_DEBUG false, CAS_LATENCY 11, CAS_WRITE_LATENCY 11, CS_ENABLED true, DATA_MASK_ENABLED true, DATA_WIDTH 8, MEMORY_TYPE COMPONENTS, MEM_ADDR_MAP ROW_COLUMN_BANK, SLOT Single, TIMEPERIOD_PS 1250";
   attribute X_INTERFACE_INFO of DDR_ba : signal is "xilinx.com:interface:ddrx:1.0 DDR BA";
@@ -1429,7 +1414,6 @@ architecture STRUCTURE of block_design_1 is
   attribute X_INTERFACE_INFO of DDR_dqs_p : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_P";
   attribute X_INTERFACE_INFO of FIXED_IO_mio : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
   attribute X_INTERFACE_INFO of btns_4bits_tri_i : signal is "xilinx.com:interface:gpio:1.0 btns_4bits TRI_I";
-  attribute X_INTERFACE_INFO of cam_data_tri_i : signal is "xilinx.com:interface:gpio:1.0 cam_data TRI_I";
   attribute X_INTERFACE_INFO of leds_4bits_tri_i : signal is "xilinx.com:interface:gpio:1.0 leds_4bits TRI_I";
   attribute X_INTERFACE_INFO of leds_4bits_tri_o : signal is "xilinx.com:interface:gpio:1.0 leds_4bits TRI_O";
   attribute X_INTERFACE_INFO of leds_4bits_tri_t : signal is "xilinx.com:interface:gpio:1.0 leds_4bits TRI_T";
@@ -1439,20 +1423,16 @@ begin
   IIC_0_sda_o <= processing_system7_0_IIC_0_SDA_O;
   IIC_0_sda_t <= processing_system7_0_IIC_0_SDA_T;
   XCLK <= processing_system7_0_FCLK_CLK1;
-  axi_gpio_0_GPIO_TRI_I(7 downto 0) <= cam_data_tri_i(7 downto 0);
+  axi_gpio_0_GPIO_TRI_I(10 downto 0) <= CAM_tri_i(10 downto 0);
   axi_gpio_1_GPIO2_TRI_I(3 downto 0) <= btns_4bits_tri_i(3 downto 0);
   axi_gpio_1_GPIO_TRI_I(3 downto 0) <= leds_4bits_tri_i(3 downto 0);
-  cam_href_1 <= cam_href;
-  cam_pclk_1 <= cam_pclk;
-  cam_vsync_1 <= cam_vsync;
   leds_4bits_tri_o(3 downto 0) <= axi_gpio_1_GPIO_TRI_O(3 downto 0);
   leds_4bits_tri_t(3 downto 0) <= axi_gpio_1_GPIO_TRI_T(3 downto 0);
   processing_system7_0_IIC_0_SCL_I <= IIC_0_scl_i;
   processing_system7_0_IIC_0_SDA_I <= IIC_0_sda_i;
 axi_gpio_0: component block_design_1_axi_gpio_0_0
      port map (
-      gpio2_io_i(2 downto 0) => xlconcat_0_dout(2 downto 0),
-      gpio_io_i(7 downto 0) => axi_gpio_0_GPIO_TRI_I(7 downto 0),
+      gpio_io_i(10 downto 0) => axi_gpio_0_GPIO_TRI_I(10 downto 0),
       s_axi_aclk => processing_system7_0_FCLK_CLK0,
       s_axi_araddr(8 downto 0) => ps7_0_axi_periph_M00_AXI_ARADDR(8 downto 0),
       s_axi_aresetn => rst_ps7_0_100M_peripheral_aresetn(0),
@@ -1666,12 +1646,5 @@ rst_ps7_0_100M: component block_design_1_rst_ps7_0_100M_0
       peripheral_aresetn(0) => rst_ps7_0_100M_peripheral_aresetn(0),
       peripheral_reset(0) => NLW_rst_ps7_0_100M_peripheral_reset_UNCONNECTED(0),
       slowest_sync_clk => processing_system7_0_FCLK_CLK0
-    );
-xlconcat_0: component block_design_1_xlconcat_0_0
-     port map (
-      In0(0) => cam_href_1,
-      In1(0) => cam_vsync_1,
-      In2(0) => cam_pclk_1,
-      dout(2 downto 0) => xlconcat_0_dout(2 downto 0)
     );
 end STRUCTURE;

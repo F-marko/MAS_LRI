@@ -1,8 +1,8 @@
 --Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
---Tool Version: Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
---Date        : Tue Dec 19 11:17:50 2017
---Host        : Lenovo running 64-bit major release  (build 9200)
+--Tool Version: Vivado v.2017.3.1 (win64) Build 2035080 Fri Oct 20 14:20:01 MDT 2017
+--Date        : Tue Jan  9 12:14:43 2018
+--Host        : ASUS-X550DP running 64-bit major release  (build 9200)
 --Command     : generate_target block_design_1_wrapper.bd
 --Design      : block_design_1_wrapper
 --Purpose     : IP block netlist
@@ -13,6 +13,7 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity block_design_1_wrapper is
   port (
+    CAM_tri_i : in STD_LOGIC_VECTOR ( 10 downto 0 );
     DDR_addr : inout STD_LOGIC_VECTOR ( 14 downto 0 );
     DDR_ba : inout STD_LOGIC_VECTOR ( 2 downto 0 );
     DDR_cas_n : inout STD_LOGIC;
@@ -38,10 +39,6 @@ entity block_design_1_wrapper is
     IIC_0_sda_io : inout STD_LOGIC;
     XCLK : out STD_LOGIC;
     btns_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    cam_data_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    cam_href : in STD_LOGIC;
-    cam_pclk : in STD_LOGIC;
-    cam_vsync : in STD_LOGIC;
     leds_4bits_tri_io : inout STD_LOGIC_VECTOR ( 3 downto 0 )
   );
 end block_design_1_wrapper;
@@ -70,7 +67,6 @@ architecture STRUCTURE of block_design_1_wrapper is
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
-    cam_data_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
     IIC_0_sda_i : in STD_LOGIC;
     IIC_0_sda_o : out STD_LOGIC;
     IIC_0_sda_t : out STD_LOGIC;
@@ -82,9 +78,7 @@ architecture STRUCTURE of block_design_1_wrapper is
     leds_4bits_tri_t : out STD_LOGIC_VECTOR ( 3 downto 0 );
     btns_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
     XCLK : out STD_LOGIC;
-    cam_href : in STD_LOGIC;
-    cam_vsync : in STD_LOGIC;
-    cam_pclk : in STD_LOGIC
+    CAM_tri_i : in STD_LOGIC_VECTOR ( 10 downto 0 )
   );
   end component block_design_1;
   component IOBUF is
@@ -134,6 +128,7 @@ IIC_0_sda_iobuf: component IOBUF
     );
 block_design_1_i: component block_design_1
      port map (
+      CAM_tri_i(10 downto 0) => CAM_tri_i(10 downto 0),
       DDR_addr(14 downto 0) => DDR_addr(14 downto 0),
       DDR_ba(2 downto 0) => DDR_ba(2 downto 0),
       DDR_cas_n => DDR_cas_n,
@@ -163,10 +158,6 @@ block_design_1_i: component block_design_1
       IIC_0_sda_t => IIC_0_sda_t,
       XCLK => XCLK,
       btns_4bits_tri_i(3 downto 0) => btns_4bits_tri_i(3 downto 0),
-      cam_data_tri_i(7 downto 0) => cam_data_tri_i(7 downto 0),
-      cam_href => cam_href,
-      cam_pclk => cam_pclk,
-      cam_vsync => cam_vsync,
       leds_4bits_tri_i(3) => leds_4bits_tri_i_3(3),
       leds_4bits_tri_i(2) => leds_4bits_tri_i_2(2),
       leds_4bits_tri_i(1) => leds_4bits_tri_i_1(1),

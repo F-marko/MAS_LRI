@@ -1,4 +1,99 @@
-11:57:44 **** Build of project Camera_bsp ****
+12:43:14 **** Build of project Camera_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_4/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling iicps"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_4/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+
+**** Build of configuration Debug for project Camera ****
+
+Nothing to build for project Camera
+12:44:47 **** Auto Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/echo.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
+../src/echo.c:36:22: fatal error: lwip/err.h: No such file or directory
+ #include "lwip/err.h"
+                      ^
+compilation terminated.
+make: *** [src/echo.o] Greška 1
+12:48:25 **** Auto Build of project Camera_bsp ****
 make -k all 
 "Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
 make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
@@ -63,25 +158,6 @@ make -C ps7_cortexa9_0/libsrc/iicps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-
 "Running Make libs in ps7_cortexa9_0/libsrc/lwip141_v1_9/src"
 make -C ps7_cortexa9_0/libsrc/lwip141_v1_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
 "Compiling lwip src and adapter files"
-In file included from ../../../include/lwip/ip.h:39:0,
-                 from lwip-1.4.1/src/core/ipv4/ip.c:42:
-lwip-1.4.1/src/core/ipv4/ip.c: In function 'ip_input':
-../../../include/lwip/ip_addr.h:200:39: warning: the comparison will always evaluate as 'false' for the address of 'current_iphdr_src' will never be NULL [-Waddress]
- #define ip_addr_isany(addr1) ((addr1) == NULL || (addr1)->addr == IPADDR_ANY)
-                                       ^
-lwip-1.4.1/src/core/ipv4/ip.c:473:24: note: in expansion of macro 'ip_addr_isany'
-   if (check_ip_src && !ip_addr_isany(&current_iphdr_src))
-                        ^~~~~~~~~~~~~
-In file included from ../../../include/lwip/netif.h:41:0,
-                 from ../../../include/lwip/udp.h:40,
-                 from lwip-1.4.1/src/core/dhcp.c:75:
-lwip-1.4.1/src/core/dhcp.c: In function 'dhcp_bind':
-../../../include/lwip/ip_addr.h:200:39: warning: the comparison will always evaluate as 'false' for the address of 'gw_addr' will never be NULL [-Waddress]
- #define ip_addr_isany(addr1) ((addr1) == NULL || (addr1)->addr == IPADDR_ANY)
-                                       ^
-lwip-1.4.1/src/core/dhcp.c:987:7: note: in expansion of macro 'ip_addr_isany'
-   if (ip_addr_isany(&gw_addr)) {
-       ^~~~~~~~~~~~~
 In file included from ../../../include/xemacps.h:348:0,
                  from ../../../include/netif/xemacpsif.h:59,
                  from contrib/ports/xilinx/netif/xemacpsif_dma.c:39:
@@ -120,543 +196,1373 @@ make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm
 make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
 "Compiling xadcps"
 'Finished building libraries'
-11:58:09 **** Build of configuration Debug for project Camera ****
+12:49:00 **** Clean-only build of configuration Debug for project Camera ****
+make clean 
+rm -rf  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o  ./src/echo.d ./src/i2c_access.d ./src/iic_phyreset.d ./src/main.d ./src/platform.d ./src/platform_mb.d ./src/platform_ppc.d ./src/platform_zynq.d ./src/platform_zynqmp.d ./src/sfp.d ./src/si5324.d  Camera.elf.size  Camera.elf
+ 
+12:49:00 **** Auto Build of configuration Debug for project Camera ****
 make pre-build main-build 
 a9-linaro-pre-build-step
-' '
-'Building file: ../src/echo.c'
-'Invoking: ARM v7 gcc compiler'
+ 
+Building file: ../src/echo.c
+Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
-'Finished building: ../src/echo.c'
-' '
-'Building file: ../src/i2c_access.c'
-'Invoking: ARM v7 gcc compiler'
+Finished building: ../src/echo.c
+ 
+Building file: ../src/i2c_access.c
+Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_access.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c_access.d" -MT"src/i2c_access.o" -o "src/i2c_access.o" "../src/i2c_access.c"
-'Finished building: ../src/i2c_access.c'
-' '
-'Building file: ../src/iic_phyreset.c'
-'Invoking: ARM v7 gcc compiler'
+Finished building: ../src/i2c_access.c
+ 
+Building file: ../src/iic_phyreset.c
+Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_phyreset.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_phyreset.d" -MT"src/iic_phyreset.o" -o "src/iic_phyreset.o" "../src/iic_phyreset.c"
-'Finished building: ../src/iic_phyreset.c'
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
+Finished building: ../src/iic_phyreset.c
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building file: ../src/platform.c'
-'Invoking: ARM v7 gcc compiler'
+In file included from ../src/main.c:35:0:
+../src/cameraInit.h:336:27: warning: 'ov7670_image' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_image[] = {
+                           ^~~~~~~~~~~~
+../src/cameraInit.h:329:27: warning: 'ov7670_test_bar' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_bar[] = {
+                           ^~~~~~~~~~~~~~~
+../src/cameraInit.h:322:27: warning: 'ov7670_test_shift' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_shift[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:304:27: warning: 'ov7670_fmt_rgb565' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_rgb565[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:286:27: warning: 'ov7670_fmt_yuv422' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_yuv422[] = {
+                           ^~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
-' '
-'Building file: ../src/platform_mb.c'
-'Invoking: ARM v7 gcc compiler'
+Finished building: ../src/platform.c
+ 
+Building file: ../src/platform_mb.c
+Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_mb.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_mb.d" -MT"src/platform_mb.o" -o "src/platform_mb.o" "../src/platform_mb.c"
-'Finished building: ../src/platform_mb.c'
-' '
-'Building file: ../src/platform_ppc.c'
-'Invoking: ARM v7 gcc compiler'
+Finished building: ../src/platform_mb.c
+ 
+Building file: ../src/platform_ppc.c
+Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_ppc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_ppc.d" -MT"src/platform_ppc.o" -o "src/platform_ppc.o" "../src/platform_ppc.c"
-'Finished building: ../src/platform_ppc.c'
-' '
-'Building file: ../src/platform_zynq.c'
-'Invoking: ARM v7 gcc compiler'
+Finished building: ../src/platform_ppc.c
+ 
+Building file: ../src/platform_zynq.c
+Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_zynq.d" -MT"src/platform_zynq.o" -o "src/platform_zynq.o" "../src/platform_zynq.c"
-'Finished building: ../src/platform_zynq.c'
-' '
-'Building file: ../src/platform_zynqmp.c'
-'Invoking: ARM v7 gcc compiler'
+Finished building: ../src/platform_zynq.c
+ 
+Building file: ../src/platform_zynqmp.c
+Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynqmp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_zynqmp.d" -MT"src/platform_zynqmp.o" -o "src/platform_zynqmp.o" "../src/platform_zynqmp.c"
-'Finished building: ../src/platform_zynqmp.c'
-' '
-'Building file: ../src/sfp.c'
-'Invoking: ARM v7 gcc compiler'
+Finished building: ../src/platform_zynqmp.c
+ 
+Building file: ../src/sfp.c
+Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sfp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sfp.d" -MT"src/sfp.o" -o "src/sfp.o" "../src/sfp.c"
-'Finished building: ../src/sfp.c'
-' '
-'Building file: ../src/si5324.c'
-'Invoking: ARM v7 gcc compiler'
+Finished building: ../src/sfp.c
+ 
+Building file: ../src/si5324.c
+Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/si5324.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/si5324.d" -MT"src/si5324.o" -o "src/si5324.o" "../src/si5324.c"
-'Finished building: ../src/si5324.c'
-' '
-'Building target: Camera.elf'
-'Invoking: ARM v7 gcc linker'
+Finished building: ../src/si5324.c
+ 
+Building target: Camera.elf
+Invoking: ARM v7 gcc linker
 arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Camera_bsp/ps7_cortexa9_0/lib -o "Camera.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
-'Finished building target: Camera.elf'
-' '
-'Invoking: ARM v7 Print Size'
+Finished building target: Camera.elf
+ 
+Invoking: ARM v7 Print Size
 arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 105320	   3844	2218272	2327436	 23838c	Camera.elf
-'Finished building: Camera.elf.size'
-' '
-11:58:12 **** Auto Build of configuration Debug for project Camera ****
+ 142532	   4636	2152752	2299920	 231810	Camera.elf
+Finished building: Camera.elf.size
+ 
+12:49:06 **** Auto Build of configuration Debug for project Camera ****
 make pre-build main-build 
 a9-linaro-pre-build-step
-' '
+ 
 make: Ništa za napraviti za `main-build'.
-11:59:14 **** Auto Build of project Camera_bsp ****
-make -k all 
-"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_5/src"
-make -C ps7_cortexa9_0/libsrc/emacps_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
-make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
-make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_5/src"
-make -C ps7_cortexa9_0/libsrc/iicps_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/lwip141_v1_9/src"
-make -C ps7_cortexa9_0/libsrc/lwip141_v1_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_8/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_4/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v6_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling coresightps_dcc"
-"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling cpu_cortexa9"
-"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling ddrps"
-"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling devcfg"
-"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling dmaps"
-"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_5/src"
-make -C ps7_cortexa9_0/libsrc/emacps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling emacps"
-"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
-make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling gpio"
-"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
-make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling gpiops"
-"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_5/src"
-make -C ps7_cortexa9_0/libsrc/iicps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling iicps"
-"Running Make libs in ps7_cortexa9_0/libsrc/lwip141_v1_9/src"
-make -C ps7_cortexa9_0/libsrc/lwip141_v1_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling lwip src and adapter files"
-"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_8/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling scugic"
-"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling scutimer"
-"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling scuwdt"
-"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_4/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v6_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling standalone"
-"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling uartps"
-"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling xadcps"
-'Finished building libraries'
-11:59:29 **** Auto Build of configuration Debug for project Camera ****
+12:50:18 **** Incremental Build of configuration Debug for project Camera ****
 make pre-build main-build 
 a9-linaro-pre-build-step
-' '
-'Building file: ../src/echo.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
-'Finished building: ../src/echo.c'
-' '
-'Building file: ../src/i2c_access.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_access.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c_access.d" -MT"src/i2c_access.o" -o "src/i2c_access.o" "../src/i2c_access.c"
-'Finished building: ../src/i2c_access.c'
-' '
-'Building file: ../src/iic_phyreset.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_phyreset.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_phyreset.d" -MT"src/iic_phyreset.o" -o "src/iic_phyreset.o" "../src/iic_phyreset.c"
-'Finished building: ../src/iic_phyreset.c'
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
+ 
+make: Ništa za napraviti za `main-build'.
+12:51:24 **** Auto Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building file: ../src/platform_zynq.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_zynq.d" -MT"src/platform_zynq.o" -o "src/platform_zynq.o" "../src/platform_zynq.c"
-'Finished building: ../src/platform_zynq.c'
-' '
-'Building file: ../src/platform_zynqmp.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynqmp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_zynqmp.d" -MT"src/platform_zynqmp.o" -o "src/platform_zynqmp.o" "../src/platform_zynqmp.c"
-'Finished building: ../src/platform_zynqmp.c'
-' '
-'Building file: ../src/sfp.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sfp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sfp.d" -MT"src/sfp.o" -o "src/sfp.o" "../src/sfp.c"
-'Finished building: ../src/sfp.c'
-' '
-'Building file: ../src/si5324.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/si5324.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/si5324.d" -MT"src/si5324.o" -o "src/si5324.o" "../src/si5324.c"
-'Finished building: ../src/si5324.c'
-' '
-'Building target: Camera.elf'
-'Invoking: ARM v7 gcc linker'
+../src/main.c: In function 'main':
+../src/main.c:177:8: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+        while(CAMERA_isVSYNup(READ_CAM));
+        ^~~~~
+../src/main.c:180:6: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'while'
+      for(y = 0; y<480; y++){  //288
+      ^~~
+../src/main.c:171:5: warning: unused variable 'led' [-Wunused-variable]
+  u8 led = 3;
+     ^~~
+In file included from ../src/main.c:35:0:
+At top level:
+../src/cameraInit.h:336:27: warning: 'ov7670_image' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_image[] = {
+                           ^~~~~~~~~~~~
+../src/cameraInit.h:329:27: warning: 'ov7670_test_bar' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_bar[] = {
+                           ^~~~~~~~~~~~~~~
+../src/cameraInit.h:322:27: warning: 'ov7670_test_shift' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_shift[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:304:27: warning: 'ov7670_fmt_rgb565' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_rgb565[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:286:27: warning: 'ov7670_fmt_yuv422' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_yuv422[] = {
+                           ^~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Camera.elf
+Invoking: ARM v7 gcc linker
 arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Camera_bsp/ps7_cortexa9_0/lib -o "Camera.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
-'Finished building target: Camera.elf'
-' '
-'Invoking: ARM v7 Print Size'
+Finished building target: Camera.elf
+ 
+Invoking: ARM v7 Print Size
 arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 105320	   3844	2218272	2327436	 23838c	Camera.elf
-'Finished building: Camera.elf.size'
-' '
-11:59:39 **** Auto Build of project Camera_bsp ****
-make -k all 
-"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_5/src"
-make -C ps7_cortexa9_0/libsrc/emacps_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
-make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
-make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_5/src"
-make -C ps7_cortexa9_0/libsrc/iicps_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/lwip141_v1_9/src"
-make -C ps7_cortexa9_0/libsrc/lwip141_v1_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_8/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_4/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v6_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling coresightps_dcc"
-"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling cpu_cortexa9"
-"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling ddrps"
-"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling devcfg"
-"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling dmaps"
-"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_5/src"
-make -C ps7_cortexa9_0/libsrc/emacps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling emacps"
-"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
-make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling gpio"
-"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
-make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling gpiops"
-"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_5/src"
-make -C ps7_cortexa9_0/libsrc/iicps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling iicps"
-"Running Make libs in ps7_cortexa9_0/libsrc/lwip141_v1_9/src"
-make -C ps7_cortexa9_0/libsrc/lwip141_v1_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling lwip src and adapter files"
-"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_8/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling scugic"
-"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling scutimer"
-"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling scuwdt"
-"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_4/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v6_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling standalone"
-"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling uartps"
-"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
-"Compiling xadcps"
-'Finished building libraries'
-11:59:54 **** Auto Build of configuration Debug for project Camera ****
+ 142460	   4636	2152752	2299848	 2317c8	Camera.elf
+Finished building: Camera.elf.size
+ 
+12:51:42 **** Auto Build of configuration Debug for project Camera ****
 make pre-build main-build 
 a9-linaro-pre-build-step
-' '
-'Building file: ../src/echo.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
-'Finished building: ../src/echo.c'
-' '
-'Building file: ../src/i2c_access.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_access.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c_access.d" -MT"src/i2c_access.o" -o "src/i2c_access.o" "../src/i2c_access.c"
-'Finished building: ../src/i2c_access.c'
-' '
-'Building file: ../src/iic_phyreset.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_phyreset.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_phyreset.d" -MT"src/iic_phyreset.o" -o "src/iic_phyreset.o" "../src/iic_phyreset.c"
-'Finished building: ../src/iic_phyreset.c'
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building file: ../src/platform_zynq.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_zynq.d" -MT"src/platform_zynq.o" -o "src/platform_zynq.o" "../src/platform_zynq.c"
-'Finished building: ../src/platform_zynq.c'
-' '
-'Building file: ../src/platform_zynqmp.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynqmp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_zynqmp.d" -MT"src/platform_zynqmp.o" -o "src/platform_zynqmp.o" "../src/platform_zynqmp.c"
-'Finished building: ../src/platform_zynqmp.c'
-' '
-'Building file: ../src/sfp.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sfp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sfp.d" -MT"src/sfp.o" -o "src/sfp.o" "../src/sfp.c"
-'Finished building: ../src/sfp.c'
-' '
-'Building file: ../src/si5324.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/si5324.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/si5324.d" -MT"src/si5324.o" -o "src/si5324.o" "../src/si5324.c"
-'Finished building: ../src/si5324.c'
-' '
-'Building target: Camera.elf'
-'Invoking: ARM v7 gcc linker'
+../src/main.c: In function 'main':
+../src/main.c:177:8: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+        while(CAMERA_isVSYNup(READ_CAM));
+        ^~~~~
+../src/main.c:180:6: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'while'
+      for(y = 0; y<480; y++){  //288
+      ^~~
+../src/main.c:171:5: warning: unused variable 'led' [-Wunused-variable]
+  u8 led = 3;
+     ^~~
+In file included from ../src/main.c:35:0:
+At top level:
+../src/cameraInit.h:336:27: warning: 'ov7670_image' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_image[] = {
+                           ^~~~~~~~~~~~
+../src/cameraInit.h:329:27: warning: 'ov7670_test_bar' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_bar[] = {
+                           ^~~~~~~~~~~~~~~
+../src/cameraInit.h:304:27: warning: 'ov7670_fmt_rgb565' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_rgb565[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:286:27: warning: 'ov7670_fmt_yuv422' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_yuv422[] = {
+                           ^~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Camera.elf
+Invoking: ARM v7 gcc linker
 arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Camera_bsp/ps7_cortexa9_0/lib -o "Camera.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
-'Finished building target: Camera.elf'
-' '
-'Invoking: ARM v7 Print Size'
+Finished building target: Camera.elf
+ 
+Invoking: ARM v7 Print Size
 arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 105320	   3844	2218272	2327436	 23838c	Camera.elf
-'Finished building: Camera.elf.size'
-' '
-12:03:00 **** Incremental Build of configuration Debug for project Camera ****
+ 142524	   4636	2152752	2299912	 231808	Camera.elf
+Finished building: Camera.elf.size
+ 
+12:52:01 **** Incremental Build of configuration Debug for project Camera ****
 make pre-build main-build 
 a9-linaro-pre-build-step
-' '
+ 
 make: Ništa za napraviti za `main-build'.
-12:03:33 **** Incremental Build of configuration Debug for project Camera ****
+12:53:00 **** Auto Build of configuration Debug for project Camera ****
 make pre-build main-build 
 a9-linaro-pre-build-step
-' '
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:177:8: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+        while(CAMERA_isVSYNup(READ_CAM));
+        ^~~~~
+../src/main.c:180:6: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'while'
+      for(y = 0; y<480; y++){  //288
+      ^~~
+../src/main.c:171:5: warning: unused variable 'led' [-Wunused-variable]
+  u8 led = 3;
+     ^~~
+In file included from ../src/main.c:35:0:
+At top level:
+../src/cameraInit.h:336:27: warning: 'ov7670_image' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_image[] = {
+                           ^~~~~~~~~~~~
+../src/cameraInit.h:329:27: warning: 'ov7670_test_bar' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_bar[] = {
+                           ^~~~~~~~~~~~~~~
+../src/cameraInit.h:304:27: warning: 'ov7670_fmt_rgb565' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_rgb565[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:286:27: warning: 'ov7670_fmt_yuv422' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_yuv422[] = {
+                           ^~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Camera.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Camera_bsp/ps7_cortexa9_0/lib -o "Camera.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: Camera.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142572	   4636	2152752	2299960	 231838	Camera.elf
+Finished building: Camera.elf.size
+ 
+12:53:03 **** Incremental Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
 make: Ništa za napraviti za `main-build'.
-12:06:35 **** Incremental Build of configuration Debug for project Camera ****
+12:54:11 **** Auto Build of configuration Debug for project Camera ****
 make pre-build main-build 
 a9-linaro-pre-build-step
-' '
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:177:8: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+        while(CAMERA_isVSYNup(READ_CAM));
+        ^~~~~
+../src/main.c:180:6: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'while'
+      for(y = 0; y<480; y++){  //288
+      ^~~
+../src/main.c:171:5: warning: unused variable 'led' [-Wunused-variable]
+  u8 led = 3;
+     ^~~
+In file included from ../src/main.c:35:0:
+At top level:
+../src/cameraInit.h:336:27: warning: 'ov7670_image' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_image[] = {
+                           ^~~~~~~~~~~~
+../src/cameraInit.h:329:27: warning: 'ov7670_test_bar' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_bar[] = {
+                           ^~~~~~~~~~~~~~~
+../src/cameraInit.h:322:27: warning: 'ov7670_test_shift' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_shift[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:304:27: warning: 'ov7670_fmt_rgb565' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_rgb565[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:286:27: warning: 'ov7670_fmt_yuv422' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_yuv422[] = {
+                           ^~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Camera.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Camera_bsp/ps7_cortexa9_0/lib -o "Camera.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: Camera.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142460	   4636	2152752	2299848	 2317c8	Camera.elf
+Finished building: Camera.elf.size
+ 
+12:54:13 **** Incremental Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
 make: Ništa za napraviti za `main-build'.
-12:11:22 **** Auto Build of configuration Debug for project Camera ****
+12:56:59 **** Incremental Build of configuration Debug for project Camera ****
 make pre-build main-build 
 a9-linaro-pre-build-step
-' '
-'Building file: ../src/echo.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
-../src/echo.c: In function 'recv_callback':
-../src/echo.c:68:62: error: expected expression before ',' token
-   err = tcp_write(tpcb,"Posalji\n",10, /*p->payload, p->len*/, 1);
-                                                              ^
-../src/echo.c:68:9: error: too many arguments to function 'tcp_write'
-   err = tcp_write(tpcb,"Posalji\n",10, /*p->payload, p->len*/, 1);
-         ^~~~~~~~~
-In file included from ../src/echo.c:37:0:
-../../Camera_bsp/ps7_cortexa9_0/include/lwip/tcp.h:358:18: note: declared here
- err_t            tcp_write   (struct tcp_pcb *pcb, const void *dataptr, u16_t len,
-                  ^~~~~~~~~
-make: *** [src/echo.o] Greška 1
-12:11:37 **** Auto Build of configuration Debug for project Camera ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/echo.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
-'Finished building: ../src/echo.c'
-' '
-'Building target: Camera.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Camera_bsp/ps7_cortexa9_0/lib -o "Camera.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
-'Finished building target: Camera.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 105332	   3844	2218272	2327448	 238398	Camera.elf
-'Finished building: Camera.elf.size'
-' '
-12:11:48 **** Incremental Build of configuration Debug for project Camera ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
+ 
 make: Ništa za napraviti za `main-build'.
-12:17:52 **** Auto Build of configuration Debug for project Camera ****
+12:57:28 **** Incremental Build of configuration Debug for project Camera ****
 make pre-build main-build 
 a9-linaro-pre-build-step
-' '
-'Building file: ../src/echo.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
-'Finished building: ../src/echo.c'
-' '
-'Building target: Camera.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Camera_bsp/ps7_cortexa9_0/lib -o "Camera.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
-'Finished building target: Camera.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 105332	   3844	2218272	2327448	 238398	Camera.elf
-'Finished building: Camera.elf.size'
-' '
-12:23:47 **** Auto Build of configuration Debug for project Camera ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/echo.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
-../src/echo.c: In function 'recv_callback':
-../src/echo.c:67:11: warning: dereferencing 'void *' pointer
-  if((char)*p->payload == 'g')
-           ^~~~~~~~~~~
-../src/echo.c:67:2: error: invalid use of void expression
-  if((char)*p->payload == 'g')
-  ^~
-make: *** [src/echo.o] Greška 1
-12:24:12 **** Auto Build of configuration Debug for project Camera ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/echo.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
-../src/echo.c: In function 'recv_callback':
-../src/echo.c:67:12: warning: dereferencing 'void *' pointer
-  if((char)(*p->payload) == 'g')
-            ^~~~~~~~~~~
-../src/echo.c:67:2: error: invalid use of void expression
-  if((char)(*p->payload) == 'g')
-  ^~
-make: *** [src/echo.o] Greška 1
-12:24:46 **** Auto Build of configuration Debug for project Camera ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/echo.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
-../src/echo.c: In function 'recv_callback':
-../src/echo.c:67:9: error: expected expression before 'char'
-  if((*(*char)p->payload) == 'g')
-         ^~~~
-../src/echo.c:67:14: error: expected ')' before 'p'
-  if((*(*char)p->payload) == 'g')
-              ^
-make: *** [src/echo.o] Greška 1
-12:24:59 **** Auto Build of configuration Debug for project Camera ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/echo.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
-'Finished building: ../src/echo.c'
-' '
-'Building target: Camera.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Camera_bsp/ps7_cortexa9_0/lib -o "Camera.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
-'Finished building target: Camera.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 105408	   3844	2218272	2327524	 2383e4	Camera.elf
-'Finished building: Camera.elf.size'
-' '
-12:25:22 **** Incremental Build of configuration Debug for project Camera ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
+ 
 make: Ništa za napraviti za `main-build'.
-12:27:35 **** Auto Build of configuration Debug for project Camera ****
+12:58:19 **** Incremental Build of configuration Debug for project Camera ****
 make pre-build main-build 
 a9-linaro-pre-build-step
-' '
-'Building file: ../src/echo.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
-'Finished building: ../src/echo.c'
-' '
-'Building target: Camera.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Camera_bsp/ps7_cortexa9_0/lib -o "Camera.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
-'Finished building target: Camera.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 105408	   3844	2218272	2327524	 2383e4	Camera.elf
-'Finished building: Camera.elf.size'
-' '
-12:27:48 **** Auto Build of configuration Debug for project Camera ****
+ 
+make: Ništa za napraviti za `main-build'.
+12:59:54 **** Auto Build of configuration Debug for project Camera ****
 make pre-build main-build 
 a9-linaro-pre-build-step
-' '
-'Building file: ../src/echo.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
-'Finished building: ../src/echo.c'
-' '
-'Building target: Camera.elf'
-'Invoking: ARM v7 gcc linker'
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:179:8: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+        while(CAMERA_isVSYNup(READ_CAM));
+        ^~~~~
+../src/main.c:182:6: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'while'
+      for(y = 0; y<480; y++){  //288
+      ^~~
+In file included from ../src/main.c:35:0:
+At top level:
+../src/cameraInit.h:336:27: warning: 'ov7670_image' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_image[] = {
+                           ^~~~~~~~~~~~
+../src/cameraInit.h:329:27: warning: 'ov7670_test_bar' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_bar[] = {
+                           ^~~~~~~~~~~~~~~
+../src/cameraInit.h:322:27: warning: 'ov7670_test_shift' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_shift[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:304:27: warning: 'ov7670_fmt_rgb565' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_rgb565[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:286:27: warning: 'ov7670_fmt_yuv422' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_yuv422[] = {
+                           ^~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Camera.elf
+Invoking: ARM v7 gcc linker
 arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Camera_bsp/ps7_cortexa9_0/lib -o "Camera.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
-'Finished building target: Camera.elf'
-' '
-'Invoking: ARM v7 Print Size'
+Finished building target: Camera.elf
+ 
+Invoking: ARM v7 Print Size
 arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 105408	   3844	2218272	2327524	 2383e4	Camera.elf
-'Finished building: Camera.elf.size'
-' '
+ 142460	   4636	2152752	2299848	 2317c8	Camera.elf
+Finished building: Camera.elf.size
+ 
+12:59:58 **** Incremental Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Ništa za napraviti za `main-build'.
+13:01:41 **** Auto Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:179:8: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+        while(CAMERA_isVSYNup(READ_CAM));
+        ^~~~~
+../src/main.c:182:6: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'while'
+      for(y = 0; y<480; y++){  //288
+      ^~~
+In file included from ../src/main.c:35:0:
+At top level:
+../src/cameraInit.h:336:27: warning: 'ov7670_image' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_image[] = {
+                           ^~~~~~~~~~~~
+../src/cameraInit.h:329:27: warning: 'ov7670_test_bar' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_bar[] = {
+                           ^~~~~~~~~~~~~~~
+../src/cameraInit.h:322:27: warning: 'ov7670_test_shift' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_shift[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:304:27: warning: 'ov7670_fmt_rgb565' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_rgb565[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:286:27: warning: 'ov7670_fmt_yuv422' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_yuv422[] = {
+                           ^~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Camera.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Camera_bsp/ps7_cortexa9_0/lib -o "Camera.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: Camera.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142460	   4636	2152752	2299848	 2317c8	Camera.elf
+Finished building: Camera.elf.size
+ 
+13:01:44 **** Incremental Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Ništa za napraviti za `main-build'.
+13:02:38 **** Auto Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:179:8: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+        while(CAMERA_isVSYNup(READ_CAM));
+        ^~~~~
+../src/main.c:182:6: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'while'
+      for(y = 0; y<480; y++){  //288
+      ^~~
+In file included from ../src/main.c:35:0:
+At top level:
+../src/cameraInit.h:336:27: warning: 'ov7670_image' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_image[] = {
+                           ^~~~~~~~~~~~
+../src/cameraInit.h:329:27: warning: 'ov7670_test_bar' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_bar[] = {
+                           ^~~~~~~~~~~~~~~
+../src/cameraInit.h:304:27: warning: 'ov7670_fmt_rgb565' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_rgb565[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:286:27: warning: 'ov7670_fmt_yuv422' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_yuv422[] = {
+                           ^~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Camera.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Camera_bsp/ps7_cortexa9_0/lib -o "Camera.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: Camera.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142572	   4636	2152752	2299960	 231838	Camera.elf
+Finished building: Camera.elf.size
+ 
+13:02:44 **** Incremental Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Ništa za napraviti za `main-build'.
+13:05:34 **** Auto Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:179:8: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+        while(CAMERA_isVSYNup(READ_CAM));
+        ^~~~~
+../src/main.c:182:6: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'while'
+      for(y = 0; y<480; y++){  //288
+      ^~~
+In file included from ../src/main.c:35:0:
+At top level:
+../src/cameraInit.h:336:27: warning: 'ov7670_image' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_image[] = {
+                           ^~~~~~~~~~~~
+../src/cameraInit.h:329:27: warning: 'ov7670_test_bar' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_bar[] = {
+                           ^~~~~~~~~~~~~~~
+../src/cameraInit.h:304:27: warning: 'ov7670_fmt_rgb565' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_rgb565[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:286:27: warning: 'ov7670_fmt_yuv422' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_yuv422[] = {
+                           ^~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Camera.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Camera_bsp/ps7_cortexa9_0/lib -o "Camera.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: Camera.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142572	   4636	2152752	2299960	 231838	Camera.elf
+Finished building: Camera.elf.size
+ 
+13:05:51 **** Incremental Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Ništa za napraviti za `main-build'.
+13:07:53 **** Auto Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:179:8: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+        while(CAMERA_isVSYNup(READ_CAM));
+        ^~~~~
+../src/main.c:182:6: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'while'
+      for(y = 0; y<480; y++){  //288
+      ^~~
+In file included from ../src/main.c:35:0:
+At top level:
+../src/cameraInit.h:336:27: warning: 'ov7670_image' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_image[] = {
+                           ^~~~~~~~~~~~
+../src/cameraInit.h:329:27: warning: 'ov7670_test_bar' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_bar[] = {
+                           ^~~~~~~~~~~~~~~
+../src/cameraInit.h:322:27: warning: 'ov7670_test_shift' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_shift[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:304:27: warning: 'ov7670_fmt_rgb565' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_rgb565[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:286:27: warning: 'ov7670_fmt_yuv422' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_yuv422[] = {
+                           ^~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Camera.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Camera_bsp/ps7_cortexa9_0/lib -o "Camera.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: Camera.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142460	   4636	2152752	2299848	 2317c8	Camera.elf
+Finished building: Camera.elf.size
+ 
+13:07:59 **** Incremental Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Ništa za napraviti za `main-build'.
+13:11:50 **** Auto Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:182:8: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+        while(CAMERA_isVSYNup(READ_CAM));
+        ^~~~~
+../src/main.c:185:6: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'while'
+      for(y = 0; y<480; y++){  //288
+      ^~~
+In file included from ../src/main.c:35:0:
+At top level:
+../src/cameraInit.h:336:27: warning: 'ov7670_image' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_image[] = {
+                           ^~~~~~~~~~~~
+../src/cameraInit.h:329:27: warning: 'ov7670_test_bar' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_bar[] = {
+                           ^~~~~~~~~~~~~~~
+../src/cameraInit.h:322:27: warning: 'ov7670_test_shift' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_shift[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:304:27: warning: 'ov7670_fmt_rgb565' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_rgb565[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:286:27: warning: 'ov7670_fmt_yuv422' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_yuv422[] = {
+                           ^~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Camera.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Camera_bsp/ps7_cortexa9_0/lib -o "Camera.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: Camera.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142524	   4636	2152752	2299912	 231808	Camera.elf
+Finished building: Camera.elf.size
+ 
+13:12:32 **** Auto Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:182:8: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+        while(CAMERA_isVSYNup(READ_CAM));
+        ^~~~~
+../src/main.c:185:6: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'while'
+      for(y = 0; y<480; y++){  //288
+      ^~~
+In file included from ../src/main.c:35:0:
+At top level:
+../src/cameraInit.h:336:27: warning: 'ov7670_image' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_image[] = {
+                           ^~~~~~~~~~~~
+../src/cameraInit.h:329:27: warning: 'ov7670_test_bar' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_bar[] = {
+                           ^~~~~~~~~~~~~~~
+../src/cameraInit.h:304:27: warning: 'ov7670_fmt_rgb565' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_rgb565[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:286:27: warning: 'ov7670_fmt_yuv422' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_yuv422[] = {
+                           ^~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Camera.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Camera_bsp/ps7_cortexa9_0/lib -o "Camera.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: Camera.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142636	   4636	2152752	2300024	 231878	Camera.elf
+Finished building: Camera.elf.size
+ 
+13:12:45 **** Incremental Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Ništa za napraviti za `main-build'.
+13:14:02 **** Incremental Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Ništa za napraviti za `main-build'.
+13:14:22 **** Incremental Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Ništa za napraviti za `main-build'.
+13:14:47 **** Auto Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:182:8: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+        while(CAMERA_isVSYNup(READ_CAM));
+        ^~~~~
+../src/main.c:185:6: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'while'
+      for(y = 0; y<480; y++){  //288
+      ^~~
+In file included from ../src/main.c:35:0:
+At top level:
+../src/cameraInit.h:336:27: warning: 'ov7670_image' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_image[] = {
+                           ^~~~~~~~~~~~
+../src/cameraInit.h:329:27: warning: 'ov7670_test_bar' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_bar[] = {
+                           ^~~~~~~~~~~~~~~
+../src/cameraInit.h:322:27: warning: 'ov7670_test_shift' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_shift[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:304:27: warning: 'ov7670_fmt_rgb565' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_rgb565[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:286:27: warning: 'ov7670_fmt_yuv422' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_yuv422[] = {
+                           ^~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Camera.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Camera_bsp/ps7_cortexa9_0/lib -o "Camera.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: Camera.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142524	   4636	2152752	2299912	 231808	Camera.elf
+Finished building: Camera.elf.size
+ 
+13:14:51 **** Incremental Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Ništa za napraviti za `main-build'.
+13:15:14 **** Auto Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:182:8: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+        while(CAMERA_isVSYNup(READ_CAM));
+        ^~~~~
+../src/main.c:185:6: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'while'
+      for(y = 0; y<480; y++){  //288
+      ^~~
+In file included from ../src/main.c:35:0:
+At top level:
+../src/cameraInit.h:336:27: warning: 'ov7670_image' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_image[] = {
+                           ^~~~~~~~~~~~
+../src/cameraInit.h:329:27: warning: 'ov7670_test_bar' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_bar[] = {
+                           ^~~~~~~~~~~~~~~
+../src/cameraInit.h:322:27: warning: 'ov7670_test_shift' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_shift[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:304:27: warning: 'ov7670_fmt_rgb565' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_rgb565[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:286:27: warning: 'ov7670_fmt_yuv422' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_yuv422[] = {
+                           ^~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Camera.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Camera_bsp/ps7_cortexa9_0/lib -o "Camera.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: Camera.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142460	   4636	2152752	2299848	 2317c8	Camera.elf
+Finished building: Camera.elf.size
+ 
+13:15:17 **** Incremental Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Ništa za napraviti za `main-build'.
+13:16:16 **** Incremental Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Ništa za napraviti za `main-build'.
+13:17:04 **** Incremental Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:182:8: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+        while(CAMERA_isVSYNup(READ_CAM));
+        ^~~~~
+../src/main.c:185:6: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'while'
+      for(y = 0; y<480; y++){  //288
+      ^~~
+In file included from ../src/main.c:35:0:
+At top level:
+../src/cameraInit.h:336:27: warning: 'ov7670_image' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_image[] = {
+                           ^~~~~~~~~~~~
+../src/cameraInit.h:329:27: warning: 'ov7670_test_bar' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_bar[] = {
+                           ^~~~~~~~~~~~~~~
+../src/cameraInit.h:322:27: warning: 'ov7670_test_shift' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_shift[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:304:27: warning: 'ov7670_fmt_rgb565' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_rgb565[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:286:27: warning: 'ov7670_fmt_yuv422' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_yuv422[] = {
+                           ^~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Camera.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Camera_bsp/ps7_cortexa9_0/lib -o "Camera.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: Camera.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142524	   4636	2152752	2299912	 231808	Camera.elf
+Finished building: Camera.elf.size
+ 
+13:18:03 **** Auto Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:182:8: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+        while(CAMERA_isVSYNup(READ_CAM));
+        ^~~~~
+../src/main.c:185:6: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'while'
+      for(y = 0; y<480; y++){  //288
+      ^~~
+In file included from ../src/main.c:35:0:
+At top level:
+../src/cameraInit.h:336:27: warning: 'ov7670_image' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_image[] = {
+                           ^~~~~~~~~~~~
+../src/cameraInit.h:329:27: warning: 'ov7670_test_bar' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_bar[] = {
+                           ^~~~~~~~~~~~~~~
+../src/cameraInit.h:322:27: warning: 'ov7670_test_shift' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_shift[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:304:27: warning: 'ov7670_fmt_rgb565' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_rgb565[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:286:27: warning: 'ov7670_fmt_yuv422' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_yuv422[] = {
+                           ^~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Camera.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Camera_bsp/ps7_cortexa9_0/lib -o "Camera.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: Camera.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142428	   4636	2152752	2299816	 2317a8	Camera.elf
+Finished building: Camera.elf.size
+ 
+13:18:20 **** Incremental Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Ništa za napraviti za `main-build'.
+13:19:24 **** Auto Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:182:8: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+        while(CAMERA_isVSYNup(READ_CAM));
+        ^~~~~
+../src/main.c:185:6: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'while'
+      for(y = 0; y<480; y++){  //288
+      ^~~
+In file included from ../src/main.c:35:0:
+At top level:
+../src/cameraInit.h:336:27: warning: 'ov7670_image' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_image[] = {
+                           ^~~~~~~~~~~~
+../src/cameraInit.h:329:27: warning: 'ov7670_test_bar' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_bar[] = {
+                           ^~~~~~~~~~~~~~~
+../src/cameraInit.h:322:27: warning: 'ov7670_test_shift' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_shift[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:304:27: warning: 'ov7670_fmt_rgb565' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_rgb565[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:286:27: warning: 'ov7670_fmt_yuv422' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_yuv422[] = {
+                           ^~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Camera.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Camera_bsp/ps7_cortexa9_0/lib -o "Camera.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: Camera.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142428	   4636	2152752	2299816	 2317a8	Camera.elf
+Finished building: Camera.elf.size
+ 
+13:19:34 **** Incremental Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Ništa za napraviti za `main-build'.
+13:20:04 **** Auto Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:182:8: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+        while(CAMERA_isVSYNup(READ_CAM));
+        ^~~~~
+../src/main.c:185:6: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'while'
+      for(y = 0; y<480; y++){  //288
+      ^~~
+In file included from ../src/main.c:35:0:
+At top level:
+../src/cameraInit.h:336:27: warning: 'ov7670_image' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_image[] = {
+                           ^~~~~~~~~~~~
+../src/cameraInit.h:329:27: warning: 'ov7670_test_bar' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_bar[] = {
+                           ^~~~~~~~~~~~~~~
+../src/cameraInit.h:322:27: warning: 'ov7670_test_shift' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_shift[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:304:27: warning: 'ov7670_fmt_rgb565' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_rgb565[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:286:27: warning: 'ov7670_fmt_yuv422' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_yuv422[] = {
+                           ^~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Camera.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Camera_bsp/ps7_cortexa9_0/lib -o "Camera.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: Camera.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142428	   4636	2152752	2299816	 2317a8	Camera.elf
+Finished building: Camera.elf.size
+ 
+13:20:08 **** Incremental Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Ništa za napraviti za `main-build'.
+13:20:49 **** Auto Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:182:8: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+        while(CAMERA_isVSYNup(READ_CAM));
+        ^~~~~
+../src/main.c:185:6: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'while'
+      for(y = 0; y<480; y++){  //288
+      ^~~
+In file included from ../src/main.c:35:0:
+At top level:
+../src/cameraInit.h:336:27: warning: 'ov7670_image' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_image[] = {
+                           ^~~~~~~~~~~~
+../src/cameraInit.h:329:27: warning: 'ov7670_test_bar' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_bar[] = {
+                           ^~~~~~~~~~~~~~~
+../src/cameraInit.h:322:27: warning: 'ov7670_test_shift' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_shift[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:304:27: warning: 'ov7670_fmt_rgb565' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_rgb565[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:286:27: warning: 'ov7670_fmt_yuv422' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_yuv422[] = {
+                           ^~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Camera.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Camera_bsp/ps7_cortexa9_0/lib -o "Camera.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: Camera.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142428	   4636	2152752	2299816	 2317a8	Camera.elf
+Finished building: Camera.elf.size
+ 
+13:20:53 **** Incremental Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Ništa za napraviti za `main-build'.
+13:21:29 **** Auto Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:182:8: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+        while(CAMERA_isVSYNup(READ_CAM));
+        ^~~~~
+../src/main.c:185:6: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'while'
+      for(y = 0; y<480; y++){  //288
+      ^~~
+In file included from ../src/main.c:35:0:
+At top level:
+../src/cameraInit.h:336:27: warning: 'ov7670_image' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_image[] = {
+                           ^~~~~~~~~~~~
+../src/cameraInit.h:329:27: warning: 'ov7670_test_bar' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_bar[] = {
+                           ^~~~~~~~~~~~~~~
+../src/cameraInit.h:304:27: warning: 'ov7670_fmt_rgb565' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_rgb565[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:286:27: warning: 'ov7670_fmt_yuv422' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_yuv422[] = {
+                           ^~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Camera.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Camera_bsp/ps7_cortexa9_0/lib -o "Camera.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: Camera.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142540	   4636	2152752	2299928	 231818	Camera.elf
+Finished building: Camera.elf.size
+ 
+13:21:34 **** Incremental Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Ništa za napraviti za `main-build'.
+13:22:49 **** Auto Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:182:8: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+        while(CAMERA_isVSYNup(READ_CAM));
+        ^~~~~
+../src/main.c:185:6: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the 'while'
+      for(y = 0; y<480; y++){  //288
+      ^~~
+In file included from ../src/main.c:35:0:
+At top level:
+../src/cameraInit.h:336:27: warning: 'ov7670_image' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_image[] = {
+                           ^~~~~~~~~~~~
+../src/cameraInit.h:329:27: warning: 'ov7670_test_bar' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_bar[] = {
+                           ^~~~~~~~~~~~~~~
+../src/cameraInit.h:322:27: warning: 'ov7670_test_shift' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_shift[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:304:27: warning: 'ov7670_fmt_rgb565' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_rgb565[] = {
+                           ^~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Camera.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Camera_bsp/ps7_cortexa9_0/lib -o "Camera.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: Camera.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142540	   4636	2152752	2299928	 231818	Camera.elf
+Finished building: Camera.elf.size
+ 
+13:22:52 **** Incremental Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Ništa za napraviti za `main-build'.
+13:34:14 **** Incremental Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Ništa za napraviti za `main-build'.
+13:37:33 **** Incremental Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Ništa za napraviti za `main-build'.
+13:41:34 **** Incremental Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Ništa za napraviti za `main-build'.
+19:04:21 **** Auto Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:234:28: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+    Y[i][j] = data[i * 1280 + j << 1 + 1];
+                   ~~~~~~~~~^~~
+../src/main.c:236:29: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+     U[i][j] = data[i * 1280 + j << 1];
+                    ~~~~~~~~~^~~
+../src/main.c:238:29: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+     V[i][j] = data[i * 1280 + j << 1];
+                    ~~~~~~~~~^~~
+../src/main.c:176:5: warning: variable 'V' set but not used [-Wunused-but-set-variable]
+  u8 V[480][640];
+     ^
+../src/main.c:175:5: warning: variable 'U' set but not used [-Wunused-but-set-variable]
+  u8 U[480][640];
+     ^
+../src/main.c:174:5: warning: variable 'Y' set but not used [-Wunused-but-set-variable]
+  u8 Y[480][640];
+     ^
+In file included from ../src/main.c:35:0:
+At top level:
+../src/cameraInit.h:336:27: warning: 'ov7670_image' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_image[] = {
+                           ^~~~~~~~~~~~
+../src/cameraInit.h:329:27: warning: 'ov7670_test_bar' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_bar[] = {
+                           ^~~~~~~~~~~~~~~
+../src/cameraInit.h:322:27: warning: 'ov7670_test_shift' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_shift[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:304:27: warning: 'ov7670_fmt_rgb565' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_rgb565[] = {
+                           ^~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Camera.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Camera_bsp/ps7_cortexa9_0/lib -o "Camera.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: Camera.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142916	   4636	2152752	2300304	 231990	Camera.elf
+Finished building: Camera.elf.size
+ 
+19:05:33 **** Auto Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:176:5: warning: variable 'V' set but not used [-Wunused-but-set-variable]
+  u8 V[480][640];
+     ^
+../src/main.c:175:5: warning: variable 'U' set but not used [-Wunused-but-set-variable]
+  u8 U[480][640];
+     ^
+../src/main.c:174:5: warning: variable 'Y' set but not used [-Wunused-but-set-variable]
+  u8 Y[480][640];
+     ^
+In file included from ../src/main.c:35:0:
+At top level:
+../src/cameraInit.h:336:27: warning: 'ov7670_image' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_image[] = {
+                           ^~~~~~~~~~~~
+../src/cameraInit.h:329:27: warning: 'ov7670_test_bar' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_bar[] = {
+                           ^~~~~~~~~~~~~~~
+../src/cameraInit.h:322:27: warning: 'ov7670_test_shift' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_shift[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:304:27: warning: 'ov7670_fmt_rgb565' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_rgb565[] = {
+                           ^~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Camera.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Camera_bsp/ps7_cortexa9_0/lib -o "Camera.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: Camera.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142916	   4636	2152752	2300304	 231990	Camera.elf
+Finished building: Camera.elf.size
+ 
+19:08:50 **** Auto Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:35:0:
+../src/cameraInit.h:336:27: warning: 'ov7670_image' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_image[] = {
+                           ^~~~~~~~~~~~
+../src/cameraInit.h:329:27: warning: 'ov7670_test_bar' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_bar[] = {
+                           ^~~~~~~~~~~~~~~
+../src/cameraInit.h:322:27: warning: 'ov7670_test_shift' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_shift[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:304:27: warning: 'ov7670_fmt_rgb565' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_rgb565[] = {
+                           ^~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Camera.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Camera_bsp/ps7_cortexa9_0/lib -o "Camera.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: Camera.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 143060	   4636	2152752	2300448	 231a20	Camera.elf
+Finished building: Camera.elf.size
+ 
+19:11:34 **** Incremental Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Ništa za napraviti za `main-build'.
+19:14:28 **** Auto Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:35:0:
+../src/cameraInit.h:336:27: warning: 'ov7670_image' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_image[] = {
+                           ^~~~~~~~~~~~
+../src/cameraInit.h:329:27: warning: 'ov7670_test_bar' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_bar[] = {
+                           ^~~~~~~~~~~~~~~
+../src/cameraInit.h:322:27: warning: 'ov7670_test_shift' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_shift[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:304:27: warning: 'ov7670_fmt_rgb565' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_rgb565[] = {
+                           ^~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Camera.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Camera_bsp/ps7_cortexa9_0/lib -o "Camera.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: Camera.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 143316	   4636	2152752	2300704	 231b20	Camera.elf
+Finished building: Camera.elf.size
+ 
+19:14:31 **** Incremental Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Ništa za napraviti za `main-build'.
+19:15:13 **** Auto Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:35:0:
+../src/cameraInit.h:336:27: warning: 'ov7670_image' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_image[] = {
+                           ^~~~~~~~~~~~
+../src/cameraInit.h:329:27: warning: 'ov7670_test_bar' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_bar[] = {
+                           ^~~~~~~~~~~~~~~
+../src/cameraInit.h:322:27: warning: 'ov7670_test_shift' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_shift[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:304:27: warning: 'ov7670_fmt_rgb565' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_rgb565[] = {
+                           ^~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Camera.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Camera_bsp/ps7_cortexa9_0/lib -o "Camera.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: Camera.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 143316	   4636	2152752	2300704	 231b20	Camera.elf
+Finished building: Camera.elf.size
+ 
+19:15:15 **** Incremental Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Ništa za napraviti za `main-build'.
+19:17:52 **** Incremental Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Ništa za napraviti za `main-build'.
+19:19:53 **** Incremental Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Ništa za napraviti za `main-build'.
+19:20:23 **** Incremental Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Ništa za napraviti za `main-build'.
+19:22:26 **** Auto Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Camera_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:35:0:
+../src/cameraInit.h:336:27: warning: 'ov7670_image' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_image[] = {
+                           ^~~~~~~~~~~~
+../src/cameraInit.h:329:27: warning: 'ov7670_test_bar' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_bar[] = {
+                           ^~~~~~~~~~~~~~~
+../src/cameraInit.h:322:27: warning: 'ov7670_test_shift' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_test_shift[] = {
+                           ^~~~~~~~~~~~~~~~~
+../src/cameraInit.h:304:27: warning: 'ov7670_fmt_rgb565' defined but not used [-Wunused-variable]
+ static struct regval_list ov7670_fmt_rgb565[] = {
+                           ^~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Camera.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Camera_bsp/ps7_cortexa9_0/lib -o "Camera.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: Camera.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 143316	   4636	2152752	2300704	 231b20	Camera.elf
+Finished building: Camera.elf.size
+ 
+19:22:34 **** Incremental Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Ništa za napraviti za `main-build'.
+19:23:29 **** Incremental Build of configuration Debug for project Camera ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Ništa za napraviti za `main-build'.

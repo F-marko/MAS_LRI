@@ -1,11 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
--- Date        : Tue Dec 19 11:20:49 2017
--- Host        : Lenovo running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub {D:/FER/Multimedijske arhitekture i
---               sustavi/Projekt/MAS_LRI/Projekt/MAS
---               projekt.srcs/sources_1/bd/block_design_1/ip/block_design_1_auto_pc_0/block_design_1_auto_pc_0_stub.vhdl}
+-- Tool Version: Vivado v.2017.3.1 (win64) Build 2035080 Fri Oct 20 14:20:01 MDT 2017
+-- Date        : Tue Jan  9 12:24:15 2018
+-- Host        : ASUS-X550DP running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode synth_stub
+--               d:/Vivado_Projects/MAS/Projekt/MAS_projekt.srcs/sources_1/bd/block_design_1/ip/block_design_1_auto_pc_0/block_design_1_auto_pc_0_stub.vhdl
 -- Design      : block_design_1_auto_pc_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1
@@ -84,6 +83,6 @@ attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
 attribute black_box_pad_pin of stub : architecture is "aclk,aresetn,s_axi_awid[11:0],s_axi_awaddr[31:0],s_axi_awlen[3:0],s_axi_awsize[2:0],s_axi_awburst[1:0],s_axi_awlock[1:0],s_axi_awcache[3:0],s_axi_awprot[2:0],s_axi_awqos[3:0],s_axi_awvalid,s_axi_awready,s_axi_wid[11:0],s_axi_wdata[31:0],s_axi_wstrb[3:0],s_axi_wlast,s_axi_wvalid,s_axi_wready,s_axi_bid[11:0],s_axi_bresp[1:0],s_axi_bvalid,s_axi_bready,s_axi_arid[11:0],s_axi_araddr[31:0],s_axi_arlen[3:0],s_axi_arsize[2:0],s_axi_arburst[1:0],s_axi_arlock[1:0],s_axi_arcache[3:0],s_axi_arprot[2:0],s_axi_arqos[3:0],s_axi_arvalid,s_axi_arready,s_axi_rid[11:0],s_axi_rdata[31:0],s_axi_rresp[1:0],s_axi_rlast,s_axi_rvalid,s_axi_rready,m_axi_awaddr[31:0],m_axi_awprot[2:0],m_axi_awvalid,m_axi_awready,m_axi_wdata[31:0],m_axi_wstrb[3:0],m_axi_wvalid,m_axi_wready,m_axi_bresp[1:0],m_axi_bvalid,m_axi_bready,m_axi_araddr[31:0],m_axi_arprot[2:0],m_axi_arvalid,m_axi_arready,m_axi_rdata[31:0],m_axi_rresp[1:0],m_axi_rvalid,m_axi_rready";
 attribute X_CORE_INFO : string;
-attribute X_CORE_INFO of stub : architecture is "axi_protocol_converter_v2_1_14_axi_protocol_converter,Vivado 2017.3";
+attribute X_CORE_INFO of stub : architecture is "axi_protocol_converter_v2_1_14_axi_protocol_converter,Vivado 2017.3.1";
 begin
 end;

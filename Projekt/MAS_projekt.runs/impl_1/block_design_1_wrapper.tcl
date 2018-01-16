@@ -69,17 +69,17 @@ set rc [catch {
   set_property board_part www.digilentinc.com:pynq-z1:part0:1.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir {D:/FER/Multimedijske arhitekture i sustavi/Projekt/MAS_LRI/Projekt/MAS projekt.cache/wt} [current_project]
-  set_property parent.project_path {D:/FER/Multimedijske arhitekture i sustavi/Projekt/MAS_LRI/Projekt/MAS projekt.xpr} [current_project]
-  set_property ip_output_repo {{D:/FER/Multimedijske arhitekture i sustavi/Projekt/MAS_LRI/Projekt/MAS projekt.cache/ip}} [current_project]
+  set_property webtalk.parent_dir D:/Vivado_Projects/MAS/Projekt/MAS_projekt.cache/wt [current_project]
+  set_property parent.project_path D:/Vivado_Projects/MAS/Projekt/MAS_projekt.xpr [current_project]
+  set_property ip_output_repo D:/Vivado_Projects/MAS/Projekt/MAS_projekt.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
-  add_files -quiet {{D:/FER/Multimedijske arhitekture i sustavi/Projekt/MAS_LRI/Projekt/MAS projekt.runs/synth_1/block_design_1_wrapper.dcp}}
+  add_files -quiet D:/Vivado_Projects/MAS/Projekt/MAS_projekt.runs/synth_1/block_design_1_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files {{D:/FER/Multimedijske arhitekture i sustavi/Projekt/MAS_LRI/Projekt/MAS projekt.srcs/sources_1/bd/block_design_1/block_design_1.bd}}
+  add_files D:/Vivado_Projects/MAS/Projekt/MAS_projekt.srcs/sources_1/bd/block_design_1/block_design_1.bd
   set_param project.isImplRun false
-  read_xdc {{D:/FER/Multimedijske arhitekture i sustavi/Projekt/MAS_LRI/Projekt/MAS projekt.srcs/constrs_1/new/pynq_pins.xdc}}
+  read_xdc D:/Vivado_Projects/MAS/Projekt/MAS_projekt.srcs/constrs_1/new/pynq_pins.xdc
   set_param project.isImplRun true
   link_design -top block_design_1_wrapper -part xc7z020clg400-1
   set_param project.isImplRun false

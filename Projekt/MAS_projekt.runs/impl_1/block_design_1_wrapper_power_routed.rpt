@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
-| Date             : Tue Dec 19 11:33:36 2017
-| Host             : Lenovo running 64-bit major release  (build 9200)
+| Tool Version     : Vivado v.2017.3.1 (win64) Build 2035080 Fri Oct 20 14:20:01 MDT 2017
+| Date             : Tue Jan  9 12:46:39 2018
+| Host             : ASUS-X550DP running 64-bit major release  (build 9200)
 | Command          : report_power -file block_design_1_wrapper_power_routed.rpt -pb block_design_1_wrapper_power_summary_routed.pb -rpx block_design_1_wrapper_power_routed.rpx
 | Design           : block_design_1_wrapper
 | Device           : xc7z020clg400-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.400        |
+| Total On-Chip Power (W)  | 1.401        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 1.263        |
 | Device Static (W)        | 0.137        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 68.9         |
-| Junction Temperature (C) | 41.1         |
+| Max Ambient (C)          | 68.8         |
+| Junction Temperature (C) | 41.2         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -54,17 +54,16 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.005 |        4 |       --- |             --- |
 | Slice Logic             |     0.001 |     2033 |       --- |             --- |
-|   LUT as Logic          |     0.001 |      593 |     53200 |            1.11 |
-|   Register              |    <0.001 |      965 |    106400 |            0.91 |
+|   LUT as Logic          |     0.001 |      591 |     53200 |            1.11 |
+|   Register              |    <0.001 |      971 |    106400 |            0.91 |
 |   CARRY4                |    <0.001 |       18 |     13300 |            0.14 |
-|   F7/F8 Muxes           |    <0.001 |        3 |     53200 |           <0.01 |
 |   LUT as Shift Register |    <0.001 |       62 |     17400 |            0.36 |
-|   Others                |     0.000 |      217 |       --- |             --- |
-| Signals                 |     0.002 |     1489 |       --- |             --- |
+|   Others                |     0.000 |      215 |       --- |             --- |
+| Signals                 |     0.002 |     1494 |       --- |             --- |
 | I/O                     |     0.005 |       22 |       125 |           17.60 |
 | PS7                     |     1.250 |        1 |       --- |             --- |
 | Static Power            |     0.137 |          |           |                 |
-| Total                   |     1.400 |          |           |                 |
+| Total                   |     1.401 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -161,8 +160,7 @@ Table of Contents
 |           I_SLAVE_ATTACHMENT                     |    <0.001 |
 |             I_DECODER                            |    <0.001 |
 |         gpio_core_1                              |    <0.001 |
-|           Dual.INPUT_DOUBLE_REGS4                |    <0.001 |
-|           Dual.INPUT_DOUBLE_REGS5                |    <0.001 |
+|           Not_Dual.INPUT_DOUBLE_REGS3            |    <0.001 |
 |     axi_gpio_1                                   |    <0.001 |
 |       U0                                         |    <0.001 |
 |         AXI_LITE_IPIF_I                          |    <0.001 |
@@ -214,7 +212,6 @@ Table of Contents
 |           ACTIVE_LOW_EXT.ACT_LO_EXT              |    <0.001 |
 |         SEQ                                      |    <0.001 |
 |           SEQ_COUNTER                            |    <0.001 |
-|     xlconcat_0                                   |     0.000 |
 |   leds_4bits_tri_iobuf_0                         |    <0.001 |
 |   leds_4bits_tri_iobuf_1                         |    <0.001 |
 |   leds_4bits_tri_iobuf_2                         |    <0.001 |

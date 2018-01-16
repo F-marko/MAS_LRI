@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
-| Date         : Tue Dec 19 11:33:35 2017
-| Host         : Lenovo running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2017.3.1 (win64) Build 2035080 Fri Oct 20 14:20:01 MDT 2017
+| Date         : Tue Jan  9 12:46:37 2018
+| Host         : ASUS-X550DP running 64-bit major release  (build 9200)
 | Command      : report_methodology -file block_design_1_wrapper_methodology_drc_routed.rpt -pb block_design_1_wrapper_methodology_drc_routed.pb -rpx block_design_1_wrapper_methodology_drc_routed.rpx
 | Design       : block_design_1_wrapper
 | Device       : xc7z020clg400-1
@@ -34,77 +34,77 @@ Table of Contents
 -----------------
 TIMING-18#1 Warning
 Missing input or output delay  
-An input delay is missing on btns_4bits_tri_i[0] relative to clock(s) clk_fpga_0
+An input delay is missing on CAM_tri_i[0] relative to clock(s) clk_fpga_0
 Related violations: <none>
 
 TIMING-18#2 Warning
 Missing input or output delay  
-An input delay is missing on btns_4bits_tri_i[1] relative to clock(s) clk_fpga_0
+An input delay is missing on CAM_tri_i[10] relative to clock(s) clk_fpga_0
 Related violations: <none>
 
 TIMING-18#3 Warning
 Missing input or output delay  
-An input delay is missing on btns_4bits_tri_i[2] relative to clock(s) clk_fpga_0
+An input delay is missing on CAM_tri_i[1] relative to clock(s) clk_fpga_0
 Related violations: <none>
 
 TIMING-18#4 Warning
 Missing input or output delay  
-An input delay is missing on btns_4bits_tri_i[3] relative to clock(s) clk_fpga_0
+An input delay is missing on CAM_tri_i[2] relative to clock(s) clk_fpga_0
 Related violations: <none>
 
 TIMING-18#5 Warning
 Missing input or output delay  
-An input delay is missing on cam_data_tri_i[0] relative to clock(s) clk_fpga_0
+An input delay is missing on CAM_tri_i[3] relative to clock(s) clk_fpga_0
 Related violations: <none>
 
 TIMING-18#6 Warning
 Missing input or output delay  
-An input delay is missing on cam_data_tri_i[1] relative to clock(s) clk_fpga_0
+An input delay is missing on CAM_tri_i[4] relative to clock(s) clk_fpga_0
 Related violations: <none>
 
 TIMING-18#7 Warning
 Missing input or output delay  
-An input delay is missing on cam_data_tri_i[2] relative to clock(s) clk_fpga_0
+An input delay is missing on CAM_tri_i[5] relative to clock(s) clk_fpga_0
 Related violations: <none>
 
 TIMING-18#8 Warning
 Missing input or output delay  
-An input delay is missing on cam_data_tri_i[3] relative to clock(s) clk_fpga_0
+An input delay is missing on CAM_tri_i[6] relative to clock(s) clk_fpga_0
 Related violations: <none>
 
 TIMING-18#9 Warning
 Missing input or output delay  
-An input delay is missing on cam_data_tri_i[4] relative to clock(s) clk_fpga_0
+An input delay is missing on CAM_tri_i[7] relative to clock(s) clk_fpga_0
 Related violations: <none>
 
 TIMING-18#10 Warning
 Missing input or output delay  
-An input delay is missing on cam_data_tri_i[5] relative to clock(s) clk_fpga_0
+An input delay is missing on CAM_tri_i[8] relative to clock(s) clk_fpga_0
 Related violations: <none>
 
 TIMING-18#11 Warning
 Missing input or output delay  
-An input delay is missing on cam_data_tri_i[6] relative to clock(s) clk_fpga_0
+An input delay is missing on CAM_tri_i[9] relative to clock(s) clk_fpga_0
 Related violations: <none>
 
 TIMING-18#12 Warning
 Missing input or output delay  
-An input delay is missing on cam_data_tri_i[7] relative to clock(s) clk_fpga_0
+An input delay is missing on btns_4bits_tri_i[0] relative to clock(s) clk_fpga_0
 Related violations: <none>
 
 TIMING-18#13 Warning
 Missing input or output delay  
-An input delay is missing on cam_href relative to clock(s) clk_fpga_0
+An input delay is missing on btns_4bits_tri_i[1] relative to clock(s) clk_fpga_0
 Related violations: <none>
 
 TIMING-18#14 Warning
 Missing input or output delay  
-An input delay is missing on cam_pclk relative to clock(s) clk_fpga_0
+An input delay is missing on btns_4bits_tri_i[2] relative to clock(s) clk_fpga_0
 Related violations: <none>
 
 TIMING-18#15 Warning
 Missing input or output delay  
-An input delay is missing on cam_vsync relative to clock(s) clk_fpga_0
+An input delay is missing on btns_4bits_tri_i[3] relative to clock(s) clk_fpga_0
 Related violations: <none>
 
 TIMING-18#16 Warning

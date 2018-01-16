@@ -1,11 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
-// Date        : Tue Dec 19 11:20:49 2017
-// Host        : Lenovo running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim {D:/FER/Multimedijske arhitekture i
-//               sustavi/Projekt/MAS_LRI/Projekt/MAS
-//               projekt.srcs/sources_1/bd/block_design_1/ip/block_design_1_auto_pc_0/block_design_1_auto_pc_0_sim_netlist.v}
+// Tool Version: Vivado v.2017.3.1 (win64) Build 2035080 Fri Oct 20 14:20:01 MDT 2017
+// Date        : Tue Jan  9 12:24:15 2018
+// Host        : ASUS-X550DP running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode funcsim
+//               d:/Vivado_Projects/MAS/Projekt/MAS_projekt.srcs/sources_1/bd/block_design_1/ip/block_design_1_auto_pc_0/block_design_1_auto_pc_0_sim_netlist.v
 // Design      : block_design_1_auto_pc_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -13,7 +12,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "block_design_1_auto_pc_0,axi_protocol_converter_v2_1_14_axi_protocol_converter,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "axi_protocol_converter_v2_1_14_axi_protocol_converter,Vivado 2017.3" *) 
+(* CHECK_LICENSE_TYPE = "block_design_1_auto_pc_0,axi_protocol_converter_v2_1_14_axi_protocol_converter,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "axi_protocol_converter_v2_1_14_axi_protocol_converter,Vivado 2017.3.1" *) 
 (* NotValidForBitStream *)
 module block_design_1_auto_pc_0
    (aclk,
