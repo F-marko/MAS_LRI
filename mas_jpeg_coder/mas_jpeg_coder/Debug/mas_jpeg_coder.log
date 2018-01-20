@@ -1,0 +1,20 @@
+﻿Build started 20.1.2018. 2:14:12.
+     1>Project "C:\Users\Jurica\Documents\Visual Studio 2013\Projects\mas_jpeg_coder\mas_jpeg_coder\mas_jpeg_coder.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt dct.c huffman_coding.c mas_jpeg_coder.c
+         mas_jpeg_coder.c
+     1>c:\users\jurica\documents\visual studio 2013\projects\mas_jpeg_coder\mas_jpeg_coder\dct.h(43): warning C4305: 'initializing' : truncation from 'double' to 'float'
+         huffman_coding.c
+         dct.c
+     1>c:\users\jurica\documents\visual studio 2013\projects\mas_jpeg_coder\mas_jpeg_coder\dct.h(43): warning C4305: 'initializing' : truncation from 'double' to 'float'
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Jurica\Documents\Visual Studio 2013\Projects\mas_jpeg_coder\Debug\mas_jpeg_coder.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Jurica\Documents\Visual Studio 2013\Projects\mas_jpeg_coder\Debug\mas_jpeg_coder.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Jurica\Documents\Visual Studio 2013\Projects\mas_jpeg_coder\Debug\mas_jpeg_coder.lib" /MACHINE:X86 Debug\dct.obj
+         Debug\huffman_coding.obj
+         Debug\mas_jpeg_coder.obj
+         mas_jpeg_coder.vcxproj -> C:\Users\Jurica\Documents\Visual Studio 2013\Projects\mas_jpeg_coder\Debug\mas_jpeg_coder.exe
+     1>Done Building Project "C:\Users\Jurica\Documents\Visual Studio 2013\Projects\mas_jpeg_coder\mas_jpeg_coder\mas_jpeg_coder.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.71
