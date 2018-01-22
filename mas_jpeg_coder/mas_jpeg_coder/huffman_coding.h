@@ -47,8 +47,14 @@ static unsigned char dqt_chr_ctx[] = {
 static unsigned char frame_header[] = {
 	0x00, 0x11,		// duljina frame headdera	(17 bajtova)
 	0x08,			// preciznost uzoraka		(8 bit)
+	/***********************************************************************/
+	/*
 	0x02, 0x00,		// broj linija				(512)
 	0x02, 0x00,		// broj uzoraka u liniji	(512)
+	*/
+	0x01, 0xe0,		// broj linija				(480)
+	0x02, 0x80,		// broj uzoraka u liniji	(640)
+	/***********************************************************************/
 	0x03,			// broj komponenti			(Y, Cb, Cr)
 
 	0x01,			// identifikator komponente

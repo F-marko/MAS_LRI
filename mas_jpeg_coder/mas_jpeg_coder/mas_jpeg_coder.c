@@ -116,7 +116,7 @@ void rgb_to_ycbcr(RAW_RGB_IMAGE* raw_rgb_image, RAW_YCbCr_IMAGE* raw_ycbcr_image
 	}
 }
 
-void write_out(RAW_YCbCr_IMAGE* raw_ycbcr_image, unsigned short width, unsigned short height){
+OUTPUT_STREAM* write_out(RAW_YCbCr_IMAGE* raw_ycbcr_image, unsigned short width, unsigned short height){
 	unsigned short n_x_blocks = height / 8;
 	unsigned short n_y_blocks = width / 8;
 
@@ -207,13 +207,18 @@ void write_out(RAW_YCbCr_IMAGE* raw_ycbcr_image, unsigned short width, unsigned 
 		block_counter = block_counter + 3;
 	}
 
-	OUTPUT_STREAM output_stream;
+	OUTPUT_STREAM* output_stream;
+	output_stream = (OUTPUT_STREAM*)malloc(sizeof(OUTPUT_STREAM));
 	// upisuje u output_stream kodirane podatke i sve dodatne podatke koje zahtjeva jpeg format
-	form_jpeg(&output_stream, &binary_buffer);
+	form_jpeg(output_stream, &binary_buffer);
 
+	/*
 	FILE* output_file = fopen("lenna.jpg", "wb");
 	fwrite(output_stream.stream, 1, output_stream.index, output_file);
 	fclose(output_file);
+	*/
+
+	return output_stream;
 }
 
 int main(int argc, char** argv){
@@ -246,7 +251,12 @@ int main(int argc, char** argv){
 	printf("Performing DCT.\n");
 	dct(&raw_ycbcr_image, ppm_header->width, ppm_header->height);
 	printf("Writing out.\n");
-	write_out(&raw_ycbcr_image, ppm_header->width, ppm_header->height);
+	OUTPUT_STREAM* os;
+	os = write_out(&raw_ycbcr_image, ppm_header->width, ppm_header->height);
+	FILE* output_file = fopen("lenna.jpg", "wb");
+	fwrite(os->stream, 1, os->index, output_file);
+	fclose(output_file);
+
 
 	free_raw_ycbcr_image(&raw_ycbcr_image, ppm_header->width, ppm_header->height);
 	return 0;
