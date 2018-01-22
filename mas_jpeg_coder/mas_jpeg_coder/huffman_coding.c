@@ -8,6 +8,10 @@ void init_byte_buffer(BYTE_BUFFER* byte_buffer){
 	byte_buffer->byte_buffer = (unsigned char*)malloc(byte_buffer->byte_buffer_size);
 }
 
+void free_byte_buffer(BYTE_BUFFER* byte_buffer){
+	free(byte_buffer->byte_buffer);
+}
+
 void put_bit_into_byte_buffer(BYTE_BUFFER* byte_buffer, unsigned char bit_value){
 	unsigned char mask;
 	unsigned char j, i;

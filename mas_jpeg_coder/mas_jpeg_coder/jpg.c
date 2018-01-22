@@ -93,10 +93,16 @@ OUTPUT_STREAM* make_jpg_image(RAW_YCbCr_IMAGE* raw_ycbcr_image, unsigned short w
 		block_counter = block_counter + 3;
 	}
 
+	free(y_buffer);
+	free(cb_buffer);
+	free(cr_buffer);
+
 	OUTPUT_STREAM* output_stream;
 	output_stream = (OUTPUT_STREAM*)malloc(sizeof(OUTPUT_STREAM));
 	// upisuje u output_stream kodirane podatke i sve dodatne podatke koje zahtjeva jpeg format
 	form_jpeg(output_stream, &binary_buffer);
+
+	free_byte_buffer(&binary_buffer);
 
 	return output_stream;
 }

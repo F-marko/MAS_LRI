@@ -514,6 +514,7 @@ typedef struct output_stream{
 }OUTPUT_STREAM;
 
 void init_byte_buffer(BYTE_BUFFER* byte_buffer);
+void free_byte_buffer(BYTE_BUFFER* byte_buffer);
 void put_bit_into_byte_buffer(BYTE_BUFFER* byte_buffer, unsigned char bit_value);
 unsigned int get_byte_buffer_size(BYTE_BUFFER* byte_buffer);
 void round_byte_buffer(BYTE_BUFFER* byte_buffer);

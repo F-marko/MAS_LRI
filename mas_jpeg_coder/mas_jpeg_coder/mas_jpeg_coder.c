@@ -144,8 +144,8 @@ int main(int argc, char** argv){
 	os = make_jpg_image(&raw_ycbcr_image, ppm_header->width, ppm_header->height);
 	FILE* output_file = fopen("lenna.jpg", "wb");
 	fwrite(os->stream, 1, os->index, output_file);
-
-
+	fclose(output_file);
+	free(os->stream);
 	free_raw_ycbcr_image(&raw_ycbcr_image, ppm_header->width, ppm_header->height);
 	return 0;
 }
