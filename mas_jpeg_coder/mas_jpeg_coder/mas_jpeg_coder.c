@@ -135,21 +135,15 @@ int main(int argc, char** argv){
 	ppm_header_size = get_ppm_header_size(ppm_header);
 
 	init_raw_rgb_image(&raw_rgb_image, ppm_header);
-	printf("Reading image.\n");
 	read_raw_rgb_image(argv[1], &raw_rgb_image, ppm_header);
 	init_raw_ycbcr_image(&raw_ycbcr_image, ppm_header->width, ppm_header->height);
-	printf("Converting from RGB to YCbCr.\n");
 	rgb_to_ycbcr(&raw_rgb_image, &raw_ycbcr_image, ppm_header);
 
 	free_raw_rgb_image(&raw_rgb_image, ppm_header);
-	printf("Performing DCT.\n");
-	dct(&raw_ycbcr_image, ppm_header->width, ppm_header->height);
-	printf("Writing out.\n");
 	OUTPUT_STREAM* os;
-	os = write_out(&raw_ycbcr_image, ppm_header->width, ppm_header->height);
+	os = make_jpg_image(&raw_ycbcr_image, ppm_header->width, ppm_header->height);
 	FILE* output_file = fopen("lenna.jpg", "wb");
 	fwrite(os->stream, 1, os->index, output_file);
-	fclose(output_file);
 
 
 	free_raw_ycbcr_image(&raw_ycbcr_image, ppm_header->width, ppm_header->height);

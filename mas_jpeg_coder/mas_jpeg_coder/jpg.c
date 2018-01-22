@@ -1,6 +1,6 @@
 #include "jpg.h"
 
-OUTPUT_STREAM* write_out(RAW_YCbCr_IMAGE* raw_ycbcr_image, unsigned short width, unsigned short height){
+OUTPUT_STREAM* make_jpg_image(RAW_YCbCr_IMAGE* raw_ycbcr_image, unsigned short width, unsigned short height){
 	unsigned short n_x_blocks = height / 8;
 	unsigned short n_y_blocks = width / 8;
 
@@ -28,6 +28,8 @@ OUTPUT_STREAM* write_out(RAW_YCbCr_IMAGE* raw_ycbcr_image, unsigned short width,
 	y_buffer_index = 0;
 	cb_buffer_index = 0;
 	cr_buffer_index = 0;
+
+	dct(raw_ycbcr_image, width, height);
 
 	for (x = 0; x < n_x_blocks; x++){
 		for (y = 0; y < n_y_blocks; y++){

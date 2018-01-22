@@ -1,11 +1,7 @@
-﻿Build started 22.1.2018. 11:32:05.
+﻿Build started 22.1.2018. 11:40:16.
      1>Project "C:\Users\Jurica\Documents\MAS_LRI\mas_jpeg_coder\mas_jpeg_coder\mas_jpeg_coder.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt dct.c jpg.c mas_jpeg_coder.c
-         dct.c
-     1>c:\users\jurica\documents\mas_lri\mas_jpeg_coder\mas_jpeg_coder\dct.h(43): warning C4305: 'initializing' : truncation from 'double' to 'float'
-         jpg.c
-     1>c:\users\jurica\documents\mas_lri\mas_jpeg_coder\mas_jpeg_coder\dct.h(43): warning C4305: 'initializing' : truncation from 'double' to 'float'
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt mas_jpeg_coder.c
          mas_jpeg_coder.c
      1>c:\users\jurica\documents\mas_lri\mas_jpeg_coder\mas_jpeg_coder\dct.h(43): warning C4305: 'initializing' : truncation from 'double' to 'float'
        Link:
@@ -20,4 +16,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.89
+Time Elapsed 00:00:00.98
