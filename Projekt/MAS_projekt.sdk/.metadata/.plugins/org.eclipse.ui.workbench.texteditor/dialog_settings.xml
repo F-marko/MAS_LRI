@@ -2,17 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="TSLB" key="selection"/>
+		<item value="1024" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="8192"/>
+			<item value="tcp_snd_buf"/>
 			<item value="tslb"/>
 			<item value="manu"/>
 			<item value="PSH"/>
 		</list>
 		<list key="replacehistory">
+			<item value="1024"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

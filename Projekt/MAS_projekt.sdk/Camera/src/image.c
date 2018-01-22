@@ -60,14 +60,16 @@ void getImage(){
 
 		for (int i = 0; i < 480; ++i) {
 			for (int j = 0; j < 640; ++j) {
-				Y[i][j] = data[i * 1280 + (j << 1)];
+				image.ycbcr[i][j].Y = data[i * 1280 + (j << 1)];
 				if (j % 2 == 0) {
-					U[i][j] = data[i * 1280 + (j << 1) + 1];
-					U[i][j + 1] = data[i * 1280 + (j << 1) + 1];
+					image.ycbcr[i][j].Cb = data[i * 1280 + (j << 1) + 1];
+					image.ycbcr[i][j + 1].Cb = data[i * 1280 + (j << 1) + 1];
 				} else {
-					V[i][j] = data[i * 1280 + (j << 1) + 1];
-					V[i][j - 1] = data[i * 1280 + (j << 1) + 1];
+					image.ycbcr[i][j].Cr = data[i * 1280 + (j << 1) + 1];
+					image.ycbcr[i][j - 1].Cr = data[i * 1280 + (j << 1) + 1];
 				}
 			}
 		}
+
+		xil_printf("Prosao punjenje strukture\r\n");
 }

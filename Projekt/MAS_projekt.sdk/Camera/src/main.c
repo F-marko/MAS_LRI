@@ -91,8 +91,8 @@ int main() {
 		return XST_FAILURE;
 	}
 	Status = IicPsMasterPolledExample(IIC_DEVICE_ID,
-			ov7670_fmt_yuv422_manual_uv,
-			sizeof(ov7670_fmt_yuv422_manual_uv) / 2);
+			ov7670_fmt_yuv422,
+			sizeof(ov7670_fmt_yuv422) / 2);
 	if (Status != XST_SUCCESS) {
 		xil_printf("IIC Master Polled Example Test Failed 2\r\n");
 		return XST_FAILURE;
@@ -109,11 +109,15 @@ int main() {
 	//XGpio_WriteReg((GPIO_REG_BASEADDR), XGPIO_CHAN_OFFSET + XGPIO_TRI_OFFSET, 0xFF);
 	// ================================= DOHVAT S KAMERE ==================================
 
-	getImage();
 
-	for (int i = 0; i < 100; ++i) {
+	init_raw_ycbcr_image(&image, IMAGE_WIDTH, IMAGE_HEIGHT);
+	getImage();
+	os = make_jpg_image(&image, IMAGE_WIDTH, IMAGE_HEIGHT);
+
+
+	/*for (int i = 0; i < 100; ++i) {
 		xil_printf("Y=%d U=%d V=%d\r\n", Y[0][i], U[0][i], V[0][i]);
-	}
+	}*/
 
 	// =====================================================================================
 	struct ip_addr ipaddr, netmask, gw;

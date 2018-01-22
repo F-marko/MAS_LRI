@@ -1,9 +1,15 @@
 #ifndef SRC_IMAGE_H_
 #define SRC_IMAGE_H_
 #include "xbasic_types.h"
+#include "jpg.h"
+
+
 // ====================================== DOHVAT S KAMERE =================================
 #include "xgpio_l.h"
 #include "image.h"
+
+#define IMAGE_HEIGHT 480
+#define IMAGE_WIDTH 640
 
 #define GPIO_REG_BASEADDR	XPAR_GPIO_0_BASEADDR
 
@@ -28,9 +34,11 @@
 #define DELAY 100000000
 // ========================================================================================
 
-u8 Y[480][640];
+RAW_YCbCr_IMAGE image;
+OUTPUT_STREAM* os;
+/*u8 Y[480][640];
 u8 U[480][640];
-u8 V[480][640];
+u8 V[480][640];*/
 
 void getImage();
 

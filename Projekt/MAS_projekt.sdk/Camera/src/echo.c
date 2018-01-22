@@ -52,14 +52,14 @@ void print_app_header() {
 
 err_t sent_callback(void *arg, struct tcp_pcb *tpcb, u16_t len) {
 	//xil_printf("Sent = %ul, Len = %u, TCP send buffer = %u\n", sent, len, tcp_sndbuf(tpcb));
-	if (sent >= 307200 - 1024) {
-		tcp_write(tpcb, (void*) U + sent, 307200 - sent /*p->payload, p->len*/, 0); //salje
+	if (sent >= os->index - 1024) {
+		tcp_write(tpcb, (void*) os->stream + sent, os->index - sent /*p->payload, p->len*/, 0); //salje
 		tcp_close(tpcb);
 		sent = 0;
 		return ERR_OK;
 	}
 	if (tcp_sndbuf(tpcb) > 1024) {
-		tcp_write(tpcb, (void*) U + sent, 1024 /*p->payload, p->len*/, 0); //salje
+		tcp_write(tpcb, (void*)os->stream + sent, 1024 /*p->payload, p->len*/, 0); //salje
 		sent += 1024;
 	}
 	return ERR_OK;
@@ -107,7 +107,7 @@ err_t recv_callback(void *arg, struct tcp_pcb *tpcb, struct pbuf *p, err_t err) 
 		 }
 		 }*/
 		if (tcp_sndbuf(tpcb) > p->len) {
-			err = tcp_write(tpcb, (void*) U, 1024 /*p->payload, p->len*/, 0); //salje
+			err = tcp_write(tpcb, (void*) os->stream, 1024 /*p->payload, p->len*/, 0); //salje
 			sent += 1024;
 		} else
 			xil_printf("no space in tcp_sndbuf\n\r");
