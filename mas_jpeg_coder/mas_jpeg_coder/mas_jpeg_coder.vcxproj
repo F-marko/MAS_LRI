@@ -66,10 +66,12 @@
   <ItemGroup>
     <ClInclude Include="dct.h" />
     <ClInclude Include="huffman_coding.h" />
+    <ClInclude Include="jpg.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dct.c" />
     <ClCompile Include="huffman_coding.c" />
+    <ClCompile Include="jpg.c" />
     <ClCompile Include="mas_jpeg_coder.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

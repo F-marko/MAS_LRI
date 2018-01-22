@@ -21,6 +21,9 @@
     <ClInclude Include="dct.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="jpg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="huffman_coding.c">
@@ -30,6 +33,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="dct.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="jpg.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
