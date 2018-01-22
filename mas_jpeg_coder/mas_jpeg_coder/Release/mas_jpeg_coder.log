@@ -1,4 +1,4 @@
-﻿Build started 22.1.2018. 13:14:36.
+﻿Build started 22.1.2018. 15:00:49.
      1>Project "C:\Users\Jurica\Documents\MAS_LRI\mas_jpeg_coder\mas_jpeg_coder\mas_jpeg_coder.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt huffman_coding.c jpg.c mas_jpeg_coder.c
@@ -19,4 +19,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.54
+Time Elapsed 00:00:01.12
