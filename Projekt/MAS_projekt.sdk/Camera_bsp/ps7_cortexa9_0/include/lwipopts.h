@@ -53,7 +53,7 @@
 
 #define LWIP_TCP 1
 #define TCP_MSS 1460
-#define TCP_SND_BUF 8192
+#define TCP_SND_BUF 23000
 #define TCP_WND 2048
 #define TCP_TTL 255
 #define TCP_MAXRTX 12
@@ -74,8 +74,8 @@
 #define IP_OPTIONS_ALLOWED 0
 #define TCP_OVERSIZE TCP_MSS
 
-#define LWIP_DHCP 0
-#define DHCP_DOES_ARP_CHECK 0
+#define LWIP_DHCP 1
+#define DHCP_DOES_ARP_CHECK 1
 
 #define CONFIG_LINKSPEED_AUTODETECT 1
 
