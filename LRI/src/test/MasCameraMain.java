@@ -11,7 +11,11 @@ import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.DataOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.Socket;
 
 import javax.imageio.ImageIO;
@@ -29,15 +33,15 @@ public class MasCameraMain {
 	static BufferedImage image;
 	static JLabel imagePanel = null;
 	static JTextField instructionText;
-	static Socket inputSocket = null;
 	static BufferedWriter outputStream = null;
 	static BufferedReader inputStream = null;
+	static long totalBytes = 0;
 
 	private static void createAndShowGUI() {
 		// Create and set up the window.
 		JFrame frame = new JFrame("Multimedijske arhitekture i sustavi - Testiranje kamere");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setMinimumSize(new Dimension(680, 480));
+		frame.setMinimumSize(new Dimension(680, 640));
 		// Set up the content pane.
 		Container contentPane = frame.getContentPane();
 		GridBagLayout outerLayout = new GridBagLayout();
@@ -45,13 +49,19 @@ public class MasCameraMain {
 
 		// Create and add the components.
 		imagePanel = new JLabel();
-		imagePanel.setPreferredSize(new Dimension(640, 360));
+		imagePanel.setPreferredSize(new Dimension(640, 480));
 		imagePanel.setBackground(Color.LIGHT_GRAY);
 		imagePanel.setOpaque(true);
 
 		JButton getImageButton = new JButton("Fetch image");
 		getImageButton.setFocusPainted(false);
 		getImageButton.addActionListener(new ActionListener() {
+			private Socket connectionToZynq;
+			private DataOutputStream outputToZynq;
+			private InputStream inputFromZynq;
+			private FileOutputStream outputToFile;
+			private File temporaryFile;
+
 			@Override
 			public void actionPerformed(ActionEvent event) {
 				/*
@@ -62,13 +72,47 @@ public class MasCameraMain {
 				 * 
 				 */
 				try {
-					Socket inputSocket = new Socket("localhost", 25000);
-					image = ImageIO.read(inputSocket.getInputStream());
+					connectionToZynq = new Socket("192.168.1.10", 7);
+					outputToZynq = new DataOutputStream(connectionToZynq.getOutputStream());
+					outputToZynq.writeByte('g');
+					outputToZynq.flush();
+					System.out.println("Poslao g!!\n");
+					temporaryFile = new File("YUV.jpeg");
+					System.out.println(temporaryFile.getAbsolutePath());
+					System.out.println(temporaryFile.getCanonicalPath());
+					System.out.println(temporaryFile.getPath());
+					outputToFile = new FileOutputStream(temporaryFile);
+					byte[] buffer = new byte[8 * 1024];
+					int bytesRead;
+					inputFromZynq = connectionToZynq.getInputStream();
+					while ((bytesRead = inputFromZynq.read(buffer)) != -1) {
+						totalBytes += bytesRead;
+						//System.out.println("Procitao bajtova s zynqa:" + bytesRead);
+						// System.out.println(new String(buffer));
+						outputToFile.write(buffer, 0, bytesRead);
+					}
+					System.out.println("Ukupno bajtova procitano:" + totalBytes);
+					System.out.println("Procitao sve sa zynqa");
+					image = ImageIO.read(temporaryFile);
 					imagePanel.setIcon(new ImageIcon(image));
-					inputSocket.close();
+					//temporaryFile.delete();
+					inputFromZynq.close();
+					outputToFile.close();
+					outputToZynq.close();
+					connectionToZynq.close();
 				} catch (IOException e) {
 					imagePanel.setIcon(new ImageIcon("res/test.png"));
-					// e.printStackTrace();
+					e.printStackTrace();
+					try {
+						inputFromZynq.close();
+						outputToFile.close();
+						outputToZynq.close();
+						connectionToZynq.close();
+						//temporaryFile.delete();
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
 				}
 			}
 		});
