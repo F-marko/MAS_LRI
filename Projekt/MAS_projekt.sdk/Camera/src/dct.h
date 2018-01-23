@@ -49,7 +49,7 @@ typedef struct pixel_ycbcr{
 }PIXEL_YCbCr;
 
 typedef struct raw_ycbcr_image{
-	PIXEL_YCbCr** ycbcr;
+	PIXEL_YCbCr ycbcr[480][640];
 }RAW_YCbCr_IMAGE;
 
 typedef struct ycbcr_block{

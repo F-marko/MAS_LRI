@@ -217,6 +217,8 @@ BEGIN LIBRARY
  PARAMETER PROC_INSTANCE = ps7_cortexa9_0
  PARAMETER dhcp_does_arp_check = true
  PARAMETER lwip_dhcp = true
+ PARAMETER memp_n_sys_timeout = 1
+ PARAMETER memp_n_tcp_pcb_listen = 1
  PARAMETER tcp_snd_buf = 23000
 END
 

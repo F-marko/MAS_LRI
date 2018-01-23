@@ -38,6 +38,9 @@
 #if defined (__arm__) || defined (__aarch64__)
 #include "xil_printf.h"
 #endif
+#define TO_BE_SENT os->index
+#define BUFFER_SIZE 1024
+#define TCPDATA os->stream
 
 unsigned long int sent = 0;
 
@@ -50,23 +53,69 @@ void print_app_header() {
 	xil_printf("TCP packets sent to port 6001 will be echoed back\n\r");
 }
 
+void fill_buffer(unsigned char buffer[], u8 data[],
+		unsigned long int position, int size) {
+	for (int i = 0; i < size; ++i) {
+		buffer[i] = data[position + i];
+		/*if (i % 3 == 0)
+			buffer[i] = (unsigned char) data[position + i / 3].Y;
+		else if (i % 3 == 1)
+			buffer[i] = (unsigned char) data[position + i / 3].Cb;
+		else
+			buffer[i] = (unsigned char) data[position + i / 3].Cr;*/
+		//xil_printf("%X", buffer[i]);
+	}
+	//xil_printf("\n");
+}
+
+// const int BUFFER_SIZE = 1024;
+// const int TO_BE_SENT = 480 * 640 * 3;
+
 err_t sent_callback(void *arg, struct tcp_pcb *tpcb, u16_t len) {
-	//xil_printf("Sent = %ul, Len = %u, TCP send buffer = %u\n", sent, len, tcp_sndbuf(tpcb));
-	if (sent >= os->index - 1024) {
-		tcp_write(tpcb, (void*) os->stream + sent, os->index - sent /*p->payload, p->len*/, 0); //salje
+	int n;
+	unsigned char buffer[BUFFER_SIZE];
+
+	if (sent >= TO_BE_SENT)
+	{
 		tcp_close(tpcb);
 		sent = 0;
+		free(os->stream);
+		os->index = 0;
 		return ERR_OK;
 	}
-	if (tcp_sndbuf(tpcb) > 1024) {
-		tcp_write(tpcb, (void*)os->stream + sent, 1024 /*p->payload, p->len*/, 0); //salje
-		sent += 1024;
-	}
+
+	if (sent >= TO_BE_SENT - BUFFER_SIZE)
+		n = TO_BE_SENT - sent;
+	else
+		n = BUFFER_SIZE;
+
+	fill_buffer(buffer, TCPDATA, sent, n);
+
+	//xil_printf("Sent = %ul, Len = %u, TCP send buffer = %u\n", sent, len, tcp_sndbuf(tpcb));
+
+	tcp_write(tpcb, (void*) buffer, n, 1);
+
+	sent += n;
+
+	/*if (sent >= sizeof(image.ycbcr) - 1024) {
+	 tcp_write(tpcb, (void*) image.ycbcr + sent, sizeof(image.ycbcr) - sent, 0); //salje
+	 tcp_close(tpcb);
+	 sent = 0;
+	 return ERR_OK;
+	 }
+	 if (tcp_sndbuf(tpcb) > 1024) {
+	 tcp_write(tpcb, (void*)image.ycbcr + sent, 1024, 0); //salje
+	 sent += 1024;
+	 }*/
 	return ERR_OK;
 }
 
 err_t recv_callback(void *arg, struct tcp_pcb *tpcb, struct pbuf *p, err_t err) {
 	/* do not read the packet if we are not in ESTABLISHED state */
+
+	int n;
+	unsigned char buffer[BUFFER_SIZE];
+
 	if (!p) {
 		tcp_close(tpcb);
 		tcp_recv(tpcb, NULL);
@@ -76,44 +125,42 @@ err_t recv_callback(void *arg, struct tcp_pcb *tpcb, struct pbuf *p, err_t err) 
 	/* indicate that the packet has been received */
 	tcp_recved(tpcb, p->len);		// prima
 
-	/* echo back the payload */
-	/* in this case, we assume that the payload is < TCP_SND_BUF */
-	if ((*(char *) p->payload) == 'g') // casta payload u pointer na char jer je on void
-			{
-		xil_printf("Primio g!\n");
-		/*unsigned char msg[] = "a";
-		 int msg_len = 2 ;
-		 int msg_pos = 0;
-		 int msg_send_len = 0;
-		 int msg_flag = 2;
-		 xil_printf("Dobio g!\n");
-		 while (msg_len > 0)
-		 {
-		 xil_printf("Usli u while!\n");
-		 while (tcp_sndbuf(tpcb) > 0); // Cekaj da se TCP send buffer oslobodi (mozda zablokira cijeli program hihi)
 
-		 if (msg_len - msg_pos > tcp_sndbuf(tpcb))
-		 {
-		 msg_send_len = tcp_sndbuf(tpcb);
-		 }
-		 else
-		 {
-		 msg_send_len = msg_len - msg_pos;
-		 msg_flag = 1;
-		 }
-		 tcp_write(tpcb, msg, msg_send_len, msg_flag);
-		 msg_pos += msg_send_len;
-		 msg_len -= msg_send_len;
-		 }
-		 }*/
-		if (tcp_sndbuf(tpcb) > p->len) {
-			err = tcp_write(tpcb, (void*) os->stream, 1024 /*p->payload, p->len*/, 0); //salje
-			sent += 1024;
-		} else
-			xil_printf("no space in tcp_sndbuf\n\r");
+	if ((*(char *) p->payload) == 'g') // casta payload u pointer na char jer je on void
+	{
+		xil_printf("Primio g!\n");
+
+		//izbrisati ove dvije linije
+		getImage();
+		os = make_jpg_image(&image, IMAGE_WIDTH, IMAGE_HEIGHT);
+		//---------------------------------------------
+
+		if (sent >= TO_BE_SENT)
+			{
+				tcp_close(tpcb);
+				sent = 0;
+				return ERR_OK;
+			}
+
+		if (sent >= TO_BE_SENT - BUFFER_SIZE)
+			n = TO_BE_SENT - sent;
+		else
+			n = BUFFER_SIZE;
+
+		fill_buffer(buffer, TCPDATA, sent, n);
+
+		//xil_printf("Sent = %ul, Len = %u, TCP send buffer = %u\n", sent, len, tcp_sndbuf(tpcb));
+
+		tcp_write(tpcb, (void*) buffer, n, 1);
+
+		sent += n;
+		/*if (tcp_sndbuf(tpcb) > p->len) {
+		 err = tcp_write(tpcb, (void*) image.ycbcr, 1024, 0); //salje
+		 sent += 1024;
+		 } else
+		 xil_printf("no space in tcp_sndbuf\n\r");*/
 	}
 	xil_printf("Poslao odgovor!\n");
-
 
 	/* free the received pbuf */
 	pbuf_free(p);

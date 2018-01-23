@@ -520,6 +520,6 @@ unsigned int get_byte_buffer_size(BYTE_BUFFER* byte_buffer);
 void round_byte_buffer(BYTE_BUFFER* byte_buffer);
 int get_luminance_ac_index(int zero_run_length, int category);
 unsigned char get_size(short value);
-unsigned int code_block(char* component_data, unsigned int component_data_index, BYTE_BUFFER* byte_buffer, unsigned short dc_table[160][2], unsigned short ac_table[160][2], unsigned short zrl[2], unsigned short eob[2]);
+unsigned int code_block(signed char* component_data, unsigned int component_data_index, BYTE_BUFFER* byte_buffer, unsigned short dc_table[160][2], unsigned short ac_table[160][2], unsigned short zrl[2], unsigned short eob[2]);
 void form_jpeg(OUTPUT_STREAM* output_stream, BYTE_BUFFER* data);
 #endif

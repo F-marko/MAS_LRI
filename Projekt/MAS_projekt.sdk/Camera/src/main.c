@@ -1,4 +1,3 @@
-
 // ========================== NASI INCLUDEOVI ============================================
 
 #include "cameraSetup.h" // setting up the camera via the I2C interface
@@ -79,7 +78,7 @@ int main() {
 
 	init_platform();
 	xil_printf("Camera initialization started\r\n");
-
+	xil_printf("Size of char: %d\nSize of short: %d\nSize of int: %d\n",sizeof(char), sizeof(short), sizeof(int));
 	/*
 	 * Run the Iic polled example in master mode, specify the Device
 	 * ID that is specified in xparameters.h.
@@ -90,15 +89,15 @@ int main() {
 		xil_printf("IIC Master Polled Example Test Failed 1\r\n");
 		return XST_FAILURE;
 	}
-	Status = IicPsMasterPolledExample(IIC_DEVICE_ID,
-			ov7670_fmt_yuv422,
+	Status = IicPsMasterPolledExample(IIC_DEVICE_ID, ov7670_fmt_yuv422,
 			sizeof(ov7670_fmt_yuv422) / 2);
 	if (Status != XST_SUCCESS) {
 		xil_printf("IIC Master Polled Example Test Failed 2\r\n");
 		return XST_FAILURE;
 	}
 
-	xil_printf("Successfully ran IIC Master Polled Example Test\r\n");
+
+	xil_printf("Initialization completed successfully!\r\n");
 
 	for (u32 i = 0; i < DELAY; i++)
 		;
@@ -109,15 +108,26 @@ int main() {
 	//XGpio_WriteReg((GPIO_REG_BASEADDR), XGPIO_CHAN_OFFSET + XGPIO_TRI_OFFSET, 0xFF);
 	// ================================= DOHVAT S KAMERE ==================================
 
-
-	init_raw_ycbcr_image(&image, IMAGE_WIDTH, IMAGE_HEIGHT);
+	xil_printf("Zapocinjem citanje s kamere.");
 	getImage();
-	os = make_jpg_image(&image, IMAGE_WIDTH, IMAGE_HEIGHT);
 
+	YUV422ToYUV();
+	xil_printf("Slika procitana.");
+
+/*	for (int i = 0; i < 480; i++) {
+		for (int j = 0; j < 640; j++) {
+			xil_printf("%X%X%X", image.ycbcr[i][j].Y,
+					image.ycbcr[i][j].Cb, image.ycbcr[i][j].Cr);
+		}
+	}*/
+
+	os = make_jpg_image(&image, IMAGE_WIDTH, IMAGE_HEIGHT);
+	YCbCr_BLOCK blok;
+	read_ycbcr_block(&image, 0, 0, &blok);
 
 	/*for (int i = 0; i < 100; ++i) {
-		xil_printf("Y=%d U=%d V=%d\r\n", Y[0][i], U[0][i], V[0][i]);
-	}*/
+	 xil_printf("Y=%d U=%d V=%d\r\n", Y[0][i], U[0][i], V[0][i]);
+	 }*/
 
 	// =====================================================================================
 	struct ip_addr ipaddr, netmask, gw;
@@ -209,6 +219,7 @@ int main() {
 		}
 		xemacif_input(echo_netif);
 		transfer_data();
+
 	}
 
 	/* never reached */

@@ -315,8 +315,8 @@ static struct regval_list ov7670_fmt_yuv422_manual_uv[] = {
 	{ 0x53, 0x5e }, 	/* "matrix coefficient 5" */
 	{ 0x54, 0x80 }, 	/* "matrix coefficient 6" */
 	{ REG_COM13, COM13_GAMMA|COM13_UVSAT },
-	{ REG_MANU, 0xFF },
-	{ REG_MANV, 0x00 },
+	{ REG_MANU, 0x80 },
+	{ REG_MANV, 0x81 },
 	{ REG_TSLB, 0x10 },
 	{ 0xff, 0xff },
 };
@@ -349,8 +349,8 @@ static struct regval_list ov7670_test_shift[] = {
 
 //SET TEST MODE: COLOR TEST BAR
 static struct regval_list ov7670_test_bar[] = {
-	{ 0x70, 0x4A },	/* 0xCA umjesto 0x4A*/
-	{ 0x71, 0xB5 },	/* 0x35 umjesto 0xB5*/
+	{ 0x70, 0xCA },	/* 0xCA umjesto 0x4A*/
+	{ 0x71, 0x35 },	/* 0x35 umjesto 0xB5*/
 	{ 0xff, 0xff }
 };
 

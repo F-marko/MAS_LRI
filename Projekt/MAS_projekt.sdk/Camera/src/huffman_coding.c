@@ -3,7 +3,7 @@
 void init_byte_buffer(BYTE_BUFFER* byte_buffer){
 	byte_buffer->tmp_buffer_index = 0;
 
-	byte_buffer->byte_buffer_size = 10000;
+	byte_buffer->byte_buffer_size = 50000;
 	byte_buffer->byte_buffer_index = 0;
 	byte_buffer->byte_buffer = (unsigned char*)malloc(byte_buffer->byte_buffer_size);
 }
@@ -66,7 +66,7 @@ unsigned char get_size(short value){
 	unsigned char size;
 
 	for (unsigned char i = 0; i < 12; i++){
-		if (abs(value) < (1 << i)){
+		if (abs(value) < pow(2, i)){
 			size = i;
 			break;
 		}
@@ -75,7 +75,7 @@ unsigned char get_size(short value){
 	return size;
 }
 
-unsigned int code_block(char* component_data, unsigned int component_data_index, BYTE_BUFFER* byte_buffer, unsigned short dc_table[160][2], unsigned short ac_table[160][2], unsigned short zrl[2], unsigned short eob[2]){
+unsigned int code_block(signed char* component_data, unsigned int component_data_index, BYTE_BUFFER* byte_buffer, unsigned short dc_table[160][2], unsigned short ac_table[160][2], unsigned short zrl[2], unsigned short eob[2]){
 	short dc_diff;
 	short ac_cat;
 	short ac_val;

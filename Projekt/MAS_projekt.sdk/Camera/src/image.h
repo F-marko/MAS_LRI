@@ -35,11 +35,15 @@
 // ========================================================================================
 
 RAW_YCbCr_IMAGE image;
+u8 data[480 * 1280];
+u8 YUVPacked[640 * 480 * 3];
 OUTPUT_STREAM* os;
 /*u8 Y[480][640];
 u8 U[480][640];
 u8 V[480][640];*/
 
 void getImage();
+
+void YUV422ToYUV();
 
 #endif /* SRC_IMAGE_H_ */
