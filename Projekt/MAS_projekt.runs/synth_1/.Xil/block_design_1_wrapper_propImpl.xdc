@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:D:/Vivado_Projects/MAS/Projekt/MAS_projekt.srcs/constrs_1/new/pynq_pins.xdc rfile:../../../MAS_projekt.srcs/constrs_1/new/pynq_pins.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:D:/MAS_LRI/Projekt/MAS_projekt.srcs/constrs_1/new/pynq_pins.xdc rfile:../../../MAS_projekt.srcs/constrs_1/new/pynq_pins.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN Y17 [get_ports {CAM_tri_i[0]}]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]

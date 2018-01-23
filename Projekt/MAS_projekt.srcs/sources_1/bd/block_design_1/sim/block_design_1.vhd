@@ -1,8 +1,8 @@
 --Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
---Tool Version: Vivado v.2017.3.1 (win64) Build 2035080 Fri Oct 20 14:20:01 MDT 2017
---Date        : Tue Jan  9 12:14:43 2018
---Host        : ASUS-X550DP running 64-bit major release  (build 9200)
+--Tool Version: Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+--Date        : Tue Jan 23 19:13:55 2018
+--Host        : Lenovo running 64-bit major release  (build 9200)
 --Command     : generate_target block_design_1.bd
 --Design      : block_design_1
 --Purpose     : IP block netlist
@@ -1404,7 +1404,7 @@ architecture STRUCTURE of block_design_1 is
   attribute X_INTERFACE_INFO of IIC_0_sda_t : signal is "xilinx.com:interface:iic:1.0 IIC_0 SDA_T";
   attribute X_INTERFACE_INFO of XCLK : signal is "xilinx.com:signal:clock:1.0 CLK.XCLK CLK";
   attribute X_INTERFACE_PARAMETER of XCLK : signal is "XIL_INTERFACENAME CLK.XCLK, CLK_DOMAIN block_design_1_processing_system7_0_0_FCLK_CLK1, FREQ_HZ 20000000, PHASE 0.000";
-  attribute X_INTERFACE_INFO of CAM_tri_i : signal is "xilinx.com:interface:gpio:1.0 CAM ";
+  attribute X_INTERFACE_INFO of CAM_tri_i : signal is "xilinx.com:interface:gpio:1.0 CAM TRI_I";
   attribute X_INTERFACE_INFO of DDR_addr : signal is "xilinx.com:interface:ddrx:1.0 DDR ADDR";
   attribute X_INTERFACE_PARAMETER of DDR_addr : signal is "XIL_INTERFACENAME DDR, AXI_ARBITRATION_SCHEME TDM, BURST_LENGTH 8, CAN_DEBUG false, CAS_LATENCY 11, CAS_WRITE_LATENCY 11, CS_ENABLED true, DATA_MASK_ENABLED true, DATA_WIDTH 8, MEMORY_TYPE COMPONENTS, MEM_ADDR_MAP ROW_COLUMN_BANK, SLOT Single, TIMEPERIOD_PS 1250";
   attribute X_INTERFACE_INFO of DDR_ba : signal is "xilinx.com:interface:ddrx:1.0 DDR BA";

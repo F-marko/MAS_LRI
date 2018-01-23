@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2017.3.1 (win64) Build 2035080 Fri Oct 20 14:20:01 MDT 2017
-| Date         : Tue Jan  9 12:45:34 2018
-| Host         : ASUS-X550DP running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Tue Jan 23 19:18:06 2018
+| Host         : Lenovo running 64-bit major release  (build 9200)
 | Command      : report_control_sets -file block_design_1_wrapper_control_sets_placed.rpt
 | Design       : block_design_1_wrapper
 | Device       : xc7z020
@@ -33,8 +33,8 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |             230 |           78 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             153 |           46 |
-| Yes          | No                    | No                     |             487 |          109 |
+| No           | Yes                   | No                     |             153 |           48 |
+| Yes          | No                    | No                     |             487 |          111 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |             101 |           27 |
 +--------------+-----------------------+------------------------+-----------------+--------------+

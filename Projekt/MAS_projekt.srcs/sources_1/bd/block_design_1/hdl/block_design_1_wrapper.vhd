@@ -1,8 +1,8 @@
 --Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
---Tool Version: Vivado v.2017.3.1 (win64) Build 2035080 Fri Oct 20 14:20:01 MDT 2017
---Date        : Tue Jan  9 12:14:43 2018
---Host        : ASUS-X550DP running 64-bit major release  (build 9200)
+--Tool Version: Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+--Date        : Tue Jan 23 19:13:55 2018
+--Host        : Lenovo running 64-bit major release  (build 9200)
 --Command     : generate_target block_design_1_wrapper.bd
 --Design      : block_design_1_wrapper
 --Purpose     : IP block netlist
@@ -77,8 +77,8 @@ architecture STRUCTURE of block_design_1_wrapper is
     leds_4bits_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
     leds_4bits_tri_t : out STD_LOGIC_VECTOR ( 3 downto 0 );
     btns_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    XCLK : out STD_LOGIC;
-    CAM_tri_i : in STD_LOGIC_VECTOR ( 10 downto 0 )
+    CAM_tri_i : in STD_LOGIC_VECTOR ( 10 downto 0 );
+    XCLK : out STD_LOGIC
   );
   end component block_design_1;
   component IOBUF is

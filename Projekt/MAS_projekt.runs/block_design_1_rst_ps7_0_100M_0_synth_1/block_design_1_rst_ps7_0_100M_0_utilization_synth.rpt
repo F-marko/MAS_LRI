@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
-| Date         : Tue Dec 19 11:19:23 2017
+| Date         : Tue Jan 23 19:15:36 2018
 | Host         : Lenovo running 64-bit major release  (build 9200)
 | Command      : report_utilization -file block_design_1_rst_ps7_0_100M_0_utilization_synth.rpt -pb block_design_1_rst_ps7_0_100M_0_utilization_synth.pb
 | Design       : block_design_1_rst_ps7_0_100M_0

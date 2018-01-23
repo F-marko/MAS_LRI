@@ -1,10 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2017.3.1 (win64) Build 2035080 Fri Oct 20 14:20:01 MDT 2017
-// Date        : Tue Jan  9 12:24:15 2018
-// Host        : ASUS-X550DP running 64-bit major release  (build 9200)
+// Tool Version: Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+// Date        : Tue Jan 23 19:16:14 2018
+// Host        : Lenovo running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               d:/Vivado_Projects/MAS/Projekt/MAS_projekt.srcs/sources_1/bd/block_design_1/ip/block_design_1_auto_pc_0/block_design_1_auto_pc_0_stub.v
+//               d:/MAS_LRI/Projekt/MAS_projekt.srcs/sources_1/bd/block_design_1/ip/block_design_1_auto_pc_0/block_design_1_auto_pc_0_stub.v
 // Design      : block_design_1_auto_pc_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1
@@ -13,7 +13,7 @@
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
-(* X_CORE_INFO = "axi_protocol_converter_v2_1_14_axi_protocol_converter,Vivado 2017.3.1" *)
+(* X_CORE_INFO = "axi_protocol_converter_v2_1_14_axi_protocol_converter,Vivado 2017.3" *)
 module block_design_1_auto_pc_0(aclk, aresetn, s_axi_awid, s_axi_awaddr, 
   s_axi_awlen, s_axi_awsize, s_axi_awburst, s_axi_awlock, s_axi_awcache, s_axi_awprot, 
   s_axi_awqos, s_axi_awvalid, s_axi_awready, s_axi_wid, s_axi_wdata, s_axi_wstrb, s_axi_wlast, 

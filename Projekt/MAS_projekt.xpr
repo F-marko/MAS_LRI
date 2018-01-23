@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Product Version: Vivado v2017.3.1 (64-bit)              -->
+<!-- Product Version: Vivado v2017.3 (64-bit)              -->
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="32" Path="D:/Vivado_Projects/MAS/Projekt/MAS_projekt.xpr">
+<Project Version="7" Minor="32" Path="D:/MAS_LRI/Projekt/MAS_projekt.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="4aeaf1cb0f83440991c78d2a1fece1bd"/>

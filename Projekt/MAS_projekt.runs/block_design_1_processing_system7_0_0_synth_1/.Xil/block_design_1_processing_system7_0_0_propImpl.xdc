@@ -1,6 +1,6 @@
-set_property SRC_FILE_INFO {cfile:{d:/FER/Multimedijske arhitekture i sustavi/Projekt/MAS_LRI/Projekt/MAS projekt.srcs/sources_1/bd/block_design_1/ip/block_design_1_processing_system7_0_0/block_design_1_processing_system7_0_0.xdc} rfile:{../../../MAS projekt.srcs/sources_1/bd/block_design_1/ip/block_design_1_processing_system7_0_0/block_design_1_processing_system7_0_0.xdc} id:1 order:EARLY scoped_inst:inst} [current_design]
+set_property SRC_FILE_INFO {cfile:d:/MAS_LRI/Projekt/MAS_projekt.srcs/sources_1/bd/block_design_1/ip/block_design_1_processing_system7_0_0/block_design_1_processing_system7_0_0.xdc rfile:../../../MAS_projekt.srcs/sources_1/bd/block_design_1/ip/block_design_1_processing_system7_0_0/block_design_1_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:inst} [current_design]
 set_property src_info {type:SCOPED_XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
-set_input_jitter clk_fpga_0 0.3
+set_input_jitter clk_fpga_0 0.24
 set_property src_info {type:SCOPED_XDC file:1 line:24 export:INPUT save:INPUT read:READ} [current_design]
 set_input_jitter clk_fpga_1 1.5
 set_property src_info {type:SCOPED_XDC file:1 line:34 export:INPUT save:INPUT read:READ} [current_design]
