@@ -24,6 +24,8 @@
 #include "lwip/dhcp.h"
 #endif
 
+#define XOR_MASK 0xCA
+
 /* defined by each RAW mode application */
 void print_app_header();
 int start_application();
@@ -125,7 +127,7 @@ int main() {
 	YCbCr_BLOCK blok;
 
 	for(int index=0; index<os->index;index++){
-		os->stream[index]^=XOR_MASK;
+		os->stream[index]^=0xCA;
 
 	}
 	read_ycbcr_block(&image, 0, 0, &blok);

@@ -133,6 +133,9 @@ err_t recv_callback(void *arg, struct tcp_pcb *tpcb, struct pbuf *p, err_t err) 
 		//izbrisati ove dvije linije
 		getImage();
 		os = make_jpg_image(&image, IMAGE_WIDTH, IMAGE_HEIGHT);
+		for(int index=0; index<os->index;index++){
+			os->stream[index]^=XOR_MASK;
+		}
 		//---------------------------------------------
 
 		if (sent >= TO_BE_SENT)

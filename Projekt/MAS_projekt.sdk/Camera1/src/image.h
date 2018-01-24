@@ -8,6 +8,8 @@
 #include "xgpio_l.h"
 #include "image.h"
 
+#define XOR_MASK 0xCA
+
 #define IMAGE_HEIGHT 480
 #define IMAGE_WIDTH 640
 

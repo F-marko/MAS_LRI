@@ -9646,3 +9646,1164 @@ con
 ----------------End of Script----------------
 
 20:02:12 INFO  : Launch script is exported to file 'D:\MAS_LRI\Projekt\MAS_projekt.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_camera1.elf_on_local.tcl'
+20:05:14 INFO  : Disconnected from the channel tcfchan#23.
+17:24:49 INFO  : Registering command handlers for SDK TCF services
+17:24:51 INFO  : Launching XSCT server: xsct.bat -interactive D:\MAS_LRI\Projekt\MAS_projekt.sdk\temp_xsdb_launch_script.tcl
+17:24:59 INFO  : XSCT server has started successfully.
+17:24:59 INFO  : Successfully done setting XSCT server connection channel  
+17:25:01 INFO  : Successfully done setting SDK workspace  
+17:25:01 INFO  : Processing command line option -hwspec D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper.hdf.
+17:25:01 INFO  : Checking for hwspec changes in the project block_design_1_wrapper_hw_platform_1.
+17:25:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:25:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+17:25:40 INFO  : FPGA configured successfully with bitstream "D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/block_design_1_wrapper.bit"
+17:25:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+17:25:47 INFO  : 'fpga -state' command is executed.
+17:25:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:25:48 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A4CE72A' is selected.
+17:25:48 INFO  : 'jtag frequency' command is executed.
+17:25:48 INFO  : Sourcing of 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+17:25:48 INFO  : Context for 'APU' is selected.
+17:25:48 INFO  : Hardware design information is loaded from 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf'.
+17:25:48 INFO  : 'configparams force-mem-access 1' command is executed.
+17:25:48 INFO  : Context for 'APU' is selected.
+17:25:48 INFO  : 'stop' command is executed.
+17:25:48 INFO  : 'ps7_init' command is executed.
+17:25:48 INFO  : 'ps7_post_config' command is executed.
+17:25:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:25:49 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:25:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:25:49 INFO  : The application 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:25:49 INFO  : 'configparams force-mem-access 0' command is executed.
+17:25:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+loadhw -hw D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+dow D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:25:49 INFO  : Memory regions updated for context APU
+17:25:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:25:49 INFO  : 'con' command is executed.
+17:25:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+con
+----------------End of Script----------------
+
+17:25:49 INFO  : Launch script is exported to file 'D:\MAS_LRI\Projekt\MAS_projekt.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_camera1.elf_on_local.tcl'
+17:26:24 INFO  : Disconnected from the channel tcfchan#1.
+17:26:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+17:26:25 INFO  : 'fpga -state' command is executed.
+17:26:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:26:25 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A4CE72A' is selected.
+17:26:25 INFO  : 'jtag frequency' command is executed.
+17:26:25 INFO  : Sourcing of 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+17:26:25 INFO  : Context for 'APU' is selected.
+17:26:27 INFO  : Hardware design information is loaded from 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf'.
+17:26:27 INFO  : 'configparams force-mem-access 1' command is executed.
+17:26:27 INFO  : Context for 'APU' is selected.
+17:26:27 INFO  : 'stop' command is executed.
+17:26:28 INFO  : 'ps7_init' command is executed.
+17:26:28 INFO  : 'ps7_post_config' command is executed.
+17:26:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:26:28 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:26:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:26:29 INFO  : The application 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:26:29 INFO  : 'configparams force-mem-access 0' command is executed.
+17:26:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+loadhw -hw D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+dow D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:26:29 INFO  : Memory regions updated for context APU
+17:26:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:26:29 INFO  : 'con' command is executed.
+17:26:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+con
+----------------End of Script----------------
+
+17:26:29 INFO  : Launch script is exported to file 'D:\MAS_LRI\Projekt\MAS_projekt.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_camera1.elf_on_local.tcl'
+17:35:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:35:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+17:36:01 INFO  : FPGA configured successfully with bitstream "D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/block_design_1_wrapper.bit"
+17:36:06 INFO  : Disconnected from the channel tcfchan#2.
+17:36:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+17:36:07 INFO  : 'fpga -state' command is executed.
+17:36:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:36:07 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A4CE72A' is selected.
+17:36:07 INFO  : 'jtag frequency' command is executed.
+17:36:07 INFO  : Sourcing of 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+17:36:07 INFO  : Context for 'APU' is selected.
+17:36:09 INFO  : Hardware design information is loaded from 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf'.
+17:36:09 INFO  : 'configparams force-mem-access 1' command is executed.
+17:36:09 INFO  : Context for 'APU' is selected.
+17:36:09 INFO  : 'stop' command is executed.
+17:36:10 INFO  : 'ps7_init' command is executed.
+17:36:10 INFO  : 'ps7_post_config' command is executed.
+17:36:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:36:10 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:36:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:36:10 INFO  : The application 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:36:10 INFO  : 'configparams force-mem-access 0' command is executed.
+17:36:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+loadhw -hw D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+dow D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:36:10 INFO  : Memory regions updated for context APU
+17:36:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:36:10 INFO  : 'con' command is executed.
+17:36:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+con
+----------------End of Script----------------
+
+17:36:10 INFO  : Launch script is exported to file 'D:\MAS_LRI\Projekt\MAS_projekt.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_camera1.elf_on_local.tcl'
+17:36:34 INFO  : Disconnected from the channel tcfchan#3.
+17:36:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+17:36:35 INFO  : 'fpga -state' command is executed.
+17:36:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:36:36 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A4CE72A' is selected.
+17:36:36 INFO  : 'jtag frequency' command is executed.
+17:36:36 INFO  : Sourcing of 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+17:36:36 INFO  : Context for 'APU' is selected.
+17:36:38 INFO  : Hardware design information is loaded from 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf'.
+17:36:38 INFO  : 'configparams force-mem-access 1' command is executed.
+17:36:38 INFO  : Context for 'APU' is selected.
+17:36:38 INFO  : 'stop' command is executed.
+17:36:38 INFO  : 'ps7_init' command is executed.
+17:36:38 INFO  : 'ps7_post_config' command is executed.
+17:36:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:36:38 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:36:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:36:39 INFO  : The application 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:36:39 INFO  : 'configparams force-mem-access 0' command is executed.
+17:36:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+loadhw -hw D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+dow D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:36:39 INFO  : Memory regions updated for context APU
+17:36:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:36:39 INFO  : 'con' command is executed.
+17:36:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+con
+----------------End of Script----------------
+
+17:36:39 INFO  : Launch script is exported to file 'D:\MAS_LRI\Projekt\MAS_projekt.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_camera1.elf_on_local.tcl'
+17:52:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:52:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+17:52:47 INFO  : FPGA configured successfully with bitstream "D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/block_design_1_wrapper.bit"
+17:52:56 INFO  : Disconnected from the channel tcfchan#4.
+17:52:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+17:52:57 INFO  : 'fpga -state' command is executed.
+17:52:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:52:58 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A4CE72A' is selected.
+17:52:58 INFO  : 'jtag frequency' command is executed.
+17:52:58 INFO  : Sourcing of 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+17:52:58 INFO  : Context for 'APU' is selected.
+17:53:00 INFO  : Hardware design information is loaded from 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf'.
+17:53:00 INFO  : 'configparams force-mem-access 1' command is executed.
+17:53:00 INFO  : Context for 'APU' is selected.
+17:53:00 INFO  : 'stop' command is executed.
+17:53:00 INFO  : 'ps7_init' command is executed.
+17:53:00 INFO  : 'ps7_post_config' command is executed.
+17:53:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:53:01 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:53:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:53:01 INFO  : The application 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:53:01 INFO  : 'configparams force-mem-access 0' command is executed.
+17:53:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+loadhw -hw D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+dow D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:53:01 INFO  : Memory regions updated for context APU
+17:53:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:53:01 INFO  : 'con' command is executed.
+17:53:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+con
+----------------End of Script----------------
+
+17:53:01 INFO  : Launch script is exported to file 'D:\MAS_LRI\Projekt\MAS_projekt.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_camera1.elf_on_local.tcl'
+17:55:55 INFO  : Disconnected from the channel tcfchan#5.
+17:55:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+17:55:56 INFO  : 'fpga -state' command is executed.
+17:55:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:55:56 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A4CE72A' is selected.
+17:55:56 INFO  : 'jtag frequency' command is executed.
+17:55:56 INFO  : Sourcing of 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+17:55:56 INFO  : Context for 'APU' is selected.
+17:55:59 INFO  : Hardware design information is loaded from 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf'.
+17:55:59 INFO  : 'configparams force-mem-access 1' command is executed.
+17:55:59 INFO  : Context for 'APU' is selected.
+17:55:59 INFO  : 'stop' command is executed.
+17:55:59 INFO  : 'ps7_init' command is executed.
+17:55:59 INFO  : 'ps7_post_config' command is executed.
+17:55:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:55:59 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:55:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:56:00 INFO  : The application 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:56:00 INFO  : 'configparams force-mem-access 0' command is executed.
+17:56:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+loadhw -hw D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+dow D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:56:00 INFO  : Memory regions updated for context APU
+17:56:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:56:00 INFO  : 'con' command is executed.
+17:56:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+con
+----------------End of Script----------------
+
+17:56:00 INFO  : Launch script is exported to file 'D:\MAS_LRI\Projekt\MAS_projekt.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_camera1.elf_on_local.tcl'
+17:59:19 INFO  : Disconnected from the channel tcfchan#6.
+17:59:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+17:59:20 INFO  : 'fpga -state' command is executed.
+17:59:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:59:20 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A4CE72A' is selected.
+17:59:20 INFO  : 'jtag frequency' command is executed.
+17:59:20 INFO  : Sourcing of 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+17:59:20 INFO  : Context for 'APU' is selected.
+17:59:22 INFO  : Hardware design information is loaded from 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf'.
+17:59:22 INFO  : 'configparams force-mem-access 1' command is executed.
+17:59:22 INFO  : Context for 'APU' is selected.
+17:59:22 INFO  : 'stop' command is executed.
+17:59:23 INFO  : 'ps7_init' command is executed.
+17:59:23 INFO  : 'ps7_post_config' command is executed.
+17:59:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:59:23 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:59:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:59:24 INFO  : The application 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:59:24 INFO  : 'configparams force-mem-access 0' command is executed.
+17:59:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+loadhw -hw D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+dow D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:59:24 INFO  : Memory regions updated for context APU
+17:59:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:59:24 INFO  : 'con' command is executed.
+17:59:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+con
+----------------End of Script----------------
+
+17:59:24 INFO  : Launch script is exported to file 'D:\MAS_LRI\Projekt\MAS_projekt.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_camera1.elf_on_local.tcl'
+18:01:39 INFO  : Disconnected from the channel tcfchan#7.
+18:01:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+18:01:40 INFO  : 'fpga -state' command is executed.
+18:01:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:01:40 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A4CE72A' is selected.
+18:01:40 INFO  : 'jtag frequency' command is executed.
+18:01:40 INFO  : Sourcing of 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+18:01:40 INFO  : Context for 'APU' is selected.
+18:01:42 INFO  : Hardware design information is loaded from 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf'.
+18:01:42 INFO  : 'configparams force-mem-access 1' command is executed.
+18:01:42 INFO  : Context for 'APU' is selected.
+18:01:42 INFO  : 'stop' command is executed.
+18:01:43 INFO  : 'ps7_init' command is executed.
+18:01:43 INFO  : 'ps7_post_config' command is executed.
+18:01:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:01:43 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:01:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:01:44 INFO  : The application 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:01:44 INFO  : 'configparams force-mem-access 0' command is executed.
+18:01:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+loadhw -hw D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+dow D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:01:44 INFO  : Memory regions updated for context APU
+18:01:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:01:44 INFO  : 'con' command is executed.
+18:01:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+con
+----------------End of Script----------------
+
+18:01:44 INFO  : Launch script is exported to file 'D:\MAS_LRI\Projekt\MAS_projekt.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_camera1.elf_on_local.tcl'
+18:02:10 INFO  : Disconnected from the channel tcfchan#8.
+18:02:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+18:02:11 INFO  : 'fpga -state' command is executed.
+18:02:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:02:11 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A4CE72A' is selected.
+18:02:11 INFO  : 'jtag frequency' command is executed.
+18:02:11 INFO  : Sourcing of 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+18:02:11 INFO  : Context for 'APU' is selected.
+18:02:13 INFO  : Hardware design information is loaded from 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf'.
+18:02:13 INFO  : 'configparams force-mem-access 1' command is executed.
+18:02:13 INFO  : Context for 'APU' is selected.
+18:02:13 INFO  : 'stop' command is executed.
+18:02:14 INFO  : 'ps7_init' command is executed.
+18:02:14 INFO  : 'ps7_post_config' command is executed.
+18:02:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:02:14 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:02:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:02:14 INFO  : The application 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:02:14 INFO  : 'configparams force-mem-access 0' command is executed.
+18:02:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+loadhw -hw D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+dow D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:02:14 INFO  : Memory regions updated for context APU
+18:02:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:02:15 INFO  : 'con' command is executed.
+18:02:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+con
+----------------End of Script----------------
+
+18:02:15 INFO  : Launch script is exported to file 'D:\MAS_LRI\Projekt\MAS_projekt.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_camera1.elf_on_local.tcl'
+18:03:18 INFO  : Disconnected from the channel tcfchan#9.
+18:03:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+18:03:19 INFO  : 'fpga -state' command is executed.
+18:03:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:03:19 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A4CE72A' is selected.
+18:03:19 INFO  : 'jtag frequency' command is executed.
+18:03:19 INFO  : Sourcing of 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+18:03:19 INFO  : Context for 'APU' is selected.
+18:03:21 INFO  : Hardware design information is loaded from 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf'.
+18:03:21 INFO  : 'configparams force-mem-access 1' command is executed.
+18:03:21 INFO  : Context for 'APU' is selected.
+18:03:21 INFO  : 'stop' command is executed.
+18:03:22 INFO  : 'ps7_init' command is executed.
+18:03:22 INFO  : 'ps7_post_config' command is executed.
+18:03:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:03:22 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:03:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:03:22 INFO  : The application 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:03:22 INFO  : 'configparams force-mem-access 0' command is executed.
+18:03:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+loadhw -hw D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+dow D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:03:22 INFO  : Memory regions updated for context APU
+18:03:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:03:22 INFO  : 'con' command is executed.
+18:03:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+con
+----------------End of Script----------------
+
+18:03:22 INFO  : Launch script is exported to file 'D:\MAS_LRI\Projekt\MAS_projekt.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_camera1.elf_on_local.tcl'
+18:04:02 INFO  : Disconnected from the channel tcfchan#10.
+18:04:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+18:04:03 INFO  : 'fpga -state' command is executed.
+18:04:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:04:03 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A4CE72A' is selected.
+18:04:03 INFO  : 'jtag frequency' command is executed.
+18:04:03 INFO  : Sourcing of 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+18:04:03 INFO  : Context for 'APU' is selected.
+18:04:05 INFO  : Hardware design information is loaded from 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf'.
+18:04:05 INFO  : 'configparams force-mem-access 1' command is executed.
+18:04:05 INFO  : Context for 'APU' is selected.
+18:04:05 INFO  : 'stop' command is executed.
+18:04:06 INFO  : 'ps7_init' command is executed.
+18:04:06 INFO  : 'ps7_post_config' command is executed.
+18:04:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:04:06 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:04:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:04:07 INFO  : The application 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:04:07 INFO  : 'configparams force-mem-access 0' command is executed.
+18:04:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+loadhw -hw D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+dow D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:04:07 INFO  : Memory regions updated for context APU
+18:04:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:04:07 INFO  : 'con' command is executed.
+18:04:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+con
+----------------End of Script----------------
+
+18:04:07 INFO  : Launch script is exported to file 'D:\MAS_LRI\Projekt\MAS_projekt.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_camera1.elf_on_local.tcl'
+18:05:03 INFO  : Disconnected from the channel tcfchan#11.
+18:05:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+18:05:04 INFO  : 'fpga -state' command is executed.
+18:05:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:05:05 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A4CE72A' is selected.
+18:05:05 INFO  : 'jtag frequency' command is executed.
+18:05:05 INFO  : Sourcing of 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+18:05:05 INFO  : Context for 'APU' is selected.
+18:05:07 INFO  : Hardware design information is loaded from 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf'.
+18:05:07 INFO  : 'configparams force-mem-access 1' command is executed.
+18:05:07 INFO  : Context for 'APU' is selected.
+18:05:07 INFO  : 'stop' command is executed.
+18:05:08 INFO  : 'ps7_init' command is executed.
+18:05:08 INFO  : 'ps7_post_config' command is executed.
+18:05:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:05:08 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:05:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:05:08 INFO  : The application 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:05:08 INFO  : 'configparams force-mem-access 0' command is executed.
+18:05:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+loadhw -hw D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+dow D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:05:08 INFO  : Memory regions updated for context APU
+18:05:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:05:08 INFO  : 'con' command is executed.
+18:05:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+con
+----------------End of Script----------------
+
+18:05:08 INFO  : Launch script is exported to file 'D:\MAS_LRI\Projekt\MAS_projekt.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_camera1.elf_on_local.tcl'
+18:06:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:06:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+18:06:12 INFO  : FPGA configured successfully with bitstream "D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/block_design_1_wrapper.bit"
+18:06:19 INFO  : Disconnected from the channel tcfchan#12.
+18:06:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+18:06:20 INFO  : 'fpga -state' command is executed.
+18:06:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:06:20 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A4CE72A' is selected.
+18:06:20 INFO  : 'jtag frequency' command is executed.
+18:06:20 INFO  : Sourcing of 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+18:06:20 INFO  : Context for 'APU' is selected.
+18:06:22 INFO  : Hardware design information is loaded from 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf'.
+18:06:22 INFO  : 'configparams force-mem-access 1' command is executed.
+18:06:22 INFO  : Context for 'APU' is selected.
+18:06:22 INFO  : 'stop' command is executed.
+18:06:23 INFO  : 'ps7_init' command is executed.
+18:06:23 INFO  : 'ps7_post_config' command is executed.
+18:06:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:06:23 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:06:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:06:24 INFO  : The application 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:06:24 INFO  : 'configparams force-mem-access 0' command is executed.
+18:06:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+loadhw -hw D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+dow D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:06:24 INFO  : Memory regions updated for context APU
+18:06:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:06:24 INFO  : 'con' command is executed.
+18:06:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+con
+----------------End of Script----------------
+
+18:06:24 INFO  : Launch script is exported to file 'D:\MAS_LRI\Projekt\MAS_projekt.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_camera1.elf_on_local.tcl'
+18:11:04 INFO  : Disconnected from the channel tcfchan#13.
+18:11:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+18:11:06 INFO  : 'fpga -state' command is executed.
+18:11:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:11:06 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A4CE72A' is selected.
+18:11:06 INFO  : 'jtag frequency' command is executed.
+18:11:06 INFO  : Sourcing of 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+18:11:06 INFO  : Context for 'APU' is selected.
+18:11:08 INFO  : Hardware design information is loaded from 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf'.
+18:11:08 INFO  : 'configparams force-mem-access 1' command is executed.
+18:11:08 INFO  : Context for 'APU' is selected.
+18:11:08 INFO  : 'stop' command is executed.
+18:11:08 INFO  : 'ps7_init' command is executed.
+18:11:08 INFO  : 'ps7_post_config' command is executed.
+18:11:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:11:09 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:11:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:11:09 INFO  : The application 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:11:09 INFO  : 'configparams force-mem-access 0' command is executed.
+18:11:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+loadhw -hw D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+dow D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:11:09 INFO  : Memory regions updated for context APU
+18:11:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:11:09 INFO  : 'con' command is executed.
+18:11:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+con
+----------------End of Script----------------
+
+18:11:09 INFO  : Launch script is exported to file 'D:\MAS_LRI\Projekt\MAS_projekt.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_camera1.elf_on_local.tcl'
+18:11:30 INFO  : Disconnected from the channel tcfchan#14.
+18:11:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+18:11:31 INFO  : 'fpga -state' command is executed.
+18:11:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:11:31 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A4CE72A' is selected.
+18:11:31 INFO  : 'jtag frequency' command is executed.
+18:11:31 INFO  : Sourcing of 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+18:11:31 INFO  : Context for 'APU' is selected.
+18:11:33 INFO  : Hardware design information is loaded from 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf'.
+18:11:33 INFO  : 'configparams force-mem-access 1' command is executed.
+18:11:33 INFO  : Context for 'APU' is selected.
+18:11:33 INFO  : 'stop' command is executed.
+18:11:34 INFO  : 'ps7_init' command is executed.
+18:11:34 INFO  : 'ps7_post_config' command is executed.
+18:11:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:11:34 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:11:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:11:35 INFO  : The application 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:11:35 INFO  : 'configparams force-mem-access 0' command is executed.
+18:11:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+loadhw -hw D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+dow D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:11:35 INFO  : Memory regions updated for context APU
+18:11:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:11:35 INFO  : 'con' command is executed.
+18:11:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+con
+----------------End of Script----------------
+
+18:11:35 INFO  : Launch script is exported to file 'D:\MAS_LRI\Projekt\MAS_projekt.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_camera1.elf_on_local.tcl'
+18:12:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:12:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+18:12:28 INFO  : FPGA configured successfully with bitstream "D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/block_design_1_wrapper.bit"
+18:12:32 INFO  : Disconnected from the channel tcfchan#15.
+18:12:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+18:12:33 INFO  : 'fpga -state' command is executed.
+18:12:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:12:33 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A4CE72A' is selected.
+18:12:33 INFO  : 'jtag frequency' command is executed.
+18:12:33 INFO  : Sourcing of 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+18:12:33 INFO  : Context for 'APU' is selected.
+18:12:35 INFO  : Hardware design information is loaded from 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf'.
+18:12:35 INFO  : 'configparams force-mem-access 1' command is executed.
+18:12:35 INFO  : Context for 'APU' is selected.
+18:12:35 INFO  : 'stop' command is executed.
+18:12:36 INFO  : 'ps7_init' command is executed.
+18:12:36 INFO  : 'ps7_post_config' command is executed.
+18:12:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:12:36 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:12:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:12:37 INFO  : The application 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:12:37 INFO  : 'configparams force-mem-access 0' command is executed.
+18:12:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+loadhw -hw D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+dow D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:12:37 INFO  : Memory regions updated for context APU
+18:12:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:12:37 INFO  : 'con' command is executed.
+18:12:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+con
+----------------End of Script----------------
+
+18:12:37 INFO  : Launch script is exported to file 'D:\MAS_LRI\Projekt\MAS_projekt.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_camera1.elf_on_local.tcl'
+18:13:18 INFO  : Disconnected from the channel tcfchan#16.
+18:13:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+18:13:19 INFO  : 'fpga -state' command is executed.
+18:13:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:13:19 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A4CE72A' is selected.
+18:13:19 INFO  : 'jtag frequency' command is executed.
+18:13:19 INFO  : Sourcing of 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+18:13:19 INFO  : Context for 'APU' is selected.
+18:13:21 INFO  : Hardware design information is loaded from 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf'.
+18:13:21 INFO  : 'configparams force-mem-access 1' command is executed.
+18:13:21 INFO  : Context for 'APU' is selected.
+18:13:21 INFO  : 'stop' command is executed.
+18:13:22 INFO  : 'ps7_init' command is executed.
+18:13:22 INFO  : 'ps7_post_config' command is executed.
+18:13:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:13:22 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:13:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:13:23 INFO  : The application 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:13:23 INFO  : 'configparams force-mem-access 0' command is executed.
+18:13:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+loadhw -hw D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+dow D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:13:23 INFO  : Memory regions updated for context APU
+18:13:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:13:23 INFO  : 'con' command is executed.
+18:13:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+con
+----------------End of Script----------------
+
+18:13:23 INFO  : Launch script is exported to file 'D:\MAS_LRI\Projekt\MAS_projekt.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_camera1.elf_on_local.tcl'
+18:13:42 INFO  : Disconnected from the channel tcfchan#17.
+18:13:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+18:13:43 INFO  : 'fpga -state' command is executed.
+18:13:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:13:43 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A4CE72A' is selected.
+18:13:43 INFO  : 'jtag frequency' command is executed.
+18:13:43 INFO  : Sourcing of 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+18:13:43 INFO  : Context for 'APU' is selected.
+18:13:45 INFO  : Hardware design information is loaded from 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf'.
+18:13:45 INFO  : 'configparams force-mem-access 1' command is executed.
+18:13:45 INFO  : Context for 'APU' is selected.
+18:13:45 INFO  : 'stop' command is executed.
+18:13:46 INFO  : 'ps7_init' command is executed.
+18:13:46 INFO  : 'ps7_post_config' command is executed.
+18:13:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:13:46 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:13:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:13:46 INFO  : The application 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:13:46 INFO  : 'configparams force-mem-access 0' command is executed.
+18:13:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+loadhw -hw D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+dow D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:13:46 INFO  : Memory regions updated for context APU
+18:13:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:13:46 INFO  : 'con' command is executed.
+18:13:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+con
+----------------End of Script----------------
+
+18:13:46 INFO  : Launch script is exported to file 'D:\MAS_LRI\Projekt\MAS_projekt.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_camera1.elf_on_local.tcl'
+18:14:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:14:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+18:14:26 INFO  : FPGA configured successfully with bitstream "D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/block_design_1_wrapper.bit"
+18:14:32 INFO  : Disconnected from the channel tcfchan#18.
+18:14:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+18:14:33 INFO  : 'fpga -state' command is executed.
+18:14:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:14:33 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A4CE72A' is selected.
+18:14:33 INFO  : 'jtag frequency' command is executed.
+18:14:33 INFO  : Sourcing of 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+18:14:33 INFO  : Context for 'APU' is selected.
+18:14:35 INFO  : Hardware design information is loaded from 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf'.
+18:14:35 INFO  : 'configparams force-mem-access 1' command is executed.
+18:14:35 INFO  : Context for 'APU' is selected.
+18:14:35 INFO  : 'stop' command is executed.
+18:14:36 INFO  : 'ps7_init' command is executed.
+18:14:36 INFO  : 'ps7_post_config' command is executed.
+18:14:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:14:36 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:14:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:14:36 INFO  : The application 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:14:36 INFO  : 'configparams force-mem-access 0' command is executed.
+18:14:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+loadhw -hw D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+dow D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:14:36 INFO  : Memory regions updated for context APU
+18:14:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:14:36 INFO  : 'con' command is executed.
+18:14:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+con
+----------------End of Script----------------
+
+18:14:36 INFO  : Launch script is exported to file 'D:\MAS_LRI\Projekt\MAS_projekt.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_camera1.elf_on_local.tcl'
+18:16:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:16:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+18:16:31 INFO  : FPGA configured successfully with bitstream "D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/block_design_1_wrapper.bit"
+18:16:36 INFO  : Disconnected from the channel tcfchan#19.
+18:16:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+18:16:37 INFO  : 'fpga -state' command is executed.
+18:16:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:16:38 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A4CE72A' is selected.
+18:16:38 INFO  : 'jtag frequency' command is executed.
+18:16:38 INFO  : Sourcing of 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+18:16:38 INFO  : Context for 'APU' is selected.
+18:16:39 INFO  : Hardware design information is loaded from 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf'.
+18:16:39 INFO  : 'configparams force-mem-access 1' command is executed.
+18:16:39 INFO  : Context for 'APU' is selected.
+18:16:39 INFO  : 'stop' command is executed.
+18:16:40 INFO  : 'ps7_init' command is executed.
+18:16:40 INFO  : 'ps7_post_config' command is executed.
+18:16:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:16:40 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:16:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:16:41 INFO  : The application 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:16:41 INFO  : 'configparams force-mem-access 0' command is executed.
+18:16:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+loadhw -hw D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+dow D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:16:41 INFO  : Memory regions updated for context APU
+18:16:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:16:41 INFO  : 'con' command is executed.
+18:16:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+con
+----------------End of Script----------------
+
+18:16:41 INFO  : Launch script is exported to file 'D:\MAS_LRI\Projekt\MAS_projekt.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_camera1.elf_on_local.tcl'
+18:17:00 INFO  : Disconnected from the channel tcfchan#20.
+18:17:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+18:17:01 INFO  : 'fpga -state' command is executed.
+18:17:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:17:02 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A4CE72A' is selected.
+18:17:02 INFO  : 'jtag frequency' command is executed.
+18:17:02 INFO  : Sourcing of 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+18:17:02 INFO  : Context for 'APU' is selected.
+18:17:04 INFO  : Hardware design information is loaded from 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf'.
+18:17:04 INFO  : 'configparams force-mem-access 1' command is executed.
+18:17:04 INFO  : Context for 'APU' is selected.
+18:17:04 INFO  : 'stop' command is executed.
+18:17:05 INFO  : 'ps7_init' command is executed.
+18:17:05 INFO  : 'ps7_post_config' command is executed.
+18:17:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:17:05 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:17:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:17:05 INFO  : The application 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:17:05 INFO  : 'configparams force-mem-access 0' command is executed.
+18:17:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+loadhw -hw D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+dow D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:17:05 INFO  : Memory regions updated for context APU
+18:17:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:17:05 INFO  : 'con' command is executed.
+18:17:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+con
+----------------End of Script----------------
+
+18:17:05 INFO  : Launch script is exported to file 'D:\MAS_LRI\Projekt\MAS_projekt.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_camera1.elf_on_local.tcl'
+18:17:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:17:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:18:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:18:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+18:18:33 INFO  : FPGA configured successfully with bitstream "D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/block_design_1_wrapper.bit"
+18:18:38 INFO  : Disconnected from the channel tcfchan#21.
+18:18:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+18:18:39 INFO  : 'fpga -state' command is executed.
+18:18:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:18:40 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A4CE72A' is selected.
+18:18:40 INFO  : 'jtag frequency' command is executed.
+18:18:40 INFO  : Sourcing of 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+18:18:40 INFO  : Context for 'APU' is selected.
+18:18:42 INFO  : Hardware design information is loaded from 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf'.
+18:18:42 INFO  : 'configparams force-mem-access 1' command is executed.
+18:18:42 INFO  : Context for 'APU' is selected.
+18:18:42 INFO  : 'stop' command is executed.
+18:18:42 INFO  : 'ps7_init' command is executed.
+18:18:42 INFO  : 'ps7_post_config' command is executed.
+18:18:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:18:42 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:18:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:18:43 INFO  : The application 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:18:43 INFO  : 'configparams force-mem-access 0' command is executed.
+18:18:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+loadhw -hw D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+dow D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:18:43 INFO  : Memory regions updated for context APU
+18:18:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:18:43 INFO  : 'con' command is executed.
+18:18:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+con
+----------------End of Script----------------
+
+18:18:43 INFO  : Launch script is exported to file 'D:\MAS_LRI\Projekt\MAS_projekt.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_camera1.elf_on_local.tcl'
+18:19:52 INFO  : Disconnected from the channel tcfchan#22.
+18:19:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+18:19:53 INFO  : 'fpga -state' command is executed.
+18:19:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:19:53 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A4CE72A' is selected.
+18:19:53 INFO  : 'jtag frequency' command is executed.
+18:19:53 INFO  : Sourcing of 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+18:19:53 INFO  : Context for 'APU' is selected.
+18:19:55 INFO  : Hardware design information is loaded from 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf'.
+18:19:55 INFO  : 'configparams force-mem-access 1' command is executed.
+18:19:55 INFO  : Context for 'APU' is selected.
+18:19:55 INFO  : 'stop' command is executed.
+18:19:56 INFO  : 'ps7_init' command is executed.
+18:19:56 INFO  : 'ps7_post_config' command is executed.
+18:19:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:19:56 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:19:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:19:56 INFO  : The application 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:19:56 INFO  : 'configparams force-mem-access 0' command is executed.
+18:19:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+loadhw -hw D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+dow D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:19:56 INFO  : Memory regions updated for context APU
+18:19:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:19:56 INFO  : 'con' command is executed.
+18:19:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+con
+----------------End of Script----------------
+
+18:19:56 INFO  : Launch script is exported to file 'D:\MAS_LRI\Projekt\MAS_projekt.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_camera1.elf_on_local.tcl'
+18:20:29 INFO  : Disconnected from the channel tcfchan#23.
+18:20:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+18:20:31 INFO  : 'fpga -state' command is executed.
+18:20:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:20:31 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A4CE72A' is selected.
+18:20:31 INFO  : 'jtag frequency' command is executed.
+18:20:31 INFO  : Sourcing of 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+18:20:31 INFO  : Context for 'APU' is selected.
+18:20:33 INFO  : Hardware design information is loaded from 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf'.
+18:20:33 INFO  : 'configparams force-mem-access 1' command is executed.
+18:20:33 INFO  : Context for 'APU' is selected.
+18:20:33 INFO  : 'stop' command is executed.
+18:20:33 INFO  : 'ps7_init' command is executed.
+18:20:33 INFO  : 'ps7_post_config' command is executed.
+18:20:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:20:33 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:20:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:20:34 INFO  : The application 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:20:34 INFO  : 'configparams force-mem-access 0' command is executed.
+18:20:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+loadhw -hw D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+dow D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:20:34 INFO  : Memory regions updated for context APU
+18:20:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:20:34 INFO  : 'con' command is executed.
+18:20:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+con
+----------------End of Script----------------
+
+18:20:34 INFO  : Launch script is exported to file 'D:\MAS_LRI\Projekt\MAS_projekt.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_camera1.elf_on_local.tcl'
+18:22:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:22:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+18:22:16 INFO  : FPGA configured successfully with bitstream "D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/block_design_1_wrapper.bit"
+18:22:22 INFO  : Disconnected from the channel tcfchan#24.
+18:22:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A" && level==0} -index 1' command is executed.
+18:22:23 INFO  : 'fpga -state' command is executed.
+18:22:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:22:23 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A4CE72A' is selected.
+18:22:23 INFO  : 'jtag frequency' command is executed.
+18:22:23 INFO  : Sourcing of 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl' is done.
+18:22:23 INFO  : Context for 'APU' is selected.
+18:22:26 INFO  : Hardware design information is loaded from 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf'.
+18:22:26 INFO  : 'configparams force-mem-access 1' command is executed.
+18:22:26 INFO  : Context for 'APU' is selected.
+18:22:26 INFO  : 'stop' command is executed.
+18:22:26 INFO  : 'ps7_init' command is executed.
+18:22:26 INFO  : 'ps7_post_config' command is executed.
+18:22:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:22:26 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:22:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:22:27 INFO  : The application 'D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:22:27 INFO  : 'configparams force-mem-access 0' command is executed.
+18:22:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+loadhw -hw D:/MAS_LRI/Projekt/MAS_projekt.sdk/block_design_1_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+dow D:/MAS_LRI/Projekt/MAS_projekt.sdk/Camera1/Debug/Camera1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:22:27 INFO  : Memory regions updated for context APU
+18:22:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:22:27 INFO  : 'con' command is executed.
+18:22:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A4CE72A"} -index 0
+con
+----------------End of Script----------------
+
+18:22:27 INFO  : Launch script is exported to file 'D:\MAS_LRI\Projekt\MAS_projekt.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_camera1.elf_on_local.tcl'

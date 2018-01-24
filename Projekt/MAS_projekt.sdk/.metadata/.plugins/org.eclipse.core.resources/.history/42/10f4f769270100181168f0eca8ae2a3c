@@ -24,6 +24,7 @@
 #include "lwip/dhcp.h"
 #endif
 
+
 /* defined by each RAW mode application */
 void print_app_header();
 int start_application();
