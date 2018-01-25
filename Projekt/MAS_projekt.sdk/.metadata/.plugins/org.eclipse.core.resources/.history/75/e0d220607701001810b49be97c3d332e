@@ -6,7 +6,7 @@ void getImageFromBram() {
 	for (int i = 0; i < 480; i++) {
 		for (int j = 0; j < 640; j += 2) {
 			image.ycbcr[i][j].Y = *(address + 3); // LITTLE ENDIAN - Y1 je na lokacija + 3
-			//xil_printf("Y1 = %X\n", *(address + 3));
+			xil_printf("Y1 = %X\n", *(address + 3));
 
 			image.ycbcr[i][j].Cb = *(address + 2); // LITTLE ENDIAN - U je na lokacija + 2
 			image.ycbcr[i][j + 1].Cb = *(address + 2);

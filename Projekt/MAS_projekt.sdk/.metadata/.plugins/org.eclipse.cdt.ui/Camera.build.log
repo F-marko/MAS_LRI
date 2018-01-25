@@ -1,4 +1,4 @@
-03:11:20 **** Auto Build of configuration Debug for project Camera ****
+03:28:06 **** Auto Build of configuration Debug for project Camera ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
@@ -132,5 +132,5 @@ arm-none-eabi-size Camera.elf  |tee "Camera.elf.size"
 Finished building: Camera.elf.size
  
 
-03:11:22 Build Finished (took 1s.716ms)
+03:28:07 Build Finished (took 1s.326ms)
 
