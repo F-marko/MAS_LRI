@@ -1,8 +1,0 @@
-18:22:20 **** Incremental Build of configuration Debug for project Camera1 ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Ništa za napraviti za `main-build'.
-
-18:22:20 Build Finished (took 186ms)
-

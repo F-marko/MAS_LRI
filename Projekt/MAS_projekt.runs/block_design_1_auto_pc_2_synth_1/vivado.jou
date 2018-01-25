@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3.1 (64-bit)
+# SW Build 2035080 on Fri Oct 20 14:20:01 MDT 2017
+# IP Build 2034413 on Fri Oct 20 15:56:25 MDT 2017
+# Start of session at: Thu Jan 25 01:43:24 2018
+# Process ID: 4676
+# Current directory: C:/Vivado_Projects/MAS/Projekt/MAS_projekt.runs/block_design_1_auto_pc_2_synth_1
+# Command line: vivado.exe -log block_design_1_auto_pc_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source block_design_1_auto_pc_2.tcl
+# Log file: C:/Vivado_Projects/MAS/Projekt/MAS_projekt.runs/block_design_1_auto_pc_2_synth_1/block_design_1_auto_pc_2.vds
+# Journal file: C:/Vivado_Projects/MAS/Projekt/MAS_projekt.runs/block_design_1_auto_pc_2_synth_1\vivado.jou
+#-----------------------------------------------------------
+source block_design_1_auto_pc_2.tcl -notrace

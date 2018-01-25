@@ -1,0 +1,64 @@
+
+*** Running vivado
+    with args -log block_design_1_rst_ps7_0_100M_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source block_design_1_rst_ps7_0_100M_0.tcl
+
+
+****** Vivado v2017.3.1 (64-bit)
+  **** SW Build 2035080 on Fri Oct 20 14:20:01 MDT 2017
+  **** IP Build 2034413 on Fri Oct 20 15:56:25 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+ERROR: [Common 17-354] Could not open 'C' for writing.
+ERROR: [Common 17-356] Failed to install all user apps.
+source block_design_1_rst_ps7_0_100M_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 347.797 ; gain = 96.855
+INFO: [Synth 8-638] synthesizing module 'block_design_1_rst_ps7_0_100M_0' [c:/Vivado_Projects/MAS/Projekt/MAS_projekt.srcs/sources_1/bd/block_design_1/ip/block_design_1_rst_ps7_0_100M_0/synth/block_design_1_rst_ps7_0_100M_0.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [c:/Vivado_Projects/MAS/Projekt/MAS_projekt.srcs/sources_1/bd/block_design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-638] synthesizing module 'lpf' [c:/Vivado_Projects/MAS/Projekt/MAS_projekt.srcs/sources_1/bd/block_design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'SRL16' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:50689]
+INFO: [Synth 8-256] done synthesizing module 'SRL16' (1#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:50689]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Vivado_Projects/MAS/Projekt/MAS_projekt.srcs/sources_1/bd/block_design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (2#1) [c:/Vivado_Projects/MAS/Projekt/MAS_projekt.srcs/sources_1/bd/block_design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (3#1) [c:/Vivado_Projects/MAS/Projekt/MAS_projekt.srcs/sources_1/bd/block_design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [c:/Vivado_Projects/MAS/Projekt/MAS_projekt.srcs/sources_1/bd/block_design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [c:/Vivado_Projects/MAS/Projekt/MAS_projekt.srcs/sources_1/bd/block_design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (4#1) [c:/Vivado_Projects/MAS/Projekt/MAS_projekt.srcs/sources_1/bd/block_design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (5#1) [c:/Vivado_Projects/MAS/Projekt/MAS_projekt.srcs/sources_1/bd/block_design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (6#1) [c:/Vivado_Projects/MAS/Projekt/MAS_projekt.srcs/sources_1/bd/block_design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'block_design_1_rst_ps7_0_100M_0' (7#1) [c:/Vivado_Projects/MAS/Projekt/MAS_projekt.srcs/sources_1/bd/block_design_1/ip/block_design_1_rst_ps7_0_100M_0/synth/block_design_1_rst_ps7_0_100M_0.vhd:74]
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 390.316 ; gain = 139.375
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 390.316 ; gain = 139.375
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 721.961 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:01:22 . Memory (MB): peak = 721.961 ; gain = 471.020
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:01:23 . Memory (MB): peak = 721.961 ; gain = 471.020
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:01:23 . Memory (MB): peak = 721.961 ; gain = 471.020
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:01:24 . Memory (MB): peak = 721.961 ; gain = 471.020
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:01:26 . Memory (MB): peak = 721.961 ; gain = 471.020
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:01:55 . Memory (MB): peak = 721.961 ; gain = 471.020
+Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:02:01 . Memory (MB): peak = 721.961 ; gain = 471.020
+Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:02:02 . Memory (MB): peak = 721.961 ; gain = 471.020
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:02:05 . Memory (MB): peak = 721.961 ; gain = 471.020
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:02:05 . Memory (MB): peak = 721.961 ; gain = 471.020
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:02:05 . Memory (MB): peak = 721.961 ; gain = 471.020
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:02:05 . Memory (MB): peak = 721.961 ; gain = 471.020
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:02:05 . Memory (MB): peak = 721.961 ; gain = 471.020
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:02:05 . Memory (MB): peak = 721.961 ; gain = 471.020
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     5|
+|2     |LUT2  |     9|
+|3     |LUT3  |     1|
+|4     |LUT4  |     6|
+|5     |LUT5  |     3|
+|6     |LUT6  |     1|
+|7     |SRL16 |     1|
+|8     |FDR   |     8|
+|9     |FDRE  |    28|
+|10    |FDSE  |     4|
++------+------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:02:06 . Memory (MB): peak = 721.961 ; gain = 471.020
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:02:26 . Memory (MB): peak = 721.961 ; gain = 478.410

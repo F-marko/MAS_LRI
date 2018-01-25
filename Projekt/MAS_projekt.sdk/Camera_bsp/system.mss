@@ -19,6 +19,12 @@ END
 
 
 BEGIN DRIVER
+ PARAMETER DRIVER_NAME = bram
+ PARAMETER DRIVER_VER = 4.2
+ PARAMETER HW_INSTANCE = axi_bram_ctrl_0
+END
+
+BEGIN DRIVER
  PARAMETER DRIVER_NAME = gpio
  PARAMETER DRIVER_VER = 4.3
  PARAMETER HW_INSTANCE = axi_gpio_0
@@ -217,9 +223,6 @@ BEGIN LIBRARY
  PARAMETER PROC_INSTANCE = ps7_cortexa9_0
  PARAMETER dhcp_does_arp_check = true
  PARAMETER lwip_dhcp = true
- PARAMETER memp_n_sys_timeout = 1
- PARAMETER memp_n_tcp_pcb_listen = 1
- PARAMETER tcp_snd_buf = 23000
 END
 
 

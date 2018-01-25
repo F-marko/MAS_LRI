@@ -1,8 +1,8 @@
 --Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
---Tool Version: Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
---Date        : Tue Jan 23 19:13:55 2018
---Host        : Lenovo running 64-bit major release  (build 9200)
+--Tool Version: Vivado v.2017.3.1 (win64) Build 2035080 Fri Oct 20 14:20:01 MDT 2017
+--Date        : Thu Jan 25 01:39:17 2018
+--Host        : TERMINATOR running 64-bit Service Pack 1  (build 7601)
 --Command     : generate_target block_design_1_wrapper.bd
 --Design      : block_design_1_wrapper
 --Purpose     : IP block netlist
@@ -13,7 +13,6 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity block_design_1_wrapper is
   port (
-    CAM_tri_i : in STD_LOGIC_VECTOR ( 10 downto 0 );
     DDR_addr : inout STD_LOGIC_VECTOR ( 14 downto 0 );
     DDR_ba : inout STD_LOGIC_VECTOR ( 2 downto 0 );
     DDR_cas_n : inout STD_LOGIC;
@@ -35,11 +34,17 @@ entity block_design_1_wrapper is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
-    IIC_0_scl_io : inout STD_LOGIC;
-    IIC_0_sda_io : inout STD_LOGIC;
-    XCLK : out STD_LOGIC;
     btns_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    leds_4bits_tri_io : inout STD_LOGIC_VECTOR ( 3 downto 0 )
+    d : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    href : in STD_LOGIC;
+    iic_scl_io : inout STD_LOGIC;
+    iic_sda_io : inout STD_LOGIC;
+    leds_4bits_tri_io : inout STD_LOGIC_VECTOR ( 3 downto 0 );
+    pclk : in STD_LOGIC;
+    rgb_led_tri_io : inout STD_LOGIC_VECTOR ( 5 downto 0 );
+    sws_2bits_tri_i : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    vsync : in STD_LOGIC;
+    xclk : out STD_LOGIC
   );
 end block_design_1_wrapper;
 
@@ -67,18 +72,25 @@ architecture STRUCTURE of block_design_1_wrapper is
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
-    IIC_0_sda_i : in STD_LOGIC;
-    IIC_0_sda_o : out STD_LOGIC;
-    IIC_0_sda_t : out STD_LOGIC;
-    IIC_0_scl_i : in STD_LOGIC;
-    IIC_0_scl_o : out STD_LOGIC;
-    IIC_0_scl_t : out STD_LOGIC;
+    iic_sda_i : in STD_LOGIC;
+    iic_sda_o : out STD_LOGIC;
+    iic_sda_t : out STD_LOGIC;
+    iic_scl_i : in STD_LOGIC;
+    iic_scl_o : out STD_LOGIC;
+    iic_scl_t : out STD_LOGIC;
     leds_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
     leds_4bits_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
     leds_4bits_tri_t : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    rgb_led_tri_i : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    rgb_led_tri_o : out STD_LOGIC_VECTOR ( 5 downto 0 );
+    rgb_led_tri_t : out STD_LOGIC_VECTOR ( 5 downto 0 );
     btns_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    CAM_tri_i : in STD_LOGIC_VECTOR ( 10 downto 0 );
-    XCLK : out STD_LOGIC
+    sws_2bits_tri_i : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    xclk : out STD_LOGIC;
+    pclk : in STD_LOGIC;
+    vsync : in STD_LOGIC;
+    href : in STD_LOGIC;
+    d : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
   end component block_design_1;
   component IOBUF is
@@ -89,12 +101,12 @@ architecture STRUCTURE of block_design_1_wrapper is
     IO : inout STD_LOGIC
   );
   end component IOBUF;
-  signal IIC_0_scl_i : STD_LOGIC;
-  signal IIC_0_scl_o : STD_LOGIC;
-  signal IIC_0_scl_t : STD_LOGIC;
-  signal IIC_0_sda_i : STD_LOGIC;
-  signal IIC_0_sda_o : STD_LOGIC;
-  signal IIC_0_sda_t : STD_LOGIC;
+  signal iic_scl_i : STD_LOGIC;
+  signal iic_scl_o : STD_LOGIC;
+  signal iic_scl_t : STD_LOGIC;
+  signal iic_sda_i : STD_LOGIC;
+  signal iic_sda_o : STD_LOGIC;
+  signal iic_sda_t : STD_LOGIC;
   signal leds_4bits_tri_i_0 : STD_LOGIC_VECTOR ( 0 to 0 );
   signal leds_4bits_tri_i_1 : STD_LOGIC_VECTOR ( 1 to 1 );
   signal leds_4bits_tri_i_2 : STD_LOGIC_VECTOR ( 2 to 2 );
@@ -111,24 +123,33 @@ architecture STRUCTURE of block_design_1_wrapper is
   signal leds_4bits_tri_t_1 : STD_LOGIC_VECTOR ( 1 to 1 );
   signal leds_4bits_tri_t_2 : STD_LOGIC_VECTOR ( 2 to 2 );
   signal leds_4bits_tri_t_3 : STD_LOGIC_VECTOR ( 3 to 3 );
+  signal rgb_led_tri_i_0 : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal rgb_led_tri_i_1 : STD_LOGIC_VECTOR ( 1 to 1 );
+  signal rgb_led_tri_i_2 : STD_LOGIC_VECTOR ( 2 to 2 );
+  signal rgb_led_tri_i_3 : STD_LOGIC_VECTOR ( 3 to 3 );
+  signal rgb_led_tri_i_4 : STD_LOGIC_VECTOR ( 4 to 4 );
+  signal rgb_led_tri_i_5 : STD_LOGIC_VECTOR ( 5 to 5 );
+  signal rgb_led_tri_io_0 : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal rgb_led_tri_io_1 : STD_LOGIC_VECTOR ( 1 to 1 );
+  signal rgb_led_tri_io_2 : STD_LOGIC_VECTOR ( 2 to 2 );
+  signal rgb_led_tri_io_3 : STD_LOGIC_VECTOR ( 3 to 3 );
+  signal rgb_led_tri_io_4 : STD_LOGIC_VECTOR ( 4 to 4 );
+  signal rgb_led_tri_io_5 : STD_LOGIC_VECTOR ( 5 to 5 );
+  signal rgb_led_tri_o_0 : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal rgb_led_tri_o_1 : STD_LOGIC_VECTOR ( 1 to 1 );
+  signal rgb_led_tri_o_2 : STD_LOGIC_VECTOR ( 2 to 2 );
+  signal rgb_led_tri_o_3 : STD_LOGIC_VECTOR ( 3 to 3 );
+  signal rgb_led_tri_o_4 : STD_LOGIC_VECTOR ( 4 to 4 );
+  signal rgb_led_tri_o_5 : STD_LOGIC_VECTOR ( 5 to 5 );
+  signal rgb_led_tri_t_0 : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal rgb_led_tri_t_1 : STD_LOGIC_VECTOR ( 1 to 1 );
+  signal rgb_led_tri_t_2 : STD_LOGIC_VECTOR ( 2 to 2 );
+  signal rgb_led_tri_t_3 : STD_LOGIC_VECTOR ( 3 to 3 );
+  signal rgb_led_tri_t_4 : STD_LOGIC_VECTOR ( 4 to 4 );
+  signal rgb_led_tri_t_5 : STD_LOGIC_VECTOR ( 5 to 5 );
 begin
-IIC_0_scl_iobuf: component IOBUF
-     port map (
-      I => IIC_0_scl_o,
-      IO => IIC_0_scl_io,
-      O => IIC_0_scl_i,
-      T => IIC_0_scl_t
-    );
-IIC_0_sda_iobuf: component IOBUF
-     port map (
-      I => IIC_0_sda_o,
-      IO => IIC_0_sda_io,
-      O => IIC_0_sda_i,
-      T => IIC_0_sda_t
-    );
 block_design_1_i: component block_design_1
      port map (
-      CAM_tri_i(10 downto 0) => CAM_tri_i(10 downto 0),
       DDR_addr(14 downto 0) => DDR_addr(14 downto 0),
       DDR_ba(2 downto 0) => DDR_ba(2 downto 0),
       DDR_cas_n => DDR_cas_n,
@@ -150,14 +171,15 @@ block_design_1_i: component block_design_1
       FIXED_IO_ps_clk => FIXED_IO_ps_clk,
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
       FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
-      IIC_0_scl_i => IIC_0_scl_i,
-      IIC_0_scl_o => IIC_0_scl_o,
-      IIC_0_scl_t => IIC_0_scl_t,
-      IIC_0_sda_i => IIC_0_sda_i,
-      IIC_0_sda_o => IIC_0_sda_o,
-      IIC_0_sda_t => IIC_0_sda_t,
-      XCLK => XCLK,
       btns_4bits_tri_i(3 downto 0) => btns_4bits_tri_i(3 downto 0),
+      d(7 downto 0) => d(7 downto 0),
+      href => href,
+      iic_scl_i => iic_scl_i,
+      iic_scl_o => iic_scl_o,
+      iic_scl_t => iic_scl_t,
+      iic_sda_i => iic_sda_i,
+      iic_sda_o => iic_sda_o,
+      iic_sda_t => iic_sda_t,
       leds_4bits_tri_i(3) => leds_4bits_tri_i_3(3),
       leds_4bits_tri_i(2) => leds_4bits_tri_i_2(2),
       leds_4bits_tri_i(1) => leds_4bits_tri_i_1(1),
@@ -169,7 +191,43 @@ block_design_1_i: component block_design_1
       leds_4bits_tri_t(3) => leds_4bits_tri_t_3(3),
       leds_4bits_tri_t(2) => leds_4bits_tri_t_2(2),
       leds_4bits_tri_t(1) => leds_4bits_tri_t_1(1),
-      leds_4bits_tri_t(0) => leds_4bits_tri_t_0(0)
+      leds_4bits_tri_t(0) => leds_4bits_tri_t_0(0),
+      pclk => pclk,
+      rgb_led_tri_i(5) => rgb_led_tri_i_5(5),
+      rgb_led_tri_i(4) => rgb_led_tri_i_4(4),
+      rgb_led_tri_i(3) => rgb_led_tri_i_3(3),
+      rgb_led_tri_i(2) => rgb_led_tri_i_2(2),
+      rgb_led_tri_i(1) => rgb_led_tri_i_1(1),
+      rgb_led_tri_i(0) => rgb_led_tri_i_0(0),
+      rgb_led_tri_o(5) => rgb_led_tri_o_5(5),
+      rgb_led_tri_o(4) => rgb_led_tri_o_4(4),
+      rgb_led_tri_o(3) => rgb_led_tri_o_3(3),
+      rgb_led_tri_o(2) => rgb_led_tri_o_2(2),
+      rgb_led_tri_o(1) => rgb_led_tri_o_1(1),
+      rgb_led_tri_o(0) => rgb_led_tri_o_0(0),
+      rgb_led_tri_t(5) => rgb_led_tri_t_5(5),
+      rgb_led_tri_t(4) => rgb_led_tri_t_4(4),
+      rgb_led_tri_t(3) => rgb_led_tri_t_3(3),
+      rgb_led_tri_t(2) => rgb_led_tri_t_2(2),
+      rgb_led_tri_t(1) => rgb_led_tri_t_1(1),
+      rgb_led_tri_t(0) => rgb_led_tri_t_0(0),
+      sws_2bits_tri_i(1 downto 0) => sws_2bits_tri_i(1 downto 0),
+      vsync => vsync,
+      xclk => xclk
+    );
+iic_scl_iobuf: component IOBUF
+     port map (
+      I => iic_scl_o,
+      IO => iic_scl_io,
+      O => iic_scl_i,
+      T => iic_scl_t
+    );
+iic_sda_iobuf: component IOBUF
+     port map (
+      I => iic_sda_o,
+      IO => iic_sda_io,
+      O => iic_sda_i,
+      T => iic_sda_t
     );
 leds_4bits_tri_iobuf_0: component IOBUF
      port map (
@@ -198,5 +256,47 @@ leds_4bits_tri_iobuf_3: component IOBUF
       IO => leds_4bits_tri_io(3),
       O => leds_4bits_tri_i_3(3),
       T => leds_4bits_tri_t_3(3)
+    );
+rgb_led_tri_iobuf_0: component IOBUF
+     port map (
+      I => rgb_led_tri_o_0(0),
+      IO => rgb_led_tri_io(0),
+      O => rgb_led_tri_i_0(0),
+      T => rgb_led_tri_t_0(0)
+    );
+rgb_led_tri_iobuf_1: component IOBUF
+     port map (
+      I => rgb_led_tri_o_1(1),
+      IO => rgb_led_tri_io(1),
+      O => rgb_led_tri_i_1(1),
+      T => rgb_led_tri_t_1(1)
+    );
+rgb_led_tri_iobuf_2: component IOBUF
+     port map (
+      I => rgb_led_tri_o_2(2),
+      IO => rgb_led_tri_io(2),
+      O => rgb_led_tri_i_2(2),
+      T => rgb_led_tri_t_2(2)
+    );
+rgb_led_tri_iobuf_3: component IOBUF
+     port map (
+      I => rgb_led_tri_o_3(3),
+      IO => rgb_led_tri_io(3),
+      O => rgb_led_tri_i_3(3),
+      T => rgb_led_tri_t_3(3)
+    );
+rgb_led_tri_iobuf_4: component IOBUF
+     port map (
+      I => rgb_led_tri_o_4(4),
+      IO => rgb_led_tri_io(4),
+      O => rgb_led_tri_i_4(4),
+      T => rgb_led_tri_t_4(4)
+    );
+rgb_led_tri_iobuf_5: component IOBUF
+     port map (
+      I => rgb_led_tri_o_5(5),
+      IO => rgb_led_tri_io(5),
+      O => rgb_led_tri_i_5(5),
+      T => rgb_led_tri_t_5(5)
     );
 end STRUCTURE;

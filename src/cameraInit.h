@@ -70,6 +70,8 @@
 #define REG_MVFP	0x1e	/* Mirror / vflip */
 #define   MVFP_MIRROR	  0x20	  /* Mirror image */
 #define   MVFP_FLIP	  0x10	  /* Vertical flip */
+#define REG_MANU	0x67 /* Manual U value */
+#define REG_MANV	0x68 /* Manual V value */
 
 #define REG_AEW		0x24	/* AGC upper limit */
 #define REG_AEB		0x25	/* AGC lower limit */
@@ -79,6 +81,7 @@
 #define REG_HREF	0x32	/* HREF pieces */
 #define REG_TSLB	0x3a	/* lots of stuff */
 #define   TSLB_YLAST	  0x04	  /* UYVY or VYUY - see com13 */
+#define   TSLB_MANUV	  0x10
 #define REG_COM11	0x3b	/* Control 11 */
 #define   COM11_NIGHT	  0x80	  /* NIght mode enable */
 #define   COM11_NMFR	  0x60	  /* Two bit NM frame rate */
@@ -162,7 +165,7 @@ static struct regval_list ov7670_default_regs[] = {
  *              2 = 20fps
  *              1 = 30fps
  */
-	{ REG_CLKRC, 0x1F},	/* OV: clock scale (30 fps) */
+	{ REG_CLKRC, 0x14},	/* OV: clock scale (30 fps) */
 	{ REG_TSLB,  0x04 },	/* OV */
 	{ REG_COM7, 0 },	/* VGA */
 	/*
@@ -299,6 +302,25 @@ static struct regval_list ov7670_fmt_yuv422[] = {
 	{ 0xff, 0xff },
 };
 
+static struct regval_list ov7670_fmt_yuv422_manual_uv[] = {
+	{ REG_COM7, 0x0 },  /* Selects YUV mode */
+	{ REG_RGB444, 0 },	/* No RGB444 please */
+	{ REG_COM1, 0 },	/* CCIR601 */
+	{ REG_COM15, COM15_R00FF },
+	{ REG_COM9, 0x48 }, /* 32x gain ceiling; 0x8 is reserved bit */
+	{ 0x4f, 0x80 }, 	/* "matrix coefficient 1" */
+	{ 0x50, 0x80 }, 	/* "matrix coefficient 2" */
+	{ 0x51, 0    },		/* vb */
+	{ 0x52, 0x22 }, 	/* "matrix coefficient 4" */
+	{ 0x53, 0x5e }, 	/* "matrix coefficient 5" */
+	{ 0x54, 0x80 }, 	/* "matrix coefficient 6" */
+	{ REG_COM13, COM13_GAMMA|COM13_UVSAT },
+	{ REG_MANU, 0x80 },
+	{ REG_MANV, 0x81 },
+	{ REG_TSLB, 0x10 },
+	{ 0xff, 0xff },
+};
+
 
 //SET RGB 565 MODE
 static struct regval_list ov7670_fmt_rgb565[] = {
@@ -327,8 +349,8 @@ static struct regval_list ov7670_test_shift[] = {
 
 //SET TEST MODE: COLOR TEST BAR
 static struct regval_list ov7670_test_bar[] = {
-	{ 0x70, 0x4A },	/* 0xCA umjesto 0x4A*/
-	{ 0x71, 0xB5 },	/* 0x35 umjesto 0xB5*/
+	{ 0x70, 0xCA },	/* 0xCA umjesto 0x4A*/
+	{ 0x71, 0x35 },	/* 0x35 umjesto 0xB5*/
 	{ 0xff, 0xff }
 };
 

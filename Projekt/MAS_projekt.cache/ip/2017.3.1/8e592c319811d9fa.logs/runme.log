@@ -1,0 +1,52 @@
+
+*** Running vivado
+    with args -log block_design_1_processing_system7_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source block_design_1_processing_system7_0_0.tcl
+
+
+****** Vivado v2017.3.1 (64-bit)
+  **** SW Build 2035080 on Fri Oct 20 14:20:01 MDT 2017
+  **** IP Build 2034413 on Fri Oct 20 15:56:25 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source block_design_1_processing_system7_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 357.574 ; gain = 96.602
+INFO: [Synth 8-638] synthesizing module 'block_design_1_processing_system7_0_0' [c:/Vivado_Projects/MAS/Projekt/MAS_projekt.srcs/sources_1/bd/block_design_1/ip/block_design_1_processing_system7_0_0/synth/block_design_1_processing_system7_0_0.v:60]
+INFO: [Synth 8-638] synthesizing module 'processing_system7_v5_5_processing_system7' [c:/Vivado_Projects/MAS/Projekt/MAS_projekt.srcs/sources_1/bd/block_design_1/ip/block_design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (1#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-638] synthesizing module 'BIBUF' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:268]
+INFO: [Synth 8-256] done synthesizing module 'BIBUF' (2#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:268]
+INFO: [Synth 8-638] synthesizing module 'PS7' [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:40559]
+INFO: [Synth 8-256] done synthesizing module 'PS7' (3#1) [C:/Xilinx/Vivado/2017.3/scripts/rt/data/unisim_comp.v:40559]
+INFO: [Synth 8-256] done synthesizing module 'processing_system7_v5_5_processing_system7' (4#1) [c:/Vivado_Projects/MAS/Projekt/MAS_projekt.srcs/sources_1/bd/block_design_1/ip/block_design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
+INFO: [Synth 8-256] done synthesizing module 'block_design_1_processing_system7_0_0' (5#1) [c:/Vivado_Projects/MAS/Projekt/MAS_projekt.srcs/sources_1/bd/block_design_1/ip/block_design_1_processing_system7_0_0/synth/block_design_1_processing_system7_0_0.v:60]
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 401.531 ; gain = 140.559
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 401.531 ; gain = 140.559
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.606 . Memory (MB): peak = 655.086 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:01:18 . Memory (MB): peak = 655.086 ; gain = 394.113
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:01:18 . Memory (MB): peak = 655.086 ; gain = 394.113
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:01:20 . Memory (MB): peak = 655.086 ; gain = 394.113
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:01:21 . Memory (MB): peak = 655.086 ; gain = 394.113
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:01:24 . Memory (MB): peak = 655.086 ; gain = 394.113
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:01:49 . Memory (MB): peak = 864.852 ; gain = 603.879
+Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:01:56 . Memory (MB): peak = 880.945 ; gain = 619.973
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:02:00 . Memory (MB): peak = 883.012 ; gain = 622.039
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:02:02 . Memory (MB): peak = 883.012 ; gain = 622.039
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:02:03 . Memory (MB): peak = 883.012 ; gain = 622.039
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:02:03 . Memory (MB): peak = 883.012 ; gain = 622.039
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:02:03 . Memory (MB): peak = 883.012 ; gain = 622.039
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:02:03 . Memory (MB): peak = 883.012 ; gain = 622.039
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:02:03 . Memory (MB): peak = 883.012 ; gain = 622.039
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BIBUF |   130|
+|2     |BUFG  |     2|
+|3     |LUT1  |   112|
+|4     |PS7   |     1|
++------+------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:02:03 . Memory (MB): peak = 883.012 ; gain = 622.039
+synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:02:22 . Memory (MB): peak = 896.949 ; gain = 645.895

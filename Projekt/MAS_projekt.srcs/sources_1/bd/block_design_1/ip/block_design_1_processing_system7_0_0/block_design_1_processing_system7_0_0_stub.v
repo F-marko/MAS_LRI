@@ -1,10 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
-// Date        : Tue Jan 23 19:15:39 2018
-// Host        : Lenovo running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               D:/MAS_LRI/Projekt/MAS_projekt.srcs/sources_1/bd/block_design_1/ip/block_design_1_processing_system7_0_0/block_design_1_processing_system7_0_0_stub.v
+// Tool Version: Vivado v.2017.3.1 (win64) Build 2035080 Fri Oct 20 14:20:01 MDT 2017
+// Date        : Thu Jan 25 01:33:20 2018
+// Host        : TERMINATOR running 64-bit Service Pack 1  (build 7601)
+// Command     : write_verilog -force -mode synth_stub -rename_top block_design_1_processing_system7_0_0 -prefix
+//               block_design_1_processing_system7_0_0_ block_design_1_processing_system7_0_0_stub.v
 // Design      : block_design_1_processing_system7_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1
@@ -13,7 +13,7 @@
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
-(* X_CORE_INFO = "processing_system7_v5_5_processing_system7,Vivado 2017.3" *)
+(* X_CORE_INFO = "processing_system7_v5_5_processing_system7,Vivado 2017.3.1" *)
 module block_design_1_processing_system7_0_0(I2C0_SDA_I, I2C0_SDA_O, I2C0_SDA_T, I2C0_SCL_I, 
   I2C0_SCL_O, I2C0_SCL_T, M_AXI_GP0_ARVALID, M_AXI_GP0_AWVALID, M_AXI_GP0_BREADY, 
   M_AXI_GP0_RREADY, M_AXI_GP0_WLAST, M_AXI_GP0_WVALID, M_AXI_GP0_ARID, M_AXI_GP0_AWID, 

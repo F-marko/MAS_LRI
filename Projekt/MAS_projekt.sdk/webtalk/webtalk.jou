@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
-# Webtalk v2017.3 (64-bit)
-# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# Webtalk v2017.3.1 (64-bit)
+# SW Build 2035080 on Fri Oct 20 14:20:01 MDT 2017
 # 
-# Start of session at: Tue Jan 23 20:05:15 2018
-# Process ID: 21236
-# Current directory: D:/MAS_LRI/Projekt/MAS_projekt.sdk/webtalk
+# Start of session at: Thu Jan 25 03:06:19 2018
+# Process ID: 2772
+# Current directory: C:/Vivado_Projects/MAS/Projekt/MAS_projekt.sdk/webtalk
 # Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
-# Log file: D:/MAS_LRI/Projekt/MAS_projekt.sdk/webtalk/webtalk.log
-# Journal file: D:/MAS_LRI/Projekt/MAS_projekt.sdk/webtalk\webtalk.jou
+# Log file: C:/Vivado_Projects/MAS/Projekt/MAS_projekt.sdk/webtalk/webtalk.log
+# Journal file: C:/Vivado_Projects/MAS/Projekt/MAS_projekt.sdk/webtalk\webtalk.jou
 #-----------------------------------------------------------
 source sdk_webtalk.tcl
