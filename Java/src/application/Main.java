@@ -236,7 +236,7 @@ public class Main extends Application {
 					while ((bytesRead = inputFromZynq.read(buffer)) != -1) {
 						totalBytes += bytesRead;
 						for (int i = 0; i < bytesRead; i++) {
-							// buffer[i] = (byte) (buffer[i] ^ 0xCA);
+							buffer[i] = (byte) (buffer[i] ^ 0xCA);
 						}
 						outputToFile.write(buffer, 0, bytesRead);
 					}
@@ -311,7 +311,6 @@ public class Main extends Application {
 				File file = fileChooser.showSaveDialog(stage);
 
 				if (file != null) {
-					// Get buffered image:
 					BufferedImage image = SwingFXUtils.fromFXImage(imageView.getImage(), null);
 
 					BufferedImage imageRGB = new BufferedImage(640, 480, BufferedImage.OPAQUE);
