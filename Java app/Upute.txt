@@ -1,0 +1,5 @@
+Nije potrebno zadavati nikakve command line argumente, potrebno je samo pokrenuti jar:
+
+	java -jar OV7670-WebCam.jar
+	
+Output mode (slika, test bar i shifting jedinice) se mogu zadati preko menua. Slika se dohvaća klikom na gumb.
